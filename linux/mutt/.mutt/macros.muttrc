@@ -1,8 +1,9 @@
+
 bind editor <space> noop
 
 #macros
-macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
-macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
+macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter><refresh>" "Archive"
+macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter><refresh>" "Trash"
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"¬
 macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"¬
 macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent mail"¬ 
@@ -14,4 +15,7 @@ macro index "\Cx\Cb" "<change-folder>?" #folder list
 macro generic "\e?" "<shell-escape>less /usr/local/doc/mutt/manual.txt<enter>"
 macro index "\e?" "<shell-escape>less /usr/local/doc/mutt/manual.txt<enter>"
 macro pager "\e?" "<shell-escape>less /usr/local/doc/mutt/manual.txt<enter>"
+
+# mailing lists
+macro index ls "<change-folder>=linux/samba<enter>" "Go to linux@lists.samba.org"¬
 
