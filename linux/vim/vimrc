@@ -1,0 +1,90 @@
+" Yet another .vimrc
+" Ben Simmonds (2015)
+" See :options for further details.
+
+
+"Pathogen.vim simplifies plugin and runtime file installation.
+"Just git clone package into ~/.vim/bundles
+"https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible "drop some legacy compatibility in favour of new things
+filetype on "file specific goodness
+filetype plugin on
+filetype indent on
+set autoread "refresh file contents when modified externally
+set autochdir "use the current file's dir as working dir
+set backspace=indent,eol,start "specifies what <BS> can do in Insert mode
+set colorcolumn=80 "columns to highlight (local to window)
+set cursorline "highlight the screen line of the cursor (local to window)
+set encoding=utf-8 "character encoding to be used in Vim
+set fileencoding=utf-8 "character encoding to be used by current file
+set gdefault "use the 'g' (global) flag for :substitute by default
+set hlsearch "highlight search results
+set ignorecase "ignore case when searching
+set incsearch "show match for partly typed search command
+set list "show non-vis characters
+set listchars=tab:▸\ ,eol:¬,nbsp:⋅,trail:⋅ "representation of non-vis chars
+set number "show line numbers
+set hidden "don't unload a buffer when no longer shown in a window
+set shell=/bin/bash "default shell
+set showmatch "when inserting a bracket, briefly jump to its match
+set smartcase "override 'ignorecase' when pattern has upper case characters
+set visualbell "use a visual bell instead of beeping
+set winheight=5 "minimal number of lines used for the current window
+set winminheight=5 "minimal number of lines used for any window
+set winwidth=84 "minimal number of columns used for the current window
+set wildmode=list:longest "activate <TAB> auto-completion for file paths
+set wildignore+=*.a,*.o
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+set wildignore+=.git,.svn,.hg
+set wildignore+=*~,*.swp,*.tmp
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Text, tab and indents
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set expandtab "expand <Tab> to spaces in Insert mode
+set tabstop=2 "number of spaces a <Tab> in the text stands for
+set softtabstop=2 "number of spaces to insert for a <Tab>
+set shiftwidth=2 "number of spaces used for each step of (auto)indent
+set autoindent "automatically set the indent of a new line
+set smartindent "do clever autoindenting
+set wrap "wrap long lines
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Files, backups and undos
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set noswapfile "don't use a swap file for this buffer
+set nobackup "don't write a backup file before overwriting a file
+set nowb "don't write a backup file before overwriting a file
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colors and fonts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable "syntax highlighting
+colorscheme monokai "default color scheme
+set t_Co=256 "the number of colors the terminal supports
+set term=screen-256color "what terminal type to use
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keyboard mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_show_hidden = 1
+
+
+
+
