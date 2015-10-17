@@ -34,7 +34,7 @@ set hidden "don't unload a buffer when no longer shown in a window
 set shell=/bin/bash "default shell
 set showmatch "when inserting a bracket, briefly jump to its match
 set smartcase "override 'ignorecase' when pattern has upper case characters
-set visualbell "use a visual bell instead of beeping
+set novisualbell "don't use a visual bell instead of beeping
 set winheight=5 "minimal number of lines used for the current window
 set winminheight=5 "minimal number of lines used for any window
 set winwidth=84 "minimal number of columns used for the current window
@@ -69,7 +69,7 @@ set nowb "don't write a backup file before overwriting a file
 " Colors and fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable "syntax highlighting
-colorscheme monokai "default color scheme
+colorscheme molokai "default color scheme
 set t_Co=256 "the number of colors the terminal supports
 set term=screen-256color "what terminal type to use
 
@@ -83,7 +83,7 @@ set term=screen-256color "what terminal type to use
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_show_hidden = 1
+"let g:ctrlp_show_hidden = 1
 
 
 
