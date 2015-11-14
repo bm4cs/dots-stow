@@ -85,6 +85,5 @@ set term=screen-256color "what terminal type to use
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:ctrlp_show_hidden = 1
 
-
-
-
+"YouCompleteMe autocompletion
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
