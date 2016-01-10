@@ -72,6 +72,7 @@ syntax enable "syntax highlighting
 colorscheme molokai "default color scheme
 set t_Co=256 "the number of colors the terminal supports
 set term=screen-256color "what terminal type to use
+au BufNewFile,BufRead *.adoc set filetype=asciidoc
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
