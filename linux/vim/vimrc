@@ -34,6 +34,7 @@ set hidden "don't unload a buffer when no longer shown in a window
 set shell=/bin/bash "default shell
 set showmatch "when inserting a bracket, briefly jump to its match
 set smartcase "override 'ignorecase' when pattern has upper case characters
+set laststatus=2 "2 = always show a status line for vim-airline
 set novisualbell "don't use a visual bell instead of beeping
 set winheight=5 "minimal number of lines used for the current window
 set winminheight=5 "minimal number of lines used for any window
@@ -79,6 +80,10 @@ au BufNewFile,BufRead *.adoc set filetype=asciidoc
 " Keyboard mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -86,5 +91,3 @@ au BufNewFile,BufRead *.adoc set filetype=asciidoc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:ctrlp_show_hidden = 1
 
-"YouCompleteMe autocompletion
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
