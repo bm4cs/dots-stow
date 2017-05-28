@@ -17,3 +17,5 @@ alias pbcopy='xel --clipboard --input'
 alias pbpaste='xel --clipboard --output'
 
 export PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
+
+#export $TERM=linux #fix for BitchX � characters
