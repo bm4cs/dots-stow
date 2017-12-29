@@ -31,6 +31,7 @@ set list "show non-vis characters
 set listchars=tab:▸\ ,eol:¬,nbsp:⋅,trail:⋅ "representation of non-vis chars
 set number "show line numbers
 set hidden "don't unload a buffer when no longer shown in a window
+set relativenumber "make line numbering relative to the current line
 set shell=/bin/bash "default shell
 set showmatch "when inserting a bracket, briefly jump to its match
 set smartcase "override 'ignorecase' when pattern has upper case characters
