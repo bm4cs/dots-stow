@@ -25,12 +25,13 @@ set encoding=utf-8 "character encoding to be used in Vim
 set fileencoding=utf-8 "character encoding to be used by current file
 set gdefault "use the 'g' (global) flag for :substitute by default
 set hlsearch "highlight search results
+set hidden "don't unload a buffer when no longer shown in a window
 set ignorecase "ignore case when searching
 set incsearch "show match for partly typed search command
 set list "show non-vis characters
 set listchars=tab:▸\ ,eol:¬,nbsp:⋅,trail:⋅ "representation of non-vis chars
 set number "show line numbers
-set hidden "don't unload a buffer when no longer shown in a window
+"set paste "disabled because resets expandtab (spaces not tabs)
 set relativenumber "make line numbering relative to the current line
 set shell=/bin/bash "default shell
 set showmatch "when inserting a bracket, briefly jump to its match
