@@ -1,6 +1,5 @@
 
 if [ -L $HOME/.bash_aliases ]; then
-  echo "found"
   source $HOME/.bash_aliases
 fi
 

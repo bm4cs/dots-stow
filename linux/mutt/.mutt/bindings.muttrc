@@ -1,18 +1,7 @@
-#key bindings
-bind index "^" imap-fetch-mail
-bind generic "\e<"   first-entry
-bind generic "\e>"   last-entry
-bind generic "<"     first-entry
-bind generic ">"     last-entry
-bind generic <home>  first-entry
-bind generic <end>   last-entry
-bind generic <left>  previous-entry
-bind generic <right> next-entry
 
-# Thread collapsing, thx https://heipei.net/2009/09/10/mutt-threading-like-a-pro/
+bind index "^" imap-fetch-mail
 bind index - collapse-thread
 bind index _ collapse-all
-
 bind index   "{"      previous-thread
 bind index   "}"      next-thread
 bind index   "x"      noop
@@ -20,11 +9,13 @@ bind index   "\ex"    exit
 bind index   "\Cxo"   change-folder
 bind index   "\Cxb"   change-folder
 bind index   "\Cx\Cf" change-folder
+
 bind editor  "\C?"    backspace
 bind alias   " "      tag-entry
 bind alias   "\r"     select-entry
 bind attach  "v"      select-entry
 bind compose "v"      view-attach
+
 bind pager   "\e<"    top
 bind pager   "\e>"    bottom
 bind pager   "<"      top
@@ -43,4 +34,13 @@ bind pager   "\ex"    exit
 bind pager   "\Cxo"   change-folder
 bind pager   "\Cxb"   change-folder
 bind pager   "\Cx\Cf" change-folder
+
+bind generic "\e<"   first-entry
+bind generic "\e>"   last-entry
+bind generic "<"     first-entry
+bind generic ">"     last-entry
+bind generic <home>  first-entry
+bind generic <end>   last-entry
+bind generic <left>  previous-entry
+bind generic <right> next-entry
 

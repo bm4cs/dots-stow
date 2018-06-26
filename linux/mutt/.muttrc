@@ -3,7 +3,7 @@ account-hook imap://gmail/ "set
 set realname = "Ben Simmonds"
 set from = "ben@bencode.net"
 set imap_user = "ben@bencode.net"
-set imap_pass = "hello_ass_hat"
+#set imap_pass = ""
 
 set sort_browser="date"
 set sort_aux=date-received #sort threads by date received.
@@ -36,12 +36,22 @@ set certificate_file="~/.mutt/certificates"
 
 #smtp
 set smtp_url = "smtp://ben@bencode.net@smtp.gmail.com:587/"
-set smtp_pass = "hello_ass_hat"
+#set smtp_pass = ""
 
 set move = no
 set timeout=15
 #set imap_keepalive = 900
 #auto_view text/html
+
+# vim
+set editor=vim
+set text_flowed #honour flowed format text (newlines preceded by non-white space)
+
+#google contacts
+set query_command="goobook query %s"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+bind editor <Tab> complete-query
+
 
 source ~/.mutt/macros.muttrc
 source ~/.mutt/colors-zenburn-256.muttrc

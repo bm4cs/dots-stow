@@ -22,4 +22,6 @@ replace_file_with_symlink ~/.vimrc ~/git/scripts/linux/vim/vimrc
 replace_file_with_symlink ~/.vim ~/git/scripts/linux/vim
 replace_file_with_symlink ~/.bashrc ~/git/scripts/linux/bash/bashrc
 replace_file_with_symlink ~/.bash_aliases ~/git/scripts/linux/bash/aliases
+replace_file_with_symlink ~/.muttrc ~/git/scripts/linux/mutt/.muttrc
+replace_file_with_symlink ~/.mutt ~/git/scripts/linux/mutt/.mutt
 
