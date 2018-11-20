@@ -1,0 +1,38 @@
+[user]
+	name = Ben Simmonds
+	email = ben@bencode.net
+
+[color]
+	ui = auto
+
+[alias]
+	a = add
+	ac = !git add . && git commit -am
+	ap = add -p
+	ba = branch -a
+	bd = branch -d
+	bD = branch -D
+	c = commit --verbose
+	ca = commit -a --verbose
+	clean-merged = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
+	cm = commit -m
+	cam = commit -a -m
+	co = checkout
+	cob = checkout -b
+	d = diff
+	ds = diff --stat
+	dc = diff --cached
+	f = fetch -p
+	m = commit --amend --verbose
+	p = push
+	pushitgood = push -u origin --all
+	rao = remote add origin
+	st = status -sb
+	undo-commit = reset --soft HEAD~1
+
+	plog = log --graph --pretty='format:%C(red)%d%C(reset) %C(yellow)%h%C(reset) %ar %C(green)%aN%C(reset) %s'
+	tlog = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	rank = shortlog -sn --no-merges
+	bdm = "!git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
+

@@ -3,4 +3,11 @@ if [ -L $HOME/.bash_aliases ]; then
   source $HOME/.bash_aliases
 fi
 
+source /usr/share/autojump/autojump.sh
+
+# check if shell is interactive
+# https://askubuntu.com/questions/591937/no-value-for-term-and-no-t-specified
+if [[ $- == *i* ]]; then
+ export PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
+fi
 

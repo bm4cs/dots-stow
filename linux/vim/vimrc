@@ -13,9 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 "Plugin 'vim-markdown-toc'
-Plugin 'tpope/vim-surround'
 Plugin 'prettier/vim-prettier'
 call vundle#end()
 
@@ -69,7 +69,8 @@ set shiftwidth=2 "number of spaces used for each step of (auto)indent
 set autoindent "automatically set the indent of a new line
 set smartindent "do clever autoindenting
 set wrap "wrap long lines
-set formatoptions=aw "mutt friendly; a=auto format para, w=para termination non-white space
+"set formatoptions=aw "mutt friendly; a=auto format para, w=para termination 
+"non-white space
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -84,7 +85,7 @@ set nowb "don't write a backup file before overwriting a file
 " Colors and fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable "syntax highlighting
-colorscheme molokai "default color scheme
+colorscheme monokai "default color scheme
 set t_Co=256 "the number of colors the terminal supports
 set term=screen-256color "what terminal type to use
 au BufNewFile,BufRead *.adoc set filetype=asciidoc
@@ -108,5 +109,5 @@ noremap <Right> <nop>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " mutt tips
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-set formatoptions=aw
+"set formatoptions=aw
 
