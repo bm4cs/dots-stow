@@ -3,11 +3,17 @@ if [ -L $HOME/.bash_aliases ]; then
   source $HOME/.bash_aliases
 fi
 
-source /usr/share/autojump/autojump.sh
+if [[ -e /usr/share/autojump/autojump.sh ]]; then
+  source /usr/share/autojump/autojump.sh
+fi
 
 # check if shell is interactive
 # https://askubuntu.com/questions/591937/no-value-for-term-and-no-t-specified
 if [[ $- == *i* ]]; then
- export PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
+  export PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
+  export VISUAL=vim
+  export EDITOR="$VISUAL"
+  export GOPATH=$HOME/golang
+  export PATH
 fi
 
