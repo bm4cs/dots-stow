@@ -42,3 +42,5 @@ A collection of miscellaneous scripts (mainly bash) and configuration files.
         │   └── zenburn.vim
         └── vimrc
 
+Run `install.sh` to symlink in various configurations (e.g.  vim, mutt, git, bash), with those in this git repo.
+
