@@ -34,7 +34,13 @@ replace_file_with_symlink() {
 }
 
 
+if [[ ! -d "~/.config/nvim" ]]; then mkdir -p ~/.config/nvim; fi
+if [[ ! -d "~/.local/share/nvim/site" ]]; then mkdir -p ~/.local/share/nvim/site; fi
+
 replace_file_with_symlink ~/git/scripts/linux/vim/vimrc ~/.vimrc 
+replace_file_with_symlink ~/git/scripts/linux/vim ~/.vim
+replace_file_with_symlink ~/git/scripts/linux/neovim/init.vim ~/.config/nvim/init.vim
+replace_file_with_symlink ~/git/scripts/linux/vim/autoload ~/.local/share/nvim/site/autoload
 replace_file_with_symlink ~/git/scripts/linux/git/gitconfig ~/.gitconfig
 replace_file_with_symlink ~/git/scripts/linux/bash/bashrc ~/.bashrc
 replace_file_with_symlink ~/git/scripts/linux/bash/profile ~/.profile

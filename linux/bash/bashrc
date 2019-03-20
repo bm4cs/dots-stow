@@ -13,7 +13,7 @@ if [[ $- == *i* ]]; then
   export PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
   export VISUAL=vim
   export EDITOR="$VISUAL"
-  export GOPATH=$HOME/golang
-  export PATH
 fi
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -7,17 +7,21 @@
 " Just git clone packages into ~/.vim/bundles
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-airline/vim-airline'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
+
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 "Plugin 'vim-markdown-toc'
-Plugin 'prettier/vim-prettier'
-call vundle#end()
+"Plugin 'prettier/vim-prettier'
+Plug 'junegunn/vim-easy-align'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode'
+call plug#end()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -87,7 +91,7 @@ set nowb "don't write a backup file before overwriting a file
 syntax enable "syntax highlighting
 colorscheme monokai "default color scheme
 set t_Co=256 "the number of colors the terminal supports
-set term=screen-256color "what terminal type to use
+"set term=screen-256color "what terminal type to use "neovim choked on this
 au BufNewFile,BufRead *.adoc set filetype=asciidoc
 
 
@@ -99,7 +103,10 @@ noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
