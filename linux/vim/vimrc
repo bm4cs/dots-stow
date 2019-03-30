@@ -91,6 +91,7 @@ set nowb "don't write a backup file before overwriting a file
 syntax enable "syntax highlighting
 colorscheme monokai "default color scheme
 set t_Co=256 "the number of colors the terminal supports
+let $TERM="xterm-256color"
 "set term=screen-256color "what terminal type to use "neovim choked on this
 au BufNewFile,BufRead *.adoc set filetype=asciidoc
 
@@ -111,7 +112,15 @@ inoremap <Right> <nop>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:ctrlp_show_hidden = 1
+let ycm_trigger_key = '<C-n>' " use semantic completion only on ctrl+n
+let g:ycm_auto_trigger = 0 "disable auto triggering suggestions pane
+let g:ycm_key_invoke_completion = ycm_trigger_key
+
+" this is some arcane magic to allow cycling through the YCM options
+" with the same key that opened it.
+let g:ycm_key_list_select_completion = ['<TAB>', '<C-j>']
+inoremap <expr> ycm_trigger_key pumvisible() ? "<C-j>" : ycm_trigger_key;
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " mutt tips

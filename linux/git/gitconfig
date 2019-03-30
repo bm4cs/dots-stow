@@ -1,6 +1,7 @@
 [user]
 	name = Ben Simmonds
 	email = ben@bencode.net
+  autocrlf = true
 
 [color]
 	ui = auto

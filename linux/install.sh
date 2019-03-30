@@ -47,4 +47,6 @@ replace_file_with_symlink ~/git/scripts/linux/bash/profile ~/.profile
 replace_file_with_symlink ~/git/scripts/linux/bash/aliases ~/.bash_aliases
 replace_file_with_symlink ~/git/scripts/linux/mutt/.muttrc ~/.muttrc
 replace_file_with_symlink ~/git/scripts/linux/mutt/.mutt ~/.mutt
+replace_file_with_symlink ~/git/scripts/linux/zsh/.zshrc ~/.zshrc
+
 
