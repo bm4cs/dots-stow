@@ -12,9 +12,12 @@ ZSH_THEME="bullet-train"
 
 BULLETTRAIN_PROMPT_ORDER=(
   time
-  dir
+  status
   context
+  dir
+  go
   git
+  cmd_exec_time
 )
 
 # Set list of themes to pick from when loading at random

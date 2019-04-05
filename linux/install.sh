@@ -36,6 +36,7 @@ replace_file_with_symlink() {
 
 if [[ ! -d "~/.config/nvim" ]]; then mkdir -p ~/.config/nvim; fi
 if [[ ! -d "~/.local/share/nvim/site" ]]; then mkdir -p ~/.local/share/nvim/site; fi
+if [[ ! -d "~/.oh-my-zsh" ]]; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; fi
 
 replace_file_with_symlink ~/git/scripts/linux/vim/vimrc ~/.vimrc 
 replace_file_with_symlink ~/git/scripts/linux/vim ~/.vim
@@ -49,4 +50,12 @@ replace_file_with_symlink ~/git/scripts/linux/mutt/.muttrc ~/.muttrc
 replace_file_with_symlink ~/git/scripts/linux/mutt/.mutt ~/.mutt
 replace_file_with_symlink ~/git/scripts/linux/zsh/.zshrc ~/.zshrc
 
+# zsh custom
+if [[ ! -f ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme ]]; then
+  curl https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme --output ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
+fi
+
+if [[ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+fi
 
