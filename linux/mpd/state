@@ -1,0 +1,32 @@
+sw_volume: 49
+audio_device_state:1:alsa sound card
+audio_device_state:1:toggle_visualizer
+state: pause
+current: 4
+time: 220.879000
+random: 0
+repeat: 0
+single: 1
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Electronic/TeamSleep-TeamSleep/01-team_sleep-ataraxia-BLEED.mp3
+1:Electronic/TeamSleep-TeamSleep/14-team_sleep-paris_arm-BLEED.mp3
+2:Electronic/TeamSleep-TeamSleep/01-team_sleep-ataraxia-BLEED.mp3
+3:Electronic/TeamSleep-TeamSleep/02-team_sleep-ever-BLEED.mp3
+4:Electronic/TeamSleep-TeamSleep/03-team_sleep-your_skull_is_red-BLEED.mp3
+5:Electronic/TeamSleep-TeamSleep/04-team_sleep-princeton_review-BLEED.mp3
+6:Electronic/TeamSleep-TeamSleep/05-team_sleep-blvd_nights-BLEED.mp3
+7:Electronic/TeamSleep-TeamSleep/06-team_sleep-delorian-BLEED.mp3
+8:Electronic/TeamSleep-TeamSleep/07-team_sleep-our_ride_to_the_rectory-BLEED.mp3
+9:Electronic/TeamSleep-TeamSleep/08-team_sleep-tomb_of_liegia-BLEED.mp3
+10:Electronic/TeamSleep-TeamSleep/09-team_sleep-elizabeth-BLEED.mp3
+11:Electronic/TeamSleep-TeamSleep/10-team_sleep-staring_at_the_queen-BLEED.mp3
+12:Electronic/TeamSleep-TeamSleep/11-team_sleep-ever_since_ww1-BLEED.mp3
+13:Electronic/TeamSleep-TeamSleep/12-team_sleep-king_diamond-BLEED.mp3
+14:Electronic/TeamSleep-TeamSleep/13-team_sleep-live_from_the_stage-BLEED.mp3
+15:Electronic/TeamSleep-TeamSleep/14-team_sleep-paris_arm-BLEED.mp3
+16:Electronic/TeamSleep-TeamSleep/15-team_sleep-11-11-BLEED.mp3
+playlist_end

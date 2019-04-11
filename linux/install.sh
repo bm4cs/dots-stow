@@ -24,7 +24,7 @@ replace_file_with_symlink() {
     echo "linking $destfile to $srcfile"
 
     if [[ -e $destfile ]]; then
-      rm $destfile
+      rm -rf $destfile
     fi 
 
     ln -nfs $srcfile $destfile
@@ -38,17 +38,43 @@ if [[ ! -d "~/.config/nvim" ]]; then mkdir -p ~/.config/nvim; fi
 if [[ ! -d "~/.local/share/nvim/site" ]]; then mkdir -p ~/.local/share/nvim/site; fi
 if [[ ! -d "~/.oh-my-zsh" ]]; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; fi
 
+# vim
 replace_file_with_symlink ~/git/scripts/linux/vim/vimrc ~/.vimrc 
 replace_file_with_symlink ~/git/scripts/linux/vim ~/.vim
 replace_file_with_symlink ~/git/scripts/linux/neovim/init.vim ~/.config/nvim/init.vim
 replace_file_with_symlink ~/git/scripts/linux/vim/autoload ~/.local/share/nvim/site/autoload
+# ycm needs vim python integration, install this with `pip install neovim`
+
+
+
+# git
 replace_file_with_symlink ~/git/scripts/linux/git/gitconfig ~/.gitconfig
+
+# shells
 replace_file_with_symlink ~/git/scripts/linux/bash/bashrc ~/.bashrc
 replace_file_with_symlink ~/git/scripts/linux/bash/profile ~/.profile
 replace_file_with_symlink ~/git/scripts/linux/bash/aliases ~/.bash_aliases
+replace_file_with_symlink ~/git/scripts/linux/zsh/.zshrc ~/.zshrc
+
+# mutt
 replace_file_with_symlink ~/git/scripts/linux/mutt/.muttrc ~/.muttrc
 replace_file_with_symlink ~/git/scripts/linux/mutt/.mutt ~/.mutt
-replace_file_with_symlink ~/git/scripts/linux/zsh/.zshrc ~/.zshrc
+
+# xwindows
+replace_file_with_symlink ~/git/scripts/linux/x/.xinitrc ~/.xinitrc
+replace_file_with_symlink ~/git/scripts/linux/x/.Xresources ~/.Xresources
+
+
+
+# i3wm
+replace_file_with_symlink ~/git/scripts/linux/i3 ~/.config/i3
+replace_file_with_symlink ~/git/scripts/linux/i3status ~/.config/i3status
+
+
+
+# mpd
+
+
 
 # zsh custom
 if [[ ! -f ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme ]]; then
@@ -58,4 +84,11 @@ fi
 if [[ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
+
+
+# fonts
+replace_file_with_symlink ~/git/scripts/linux/fonts ~/.fonts
+fc-cache -vr
+# `pacman -S powerline-fonts`
+
 
