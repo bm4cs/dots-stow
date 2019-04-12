@@ -1,0 +1,1111 @@
+Delivered-To: ben@bencode.net
+Received: by 2002:adf:f082:0:0:0:0:0 with SMTP id n2-v6csp4116237wro;
+        Mon, 25 Jun 2018 05:35:43 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKKYvqJ/KSCrBKHnVdyG73W46yaceGfqWxgiidSq52sXZPCjcofEIbooaLAjSYh80pCk8lRR
+X-Received: by 2002:a25:8b0a:: with SMTP id i10-v6mr5671105ybl.468.1529930143784;
+        Mon, 25 Jun 2018 05:35:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1529930143; cv=none;
+        d=google.com; s=arc-20160816;
+        b=QujQrv/U4qMNeoIndoY4ImV5xrTDh3MLNAX1hwUgEyShi/9tlXzgfkXG+68omhaxaG
+         J8svau/5fLO52TMxWLFUSVXfi4o1V+wNzZun5cCAShRYtxaFIE+qXlY3n3stxsOgPZnW
+         43qoXRC/GVblNqNiaDK1ASzMFieCC3uOObe0PF3HtS8TsC6rLJxMPInlS6Q+JJjTeuyB
+         lkMQiWvdXFLvY+vwfoSr7SPDep7ccOShwItogKwJ1lguszvbLKTp8VZqTn7qArqHHD3o
+         mUYgBtY+OshhPa/pY7vr6zfQ6HXlKWmdAb4F+BpAPo8QVU9QZjBLUx6uelWw6iJzArW/
+         NXGw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:mime-version:to:from:subject:date:message-id
+         :dkim-signature:arc-authentication-results;
+        bh=tVhFu6KvCGJcntS1KnEGQ/OAIQd1XH0syHC9r2iB/a0=;
+        b=DOYABkEtT0o2+MIugPGBcmd4Xx9vaf3u/b59k/eQKDlpviAhipxp6kNu7nfMPyAAUI
+         IxwEp3UXvcsSOu5JjajcXDJRVeZxJX7IXwKH66D+kz+i4AKCAYzQ1ffbn05+c4UsK/8z
+         5V7Ydkl/MAZY0SO6XltLk0uO1+UyblaRaiE4kWgV3TT4AW3KuYfVpYb/9TcbIPzKkqrt
+         pgZjYrqC8z8A1pmZuIS7mK+/YEMyjJeQMk6kNL0DVsa4jJ6vVpGQ3G0nvTfYHzLWmU0v
+         WXVC9HqQBhVss+B7xgZ37nfMH8pPLq5rSVXoGD8l7vFgftdAtI7pZm6gExnz17C8D+WC
+         iWXg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@engage.linux.com header.s=200608 header.b=Ff6mdP5f;
+       spf=pass (google.com: domain of bounce-5056_html-206135976-46020-7213602-537328@bounce.s7.exacttarget.com designates 13.111.0.146 as permitted sender) smtp.mailfrom=bounce-5056_HTML-206135976-46020-7213602-537328@bounce.s7.exacttarget.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=engage.linux.com
+Return-Path: <bounce-5056_HTML-206135976-46020-7213602-537328@bounce.s7.exacttarget.com>
+Received: from db146.mta.exacttarget.com (db146.mta.exacttarget.com. [13.111.0.146])
+        by mx.google.com with ESMTPS id k13-v6si1282446ybj.292.2018.06.25.05.35.43
+        for <ben@bencode.net>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 25 Jun 2018 05:35:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-5056_html-206135976-46020-7213602-537328@bounce.s7.exacttarget.com designates 13.111.0.146 as permitted sender) client-ip=13.111.0.146;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@engage.linux.com header.s=200608 header.b=Ff6mdP5f;
+       spf=pass (google.com: domain of bounce-5056_html-206135976-46020-7213602-537328@bounce.s7.exacttarget.com designates 13.111.0.146 as permitted sender) smtp.mailfrom=bounce-5056_HTML-206135976-46020-7213602-537328@bounce.s7.exacttarget.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=engage.linux.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=engage.linux.com;
+ h=Message-ID:Date:Subject:From:To:MIME-Version:Content-Type:List-Unsubscribe; i=no-reply@engage.linux.com;
+ bh=dBaQop+T/34Lit/pI02g1np4UEA=;
+ b=Ff6mdP5fP+p2ZUqTjtV3t71/PledZDu2qkC00J4kJCifLxql1Ubq8NsHuDy+FV3vGDnptfdw/QiS
+   1hcnP3QiD3bG8shrxgBEGlu2nXfoHPsVZGlm6MQAaXN1aowygYELmndv+pN5wYsMt1xSyvrtO3Q1
+   C/qKRkSDHKEwEy62kns=
+Received: by db146.mta.exacttarget.com id h63gpu163hsa for <ben@bencode.net>; Mon, 25 Jun 2018 12:35:42 +0000 (envelope-from <bounce-5056_HTML-206135976-46020-7213602-537328@bounce.s7.exacttarget.com>)
+X-Virus-Scanned: amavisd-new at orionsmtp-205.s7.exacttarget.com
+Message-ID: <87831fe6-9b1d-4817-b394-b6dd24d76afc@xtgap4s7mta1571.xt.local>
+Date: Mon, 25 Jun 2018 06:35:42 -0600
+Subject: Get the Free 2018 Open Source Jobs Report
+From: "Linux.com" <no-reply@engage.linux.com>
+To: ben@bencode.net
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1529929845_8f897b007e7d36d39c4aeccf5f487c74_=_"
+List-Unsubscribe: <https://www2.thelinuxfoundation.org/unsubscribe/u/6342/ba91567784193c10c5f21d4296ea58b515ad110d8890976c33068bee3398521f/888479373>
+X-Report-Abuse-To: abuse@pd25.com
+x-job: 7213602_46020
+
+--_=_swift_v4_1529929845_8f897b007e7d36d39c4aeccf5f487c74_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+News for the Open Source Professional
+
+=3D=3D=3D
+Open Source Skills S=
+oar In Demand According to 2018 Jobs Report
+=3D=3D=3D
+By Amber Ankerhol=
+z
+The Open Source Jobs Report shows high demand for open source skills an=
+d a strong career benefit from open source experience; download the full re=
+port.
+
+Read More =E2=86=92=20
+https://www2.thelinuxfoundation.org/e/634=
+2/according-to-2018-jobs-report-/3zzmmx/888479373
+
+=3D=3D=3D
+How SUSE=
+ Is Bringing Open Source Projects and Communities Together
+=3D=3D=3D
+By=
+ Swapnil Bhartiya
+Open source is the de facto facilitator for cross-proje=
+ct work and innovation, says SUSE's Thomas Di Giacomo.
+
+Learn More =
+=E2=86=92=20
+https://www2.thelinuxfoundation.org/e/6342/jects-and-communiti=
+es-together/3zzmmz/888479373
+
+=3D=3D=3D
+Systemd Services: Monitoring =
+Files and Directories
+=3D=3D=3D
+By Paul Brown
+Learn how to configure =
+systemd to start a service when something changes in the filesystem.
+
+L=
+earn More =E2=86=92=20
+https://www2.thelinuxfoundation.org/e/6342/nitoring-=
+files-and-directories/3zzmn2/888479373
+
+=3D=3D=3D
+Heather Kirksey on =
+Integrating Networking and Cloud Native
+=3D=3D=3D
+By Swapnil Bhartiya=
+
+A lot of the interactions between the LF Networking and cloud native com=
+munities focus on how these technologies work together and on connecting pe=
+ople from different projects.
+
+Learn More =E2=86=92=20
+https://www2.the=
+linuxfoundation.org/e/6342/g-networking-and-cloud-native-/3zzmn4/888479373=
+
+
+=3D=3D=3D
+6 Open Source AI Tools to Know
+=3D=3D=3D
+By Sam Dean=
+
+Many leading companies are developing and open sourcing valuable AI tool=
+s. Here, we look at several tools that are available to anyone.
+
+Learn =
+More =E2=86=92
+https://www2.thelinuxfoundation.org/e/6342/-6-6-open-sourc=
+e-ai-tools-know/3zzmn6/888479373
+
+=3D=3D=3D
+How to Check Disk Space o=
+n Linux from the Command Line
+=3D=3D=3D
+By Jack Wallen
+Linux provides=
+ all the necessary tools to help you find out exactly how much space remain=
+s on your drives. Jack has details in this tutorial.
+
+Learn More =
+=E2=86=92=20
+https://www2.thelinuxfoundation.org/e/6342/-disk-space-linux-c=
+ommand-line/3zzmn8/888479373
+
+More News =C2=BB
+https://www2.thelinuxf=
+oundation.org/e/6342/news/3zzmnb/888479373
+
+Blogs =C2=BB
+https://www2=
+.thelinuxfoundation.org/e/6342/blogs-linux-foundation/3zzmnd/888479373
+=
+
+Tutorials on Linux.com =C2=BB
+https://www2.thelinuxfoundation.org/e/63=
+42/tutorials/3zzmng/888479373
+=09=09=09=09=09=09=09=09=09=09=09=20
+=3D=3D=
+=3D
+Free Webinar: GDPR in Open Source and Emerging Technologies
+=3D=3D=
+=3D
+By now your company should be prepared for the GDPR, the EU's General=
+ Data Protection Regulation. In this webinar, The Linux Foundation=E2=80=
+=99s Steve Winslow will discuss specific ways that we see the GDPR interact=
+ing with open source development models and with new technologies. Join us =
+Tuesday, July 10 at 10 am Pacific to learn more. Sign Up Now =C2=BB
+
+ht=
+tps://www2.thelinuxfoundation.org/e/6342/20194C84A41-partnerref-lincobb/3zz=
+mnj/888479373
+
+=3D=3D=3D
+Keynotes Announced for Open Networking Summi=
+t Europe 2018
+=3D=3D=3D
+Join us in Amsterdam September 25 - 27 at Open =
+Networking Summit Europe for over 75 sessions on the latest technologies an=
+d topics in open networking. Hear from industry experts, including Dr. Paul=
+ Doany, CEO, T=C3=BCrk Telecom and Dr. Catherine Mulligan, Co-Director, Cen=
+tre for Cryptocurrency Research and Engineering, Imperial College London. T=
+here will also be a demo on Virtualizing the Central Office for Mobile Serv=
+ices: A collaboration across companies (China Mobile, Red Hat, Cumulus, Quo=
+rtus, Ettus Research, NetScout, F5, EXFO, and Nokia) and multiple open sour=
+ce projects including OPNFV, OpenDaylight, OpenAirInterface, and Open Compu=
+te Project. The full schedule will be announced in late July. Register now =
+and save $805 through August 4!=20
+
+Learn More =C2=BB
+https://www2.thel=
+inuxfoundation.org/e/6342/ium-email-utm-campaign-onseu18/3zzmnl/888479373=
+
+
+=3D=3D=3D
+Get Essential Git, Linux, and Open Source Skills with New=
+ Training Course
+=3D=3D=3D
+Learn essential Git and Linux skills to take=
+ your open source career to the next level with this new training course fr=
+om The Linux Foundation. The "Introduction to Open Source Development, Git,=
+ and Linux" course focuses on open source software, an introduction to Linu=
+x systems, and fundamentals of the Git revision control system.=20
+
+Sign =
+Up Now =C2=BB
+https://www2.thelinuxfoundation.org/e/6342/urce-development=
+-git-and-linux/3zzmnn/888479373
+=09=09=09=09=09=09=09=09=09=20
+///
+
+A=
+bout Us
+https://www2.thelinuxfoundation.org/e/6342/2018-06-25/3zzmnq/8884=
+79373
+
+Events=20
+https://www2.thelinuxfoundation.org/e/6342/2018-06-25/=
+3zzmns/888479373
+
+Training
+https://www2.thelinuxfoundation.org/e/6342=
+/2018-06-25/3zzmnv/888479373
+
+Projects
+https://www2.thelinuxfoundatio=
+n.org/e/6342/projects/3zzmnx/888479373
+
+Linux.com
+https://www2.thelin=
+uxfoundation.org/e/6342/2018-06-25/3zzmnz/888479373
+
+Stay Connected
+h=
+ttps://www2.thelinuxfoundation.org/e/6342/TheLinuxFoundation/3zzmp2/8884793=
+73
+https://www2.thelinuxfoundation.org/e/6342/linuxfoundation/3zzmp4/8884=
+79373
+https://www2.thelinuxfoundation.org/e/6342/user-TheLinuxFoundation/=
+3zzmp6/888479373
+https://www2.thelinuxfoundation.org/e/6342/2018-06-25/3z=
+zmp8/888479373
+
+You are receiving this email because you have expressed=
+ interest in Linux.com. Visit Your Email Preferences
+https://www2.thelinu=
+xfoundation.org/set-email-preferences?ehash=3Dba91567784193c10c5f21d4296ea5=
+8b515ad110d8890976c33068bee3398521f&email_id=3D888479373
+
+The Linux Fou=
+ndation=20
+One Letterman Drive Building D,=20
+Suite D4700, San Francisco, C=
+A, 94129
+
+--_=_swift_v4_1529929845_8f897b007e7d36d39c4aeccf5f487c74_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type=
+" />
+    <!-- Facebook sharing information tags -->
+    <meta property=3D"og:title" content=3D"Get the Free 2018 Open Source Jo=
+bs Report" />
+
+    <title>Get the Free 2018 Open Source Jobs Report</title>
+
+<style type=3D"text/css">#outlook a {
+              padding: 0;
+          }
+          .body{
+              width: 100% !important;
+              -webkit-text-size-adjust: 100%;
+              -ms-text-size-adjust: 100%;
+              margin: 0;
+              padding: 0;
+          }
+          .ExternalClass {
+              width:100%;
+          }
+          .ExternalClass,
+          .ExternalClass p,
+          .ExternalClass span,
+          .ExternalClass font,
+          .ExternalClass td,
+          .ExternalClass div {
+              line-height: 100%;
+          }
+          img {
+              outline: none;
+              text-decoration: none;
+              -ms-interpolation-mode: bicubic;
+          }
+          a img {
+              border: none;
+          }
+           p {margin:0; padding:0; margin-bottom:0;}
+          =20
+          table td {
+              border-collapse: collapse;
+          }
+          /* hide unsubscribe from forwards*/
+          blockquote .original-only, .WordSection1 .original-only {
+            display: none !important;
+          }
+   =20
+             .appleLink-white a=20
+        { color:#fff !important; text-decoration:none !important; }
+
+                .appleLink-charcoal a=20
+        { color:#303030 !important; text-decoration:none !important; }
+   =20
+          @media only screen and (max-width: 480px){
+            body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:=
+none !important;} /* Prevent Webkit platforms from changing default text si=
+zes */
+            body{width:100% !important; min-width:100% !important;} /* Prev=
+ent iOS Mail from adding padding to the body */
+
+            #bodyCell{padding:10px !important;}
+
+            #templateContainer{
+              max-width:420px !important;
+              width:100% !important;
+            }
+
+            h1{
+              font-size:24px !important;
+              line-height:100% !important;
+              display: inline-block;
+            }
+
+            h2{
+              font-size:26px !important;
+              line-height:100% !important;
+              display: inline-block;
+            }
+
+            h3{
+              color:#42acdc;
+              font-size:14px !important;
+              line-height:100% !important;
+              display: inline-block;
+              font-weight: normal;
+            }
+
+            h4{
+              font-size:18px !important;
+              font-weight:normal;
+              line-height:100% !important;
+            }
+
+            .headerContent{
+              font-size:20px !important;
+              line-height:125% !important;
+            }
+
+            #bodyImage{
+              height:auto !important;
+              max-width:420px !important;
+              width:100% !important;
+            }
+
+            .bodyContent{
+              font-size:14px !important;
+              line-height:125% !important;
+            }
+
+            .footerContent{
+              font-size:12px !important;
+              line-height:100% !important;
+            }
+</style>
+</head>
+
+<body bgcolor=3D"#dadae0" style=3D"-webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; height: 100% !important; width: 100% !important; backgr=
+ound-color: #dadae0; margin: 0; padding: 0;">
+<table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"bodyTable" style=3D"-ms=
+-text-size-adjust:100%; -webkit-text-size-adjust:100%; background-color:#da=
+dae0; border-collapse:collapse !important; height:100% !important; margin:0=
+; mso-table-lspace:0pt; mso-table-rspace:0pt; padding:0; width:100% !import=
+ant">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center" id=3D"bodyC=
+ell" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt; height: 100% !important; width=
+: 100% !important; margin: 0;" valign=3D"middle"><!-- BEGIN TEMPLATE // -->=
+
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"t=
+emplateContainer" style=3D"-ms-text-size-adjust:100%; -webkit-text-size-adj=
+ust:100%; background-color:#ffffff; border-collapse:collapse !important; ms=
+o-table-lspace:0pt; mso-table-rspace:0pt; width:580px">
+=09=09=09=09<tbod=
+y>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" style=3D"=
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; background-color: #fff;" valign=3D"top"><!--=
+ BEGIN PREHEADER // -->
+=09=09=09=09=09=09<table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" id=3D"templatePreheader" style=3D"-ms-text-size-ad=
+just:100%; -webkit-text-size-adjust:100%; background-color:#FFF; background=
+:rgb(255, 255, 255); border-collapse:collapse !important; mso-table-lspace:=
+0pt; mso-table-rspace:0pt; padding-top:40px; width:100%">
+=09=09=09=09=09=
+=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<=
+td align=3D"left" class=3D"preheaderContent" pardot-data=3D"" style=3D"text=
+-align: right; padding: 30px 0px 30px; background: rgb(255, 255, 255);" val=
+ign=3D"top" width=3D"100%">
+=09=09=09=09=09=09=09=09=09<div style=3D"text=
+-align: center;font-size:12px;color:#606060;font-family: Helvetica, Arial, =
+sans-serif;"><a href=3D"https://www2.thelinuxfoundation.org/webmail/6342/88=
+8479373/ba91567784193c10c5f21d4296ea58b515ad110d8890976c33068bee3398521f" s=
+tyle=3D"color:#333;">View Online</a><br>
+=09=09=09=09=09=09=09=09=09<br>=
+
+=09=09=09=09=09=09=09=09=09<a href=3D"https://www2.thelinuxfoundation.or=
+g/e/6342/2018-06-25/3zzmnz/888479373"><img alt=3D"Linux.com" src=3D"https:/=
+/www.linux.com/sites/all/themes/custom/lcom/logo.png" style=3D"height:39px;=
+ margin-bottom:10px; margin-top:10px; width:242px"></a><br>
+=09=09=09=09=
+=09=09=09=09=09<span style=3D"color:#808080">News for the Open Source Profe=
+ssional</span></div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=
+=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>=
+
+=09=09=09=09=09=09<!-- // END PREHEADER --></td>
+=09=09=09=09=09</tr>=
+
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" style=3D"-w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt;" valign=3D"top"><!-- BEGIN HEADER // -->
+=09=
+=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"templateHeader" pardot-data=3D"" style=3D"-ms-text-size-adjust:100%; -w=
+ebkit-text-size-adjust:100%; background-color:#FFFFFF; border-collapse:coll=
+apse !important; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%">=
+
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=
+=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</=
+table>
+
+=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" id=3D"templateHeader" style=3D"-ms-text-size-adjust:100%; -webki=
+t-text-size-adjust:100%; background-color:#FFFFFF; border-collapse:collapse=
+ !important; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%">
+=09=
+=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=
+=09=09=09=09<td background=3D"https://www.linuxfoundation.org/wp-content/up=
+loads/2018/06/OS-Jobs-Report-768x389.jpg" bgcolor=3D"#ffffff" height=3D"350=
+" pardot-data=3D"" pardot-region=3D"" style=3D"background-color: ffffff;" v=
+align=3D"top" width=3D"100%" class=3D""><div style=3D"color: rgb(255, 255, =
+255); font-family: Helvetica; font-size:24px;padding:3%; text-align: center=
+;background-color:#303030;">
+<p style=3D"font-family: Helvetica; font-siz=
+e:24px;text-align: center;color:#FFFFFF;margin:10px;line-height:25px;"><str=
+ong>Open Source Skills Soar In Demand According to 2018 Jobs Report</strong=
+></p>
+
+<p style=3D"font-size:12px;font-weight:normal !important;color:#=
+aaaaaa;line-height:15px"><em>By Amber Ankerholz</em></p>
+
+<p style=3D"f=
+ont-size:16px;padding:2%;font-weight:normal;line-height:21px">The Open Sour=
+ce Jobs Report shows high demand for open source skills and a strong career=
+ benefit from open source experience; download the full report.</p>
+
+<p=
+ style=3D"font-size:16px;font-weight:normal !important;color:#ffffff;margin=
+-top:10px;"><a class=3D"cta" href=3D"https://www2.thelinuxfoundation.org/e/=
+6342/according-to-2018-jobs-report-/3zzmmx/888479373" style=3D"font-size: 1=
+8px; font-family: Helvetica,Arial,sans-serif; font-weight: normal; color: r=
+gb(255, 255, 255);float:center;text-align:center; text-decoration: none; ba=
+ckground-color: rgb(255, 102, 0); border-width: 12px 18px; border-style: so=
+lid; margin-left:35%;margin-bottom:10px;border-color: rgb(255, 102, 0); dis=
+play: block; width: 25%;" target=3D"_blank">Read More =E2=86=92 </a></p>
+=
+</div>
+</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbo=
+dy>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=
+=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" bgc=
+olor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adj=
+ust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: =
+rgb(255, 255, 255);" valign=3D"top"><!-- BEGIN BODY // -->
+=09=09=09=09=
+=09=09<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" id=3D"templateBody" style=3D"-ms-text-size-adjust:100%; -webkit-text=
+-size-adjust:100%; background-color:#FFFFFF; border-collapse:collapse !impo=
+rtant; font-family:helvetica,arial,sans-serif; mso-table-lspace:0pt; mso-ta=
+ble-rspace:0pt; width:100%">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=
+=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"left" class=3D"b=
+odyContent" pardot-data=3D"link-color:#fe6b0c;" style=3D"background-color: =
+#FFFFFF; color: rgb(33, 34, 35); font-family:  Helvetica,Arial,sans-serif; =
+font-size: 14px; line-height: 18px; text-align: left; padding: 0px 20px;" v=
+align=3D"top">
+=09=09=09=09=09=09=09=09=09<table bgcolor=3D"#ffffff" bord=
+er=3D"0" cellpadding=3D"2" cellspacing=3D"2" class=3D"pd-table" style=3D"ba=
+ckground-color:#FFFFFF; height:10px; width:100%">
+=09=09=09=09=09=09=09=
+=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=
+=09=09=09=09=09=09=09<td height=3D"10px;">&nbsp;</td>
+=09=09=09=09=09=09=
+=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr style=3D"">
+=
+=09=09=09=09=09=09=09=09=09=09=09=09<td pardot-data=3D"link-color:#fff;" pa=
+rdot-region=3D"" style=3D"margin:0!important; font-family:  Helvetica,Arial=
+,sans-serif;" class=3D""><h4><a href=3D"https://www2.thelinuxfoundation.org=
+/e/6342/jects-and-communities-together/3zzmmz/888479373" style=3D"text-deco=
+ration:none;"><span style=3D"color:#fe6b0c; font-size:18px; line-height:21p=
+x">How SUSE Is Bringing Open Source Projects and Communities Together</span=
+></a><br>
+<span style=3D"color:#303030; line-height:21px">By Swapnil Bhar=
+tiya</span><br>
+<span style=3D"color:#999999; font-weight:normal">Open so=
+urce is the de facto facilitator for cross-project work and innovation, say=
+s SUSE's Thomas Di Giacomo.</span></h4>
+
+<table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"width:100%">
+=09<tbody>
+=09=09<tr>=
+
+=09=09=09<td align=3D"left">
+=09=09=09<table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"width:100%">
+=09=09=09=09<tbody>
+=09=
+=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" style=3D"padding: 1=
+5px 0 15px 0;">
+=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"responsive-table">
+=09=09=09=09=09=09=09<tbody>=
+
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"c=
+enter" bgcolor=3D"#ffffff"><a class=3D"cta" href=3D"https://www2.thelinuxfo=
+undation.org/e/6342/jects-and-communities-together/3zzmmz/888479373" style=
+=3D"font-size: 16px; font-family: Helvetica,Arial,sans-serif; font-weight: =
+normal; color: rgb(255, 255, 255); text-decoration: none; background-color:=
+ rgb(48, 48, 48); border-width: 12px 18px; border-style: solid; border-colo=
+r: rgb(48, 48, 48); display: block; width: 90px;" target=3D"_blank">Learn M=
+ore </a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbod=
+y>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09=
+</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09<=
+/tr>
+=09</tbody>
+</table>
+</td>
+=09=09=09=09=09=09=09=09=09=09=09</=
+tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr style=3D"">
+=09=09=09=09=09=09=
+=09=09=09=09=09=09<td pardot-data=3D"link-color:#fff;" pardot-region=3D"" s=
+tyle=3D"margin:0!important; font-family:  Helvetica,Arial,sans-serif;" clas=
+s=3D""><h4><a href=3D"https://www2.thelinuxfoundation.org/e/6342/nitoring-f=
+iles-and-directories/3zzmn2/888479373" style=3D"text-decoration:none;"><spa=
+n style=3D"color:#fe6b0c; font-size:18px; line-height:21px">Systemd Service=
+s: Monitoring Files and Directories</span></a><br>
+<span style=3D"color:#=
+303030; line-height:21px">By Paul Brown</span><br>
+<span style=3D"color:#=
+999999; font-weight:normal">Learn how to configure systemd to start a servi=
+ce when something changes in the filesystem.</span></h4>
+<!-- LEFT ALIGNE=
+D BUTTON -->
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" s=
+tyle=3D"width:100%">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"left=
+">
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width:100%">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=
+=09=09<td align=3D"left" style=3D"padding: 15px 0 15px 0;">
+=09=09=09=09=
+=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"resp=
+onsive-table">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr=
+>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" bgcolor=3D"#ffffff"><a =
+class=3D"cta" href=3D"https://www2.thelinuxfoundation.org/e/6342/nitoring-f=
+iles-and-directories/3zzmn2/888479373" style=3D"font-size: 16px; font-famil=
+y: Helvetica,Arial,sans-serif; font-weight: normal; color: rgb(255, 255, 25=
+5); text-decoration: none; background-color: rgb(48, 48, 48); border-width:=
+ 12px 18px; border-style: solid; border-color: rgb(48, 48, 48); display: bl=
+ock; width: 90px;" target=3D"_blank">Learn More </a></td>
+=09=09=09=09=09=
+=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>=
+
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>=
+
+</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=
+=09=09=09=09<tr style=3D"">
+=09=09=09=09=09=09=09=09=09=09=09=09<td pardo=
+t-data=3D"link-color:#fff;" pardot-region=3D"" style=3D"margin:0!important;=
+ font-family:  Helvetica,Arial,sans-serif;" class=3D""><h4><a href=3D"https=
+://www2.thelinuxfoundation.org/e/6342/g-networking-and-cloud-native-/3zzmn4=
+/888479373" style=3D"text-decoration:none;"><span style=3D"color:#fe6b0c; f=
+ont-size:18px; line-height:21px">Heather Kirksey on Integrating Networking =
+and Cloud Native</span></a><br>
+<span style=3D"color:#303030; line-height=
+:21px">By Swapnil Bhartiya</span><br>
+<span style=3D"color:#999999; font-=
+weight:normal">A lot of the interactions between the LF Networking and clou=
+d native communities focus on how these technologies work together and on c=
+onnecting people from different projects.</span></h4>
+<!-- LEFT ALIGNED B=
+UTTON -->
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"width:100%">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"left">=
+
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width:100%">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=
+=09=09<td align=3D"left" style=3D"padding: 15px 0 15px 0;">
+=09=09=09=09=
+=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"resp=
+onsive-table">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr=
+>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" bgcolor=3D"#ffffff"><a =
+class=3D"cta" href=3D"https://www2.thelinuxfoundation.org/e/6342/g-networki=
+ng-and-cloud-native-/3zzmn4/888479373" style=3D"font-size: 16px; font-famil=
+y: Helvetica,Arial,sans-serif; font-weight: normal; color: rgb(255, 255, 25=
+5); text-decoration: none; background-color: rgb(48, 48, 48); border-width:=
+ 12px 18px; border-style: solid; border-color: rgb(48, 48, 48); display: bl=
+ock; width: 90px;" target=3D"_blank">Learn More </a></td>
+=09=09=09=09=09=
+=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>=
+
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>=
+
+</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=
+=09=09=09=09<tr style=3D"">
+=09=09=09=09=09=09=09=09=09=09=09=09<td pardo=
+t-data=3D"link-color:#fff;" pardot-region=3D"" style=3D"margin:0!important;=
+ font-family:  Helvetica,Arial,sans-serif;" class=3D""><h4><a href=3D"https=
+://www2.thelinuxfoundation.org/e/6342/-6-6-open-source-ai-tools-know/3zzmn6=
+/888479373" style=3D"text-decoration:none;"><span style=3D"color:#fe6b0c; f=
+ont-size:18px; line-height:21px">6 Open Source AI Tools to Know</span></a><=
+br>
+<span style=3D"color:#303030; line-height:21px">By Sam Dean</span><br=
+>
+<span style=3D"color:#999999; font-weight:normal">Many leading companie=
+s are developing and open sourcing valuable AI tools. Here, we look at seve=
+ral tools that are available to anyone.</span></h4>
+<!-- LEFT ALIGNED BUT=
+TON -->
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width:100%">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"left">=
+
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width:100%">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=
+=09=09<td align=3D"left" style=3D"padding: 15px 0 15px 0;">
+=09=09=09=09=
+=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"resp=
+onsive-table">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr=
+>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" bgcolor=3D"#ffffff"><a =
+class=3D"cta" href=3D"https://www2.thelinuxfoundation.org/e/6342/-6-6-open-=
+source-ai-tools-know/3zzmn6/888479373" style=3D"font-size: 16px; font-famil=
+y: Helvetica,Arial,sans-serif; font-weight: normal; color: rgb(255, 255, 25=
+5); text-decoration: none; background-color: rgb(48, 48, 48); border-width:=
+ 12px 18px; border-style: solid; border-color: rgb(48, 48, 48); display: bl=
+ock; width: 90px;" target=3D"_blank">Learn More </a></td>
+=09=09=09=09=09=
+=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>=
+
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>=
+
+</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=
+=09=09=09=09<tr style=3D"">
+=09=09=09=09=09=09=09=09=09=09=09=09<td pardo=
+t-data=3D"link-color:#fff;" pardot-region=3D"" style=3D"margin:0!important;=
+ font-family:  Helvetica,Arial,sans-serif;" class=3D""><h4><a href=3D"https=
+://www2.thelinuxfoundation.org/e/6342/-disk-space-linux-command-line/3zzmn8=
+/888479373" style=3D"text-decoration:none;"><span style=3D"color:#fe6b0c; f=
+ont-size:18px; line-height:21px">How to Check Disk Space on Linux from the =
+Command Line</span></a><br>
+<span style=3D"color:#303030; line-height:21p=
+x">By Jack Wallen</span><br>
+<span style=3D"color:#999999; font-weight:no=
+rmal">Linux provides all the necessary tools to help you find out exactly h=
+ow much space remains on your drives. Jack has details in this tutorial.</s=
+pan></h4>
+<!-- LEFT ALIGNED BUTTON -->
+
+<table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"width:100%">
+=09<tbody>
+=09=09<tr>=
+
+=09=09=09<td align=3D"left">
+=09=09=09<table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"width:100%">
+=09=09=09=09<tbody>
+=09=
+=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" style=3D"padding: 1=
+5px 0 15px 0;">
+=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"responsive-table">
+=09=09=09=09=09=09=09<tbody>=
+
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"c=
+enter" bgcolor=3D"#ffffff"><a class=3D"cta" href=3D"https://www2.thelinuxfo=
+undation.org/e/6342/-disk-space-linux-command-line/3zzmn8/888479373" style=
+=3D"font-size: 16px; font-family: Helvetica,Arial,sans-serif; font-weight: =
+normal; color: rgb(255, 255, 255); text-decoration: none; background-color:=
+ rgb(48, 48, 48); border-width: 12px 18px; border-style: solid; border-colo=
+r: rgb(48, 48, 48); display: block; width: 90px;" target=3D"_blank">Learn M=
+ore </a></td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbod=
+y>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09=
+</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09<=
+/tr>
+=09</tbody>
+</table>
+</td>
+=09=09=09=09=09=09=09=09=09=09=09</=
+tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=
+=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09<table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" id=3D"templateBody" style=3D"-ms-text-size=
+-adjust:100%; -webkit-text-size-adjust:100%; background-color:#fe6b0c; bord=
+er-collapse:collapse !important; color:#ffffff; font-family:helvetica,arial=
+,sans-serif; font-size:18px; font-weight:bold; height:50px; margin:0!import=
+ant; mso-table-lspace:0pt; mso-table-rspace:0pt; padding:0!important; width=
+:100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<td align=3D"center" class=3D"bodyContent appleLink-white" style=3D"c=
+olor: rgb(255, 255, 255);  font-family: Helvetica,Arial,sans-serif; font-si=
+ze: 14px; line-height: 21px; padding: 15px;text-align: center;" valign=3D"t=
+op" width=3D"30%"><span style=3D"color:#fff"><a href=3D"https://www2.thelin=
+uxfoundation.org/e/6342/news/3zzmnb/888479373" pardot-data=3D"link-color:#f=
+fffff;" style=3D"color:#ffffff;">More News =C2=BB</a></span></td>
+=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" class=3D"bodyCo=
+ntent appleLink-white" style=3D"color: rgb(255, 255, 255); font-family: Hel=
+vetica,Arial,sans-serif; font-size: 14px; line-height: 21px; padding: 15px;=
+text-align: center;" valign=3D"top" width=3D"30%"><a href=3D"https://www2.t=
+helinuxfoundation.org/e/6342/blogs-linux-foundation/3zzmnd/888479373" pardo=
+t-data=3D"link-color:#fff;" style=3D"color:#ffffff;">Blogs =C2=BB</a></td>=
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" class=
+=3D"bodyContent appleLink-white" pardot-data=3D"link-color:#fff;" style=3D"=
+color: rgb(255, 255, 255); font-family: Helvetica,Arial,sans-serif; font-si=
+ze: 14px; line-height: 21px; padding: 15px;text-align: center;" valign=3D"t=
+op" width=3D"40%"><a href=3D"https://www2.thelinuxfoundation.org/e/6342/tut=
+orials/3zzmng/888479373" pardot-data=3D"link-color:fff;" style=3D"color:#ff=
+ffff;">Tutorials on Linux.com =C2=BB</a></td>
+=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=
+=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"=
+10px;">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=
+=09=09=09=09=09=09=09<!-- END ORANGE LINK SECTION AS A RESPONSIVE TABLE -->=
+
+=09=09=09=09=09=09=09=09=09=09=09<tr style=3D"">
+=09=09=09=09=09=09=09=
+=09=09=09=09=09<td align=3D"left" class=3D"bodyContent" pardot-data=3D"link=
+-color:#303030;" pardot-region=3D"" style=3D"color: rgb(48, 48, 48); font-f=
+amily: Helvetica; font-size: 14px; line-height: 18px; text-align: left; pad=
+ding: 0px 10px 10px 20px; border-bottom: 1px solid #e3e3e3; margin:0!import=
+ant;" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<h4 class=3D"ap=
+pleLink-charcoal" style=3D"line-height:18px;font-size:18px; color:#303030;"=
+><a href=3D"https://www2.thelinuxfoundation.org/e/6342/20194C84A41-partnerr=
+ef-lincobb/3zzmnj/888479373" style=3D"text-decoration:none;color:#303030;">=
+Free Webinar: GDPR in Open Source and Emerging Technologies</a><br>
+=09=
+=09=09=09=09=09=09=09=09=09=09=09<span style=3D"color:#999999; font-size:14=
+px; font-weight:normal">By now your company should be prepared for the GDPR=
+, the EU's General Data Protection Regulation. In this webinar, The Linux F=
+oundation=E2=80=99s Steve Winslow will discuss specific ways that we see th=
+e GDPR interacting with open source development models and with new technol=
+ogies. Join us Tuesday, July 10 at 10 am Pacific to learn more.&nbsp;<a hre=
+f=3D"https://www2.thelinuxfoundation.org/e/6342/20194C84A41-partnerref-linc=
+obb/3zzmnj/888479373" style=3D"color:#303030;">Sign Up Now =C2=BB</a></span=
+></h4>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=
+=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr style=3D"">
+=09=
+=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" class=3D"bodyContent" p=
+ardot-data=3D"link-color:#303030;" pardot-region=3D"" style=3D"color: rgb(4=
+8, 48, 48); font-family: Helvetica; font-size: 14px; line-height: 18px; tex=
+t-align: left; padding: 0px 10px 10px 20px; border-bottom: 1px solid #e3e3e=
+3; margin:0!important;" valign=3D"top"><h4 class=3D"appleLink-charcoal" sty=
+le=3D"line-height:18px;font-size:18px; color:#303030;"><a href=3D"https://w=
+ww2.thelinuxfoundation.org/e/6342/ium-email-utm-campaign-onseu18/3zzmnl/888=
+479373" style=3D"text-decoration:none;color:#303030;">Keynotes Announced fo=
+r Open Networking Summit Europe 2018</a><br>
+<span style=3D"color:#999999=
+; font-size:14px; font-weight:normal">Join us in Amsterdam September 25 - 2=
+7 at Open Networking Summit Europe for over 75 sessions on the latest techn=
+ologies and topics in open networking. Hear from industry experts, includin=
+g Dr. Paul Doany, <em>CEO</em>, <strong>T=C3=BCrk Telecom</strong> and Dr. =
+Catherine Mulligan, <em>Co-Director</em>, <strong>Centre for Cryptocurrency=
+ Research and Engineering, Imperial College London</strong>. There will als=
+o be a demo on Virtualizing the Central Office for Mobile Services: A colla=
+boration across companies (<strong>China Mobile, Red Hat, Cumulus, Quortus,=
+ Ettus Research, NetScout, F5, EXFO,&nbsp;</strong>and<strong> Nokia)</stro=
+ng> and multiple open source projects including <strong>OPNFV, OpenDaylight=
+, OpenAirInterface, </strong>and <strong>Open Compute Project</strong>. The=
+ full schedule will be announced in late July.
+Register now and save $805=
+ through August 4!&nbsp;<a href=3D"https://www2.thelinuxfoundation.org/e/63=
+42/ium-email-utm-campaign-onseu18/3zzmnl/888479373" style=3D"color:#303030;=
+">Learn More&nbsp;=C2=BB</a></span></h4>
+</td>
+=09=09=09=09=09=09=09=09=
+=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr style=3D"">
+=09=09=
+=09=09=09=09=09=09=09=09=09=09<td align=3D"left" class=3D"bodyContent" pard=
+ot-data=3D"link-color:#303030;" pardot-region=3D"" style=3D"color: rgb(48, =
+48, 48); font-family: Helvetica; font-size: 14px; line-height: 18px; text-a=
+lign: left; padding: 0px 10px 10px 20px; border-bottom: 1px solid #e3e3e3; =
+margin:0!important;" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09=
+<h4 class=3D"appleLink-charcoal" style=3D"line-height:18px;font-size:18px; =
+color:#303030;"><a href=3D"https://www2.thelinuxfoundation.org/e/6342/urce-=
+development-git-and-linux/3zzmnn/888479373" style=3D"color:#303030;">Get Es=
+sential Git, Linux, and Open Source Skills with New Training Course</a><br>=
+
+=09=09=09=09=09=09=09=09=09=09=09=09<span style=3D"color:#999999; font-s=
+ize:14px; font-weight:normal">Learn essential Git and Linux skills to take =
+your open source career to the next level with this new training course fro=
+m The Linux Foundation. The "Introduction to Open Source Development, Git, =
+and Linux" course focuses on open source software, an introduction to Linux=
+ systems, and fundamentals of the Git revision control system.&nbsp;<a href=
+=3D"https://www2.thelinuxfoundation.org/e/6342/urce-development-git-and-lin=
+ux/3zzmnn/888479373" style=3D"color:#303030;">Sign Up Now&nbsp;=C2=BB</a></=
+span></h4>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=
+=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=
+=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<!-- // END BODY -->
+=09=
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center"=
+ style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt;background-color: #ffffff;" valign=
+=3D"top">&nbsp;</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=
+=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td align=3D"center" pardot-data=3D=
+"" pardot-region=3D"" style=3D"-webkit-text-size-adjust: 100%; -ms-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: r=
+gb(48, 48, 48); background: rgb(48, 48, 48); width: 600px;" valign=3D"top">=
+<!-- BEGIN ADDRESS SOCIAL MEDIA // -->
+=09=09=09=09=09=09=09=09=09<table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"templateFooter" styl=
+e=3D"-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; background:r=
+gb(48, 48, 48); border-collapse:collapse !important; mso-table-lspace:0pt; =
+mso-table-rspace:0pt; width:100%">
+=09=09=09=09=09=09=09=09=09=09<tbody>=
+
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=
+=09=09<td align=3D"left" class=3D"footerContent" style=3D"color: rgb(255, 2=
+55, 255); font-family: Helvetica,Arial,sans-serif; font-size: 10px; line-he=
+ight: 20px; text-align: left; padding: 0px 0px 20px; background: rgb(48, 48=
+, 48);" valign=3D"top" width=3D"40%">
+=09=09=09=09=09=09=09=09=09=09=09=
+=09<div style=3D"text-align: center;"><br>
+=09=09=09=09=09=09=09=09=09=09=
+=09=09<a href=3D"https://www2.thelinuxfoundation.org/e/6342/about/3zzmpb/88=
+8479373" style=3D"color:#fff;">About Us</a> | <a href=3D"https://www2.theli=
+nuxfoundation.org/e/6342/2018-06-25/3zzmpd/888479373" style=3D"color:#fff;"=
+>Events</a><a href=3D"https://www2.thelinuxfoundation.org/e/6342/2018-06-25=
+/3zzmpg/888479373"> </a>| <a href=3D"https://www2.thelinuxfoundation.org/e/=
+6342/2018-06-25/3zzmpj/888479373" style=3D"color:#fff;">Training</a> | <a h=
+ref=3D"https://www2.thelinuxfoundation.org/e/6342/projects/3zzmpl/888479373=
+" style=3D"color:#fff;">Projects</a> | <a href=3D"https://www2.thelinuxfoun=
+dation.org/e/6342/2018-06-25/3zzmpn/888479373" style=3D"color:#fff;">Linux.=
+com</a><br>
+=09=09=09=09=09=09=09=09=09=09=09=09<br>
+=09=09=09=09=09=09=
+=09=09=09=09=09=09<a href=3D"https://www2.thelinuxfoundation.org/e/6342/The=
+LinuxFoundation/3zzmp2/888479373"><img alt=3D"Facebook" border=3D"0" src=3D=
+"http://go.linuxfoundation.org/l/6342/2015-07-02/2lvzp7/6342/128372/social_=
+facebook_white_large.png" style=3D"border-style:solid; border-width:0px; he=
+ight:24px; width:24px"></a>&nbsp;<a href=3D"https://www2.thelinuxfoundation=
+.org/e/6342/linuxfoundation/3zzmp4/888479373"><img alt=3D"Twitter" border=
+=3D"0" src=3D"http://go.linuxfoundation.org/l/6342/2015-07-02/2lvzp5/6342/1=
+28370/social_twitter_white_large.png" style=3D"border-style:solid; border-w=
+idth:0px; height:24px; margin-left:10px; margin-right:10px; width:24px"></a=
+><a href=3D"https://www2.thelinuxfoundation.org/e/6342/user-TheLinuxFoundat=
+ion/3zzmp6/888479373"><img alt=3D"YouTube" border=3D"0" src=3D"http://go.li=
+nuxfoundation.org/l/6342/2015-07-02/2lvzp9/6342/128368/social_youtube_white=
+_large.png"
+style=3D"border-style:solid; border-width:0px; height:24px; m=
+argin-left:10px; margin-right:10px; width:24px"></a><a href=3D"https://www2=
+.thelinuxfoundation.org/e/6342/2018-06-25/3zzmp8/888479373" style=3D"color:=
+#fff;"><img alt=3D"Slack" border=3D"0" src=3D"http://go.linuxfoundation.org=
+/l/6342/2017-08-25/3x5t8g/6342/183813/social_icon_slack_white.png" style=3D=
+"border-style:solid; border-width:0px; height:22px; margin-left:5px; margin=
+-right:5px; width:24px"></a></div>
+=09=09=09=09=09=09=09=09=09=09=09=09</=
+td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=
+=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=
+=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<tr>=
+
+=09=09=09=09=09=09=09=09=09<td align=3D"center" style=3D"-webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt;" valign=3D"top"><!-- BEGIN ADDRESS AND EMAIL PREFERENCES //=
+ -->
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" id=3D"templateFooter  original-only" style=3D"-ms-text-size-=
+adjust:100%; -webkit-text-size-adjust:100%; border-collapse:collapse !impor=
+tant; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%">
+=09=09=09=
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=
+=09=09=09=09=09=09=09=09=09=09=09<td -region=3D"" align=3D"center" style=3D=
+"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; color: #808080; font-family: Helvetica,Aria=
+l,sans-serif; font-size: 10px; line-height: 20px; text-align: center; paddi=
+ng: 0 0px 20px;" valign=3D"top" width=3D"40%">
+=09=09=09=09=09=09=09=09=
+=09=09=09=09<div style=3D"text-align: center;">You are receiving this email=
+ because you have expressed interest in Linux.com. Review Your <a href=3D"h=
+ttps://www2.thelinuxfoundation.org/set-email-preferences?ehash=3Dba91567784=
+193c10c5f21d4296ea58b515ad110d8890976c33068bee3398521f&email_id=3D888479373=
+" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;  fon=
+t-weight: normal;color: #606060;">Email Preferences</a>.<br>
+=09=09=09=09=
+=09=09=09=09=09=09=09=09<span style=3D"text-align:center">The Linux Foundat=
+ion One Letterman Drive Building D, Suite D4700, San Francisco, CA, 94129</=
+span></div>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=
+=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09<!-- // END FOOTER -->
+=
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=
+=09=09<!-- // END TEMPLATE --></td>
+=09=09=09=09=09</tr>
+=09=09=09=09</=
+tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+<=
+/table>
+<img alt=3D"" src=3D"https://www2.thelinuxfoundation.org/r/6342/1=
+/888479373/open/1" /><style>@media print{ #_t { background-image: url('http=
+s://nse4pc61.emltrk.com/nse4pc61?p');}} div.OutlookMessageHeader {backgroun=
+d-image:url('https://nse4pc61.emltrk.com/nse4pc61?f')} table.moz-email-head=
+ers-table {background-image:url('https://nse4pc61.emltrk.com/nse4pc61?f')} =
+blockquote #_t {background-image:url('https://nse4pc61.emltrk.com/nse4pc61?=
+f')} #MailContainerBody #_t {background-image:url('https://nse4pc61.emltrk.=
+com/nse4pc61?f')}</style><div id=3D"_t"></div>
+<img src=3D"https://nse4pc=
+61.emltrk.com/nse4pc61" width=3D"1" height=3D"1" border=3D"0" /></body>
+</html>
+
+--_=_swift_v4_1529929845_8f897b007e7d36d39c4aeccf5f487c74_=_--
+
+

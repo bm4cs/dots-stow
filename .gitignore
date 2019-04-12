@@ -1,4 +1,5 @@
-linux/mutt/.mutt/cache
-linux/mutt/.mutt/certifcates
-linux/vim/bundle
+mutt/.mutt/cache
+mutt/.mutt/certifcates
+vim/bundle
+vim/plugged
 

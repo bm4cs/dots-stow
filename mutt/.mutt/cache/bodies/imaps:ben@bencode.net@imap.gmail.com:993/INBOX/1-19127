@@ -1,0 +1,2513 @@
+Delivered-To: ben@bencode.net
+Received: by 2002:adf:f082:0:0:0:0:0 with SMTP id n2-v6csp3007192wro;
+        Sun, 17 Jun 2018 05:00:12 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKK+VeQtwINtfCY9zNXnYkue9TjunXpo2wWAxjbzAgJgMQifcJ74vyxWGhu2IiT0AA3nyLOt
+X-Received: by 2002:a65:504d:: with SMTP id k13-v6mr6805155pgo.231.1529236812208;
+        Sun, 17 Jun 2018 05:00:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1529236812; cv=none;
+        d=google.com; s=arc-20160816;
+        b=oplniBAAwht4YZ1RXKy0J8dwHZcB3A5Qmjnw17gyHQuhf38HukE8MnraKaVgpe6s9P
+         3Y35WZum9SdR3FUvk5umFBHhGwJCEaO2S8pV/ACq9op4NCeBLaFJNnlOMDFz8QxVYFjJ
+         5KeYzXXsDmG34aa8ZkTTnZyByLsc4LKbbV7G8UiWXyAWvYGquXQiRPZKnopaxNgqqVZV
+         2e8G2eRLJ6s1cC1eVAhXUc2IcCs4609wHvXzKLUI0z3dYH0I341dhJLXIRvH5BDldvX+
+         hJ2yoqAX98CRTKm/E+AhAXxcNPThD0EUk7+yQ6DEdi8JgA6d48MkwVzTj4RXu4WuojpV
+         vUdg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:list-unsubscribe:mime-version:date:reply-to:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=oCpTph2dhxJo1xlREUXkP5SBuuGuJKzG/PGClTJbDwY=;
+        b=0HJ8K+Obdh4FlYq+vR2QBxLgqHuk/8HLeOQuR8YuP84jBPFtB6BQ18KrhhT6q3eXBO
+         s0u9WZicVntDvQZwVzMhja98mHZXBRajcbsBlaMte45K8XkPvMw2DSAyD6KGG/cMZO4q
+         nNZhklwNGxjLMkGrsQ3hNg1E3lQfz8sdYy+wUMTqUxSPr3plTlqXRsGtSDyT1IaVO4Ng
+         0UcbqvGcSv4sggFC3qnCgsZ3KPqzgWWECokVKwXUhOXwPtRuXnn4Kd92H7oaMBBtwtKy
+         3UMX9IKktx0WL07F1yjNuL+5VuOBjOQvhbW6YCGn35WOC9xcC8fVCNLF+ICgsXF/Z0up
+         q3IA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@changelog.com header.s=cm header.b=JH4RkYzv;
+       spf=pass (google.com: domain of changelogweekly-udhkhyy1hltywjhy1t@cmail20.com designates 27.126.146.34 as permitted sender) smtp.mailfrom=ChangelogWeekly-udhkhyy1hltywjhy1t@cmail20.com
+Return-Path: <ChangelogWeekly-udhkhyy1hltywjhy1t@cmail20.com>
+Received: from mx34.b.outbound.createsend.com (mx34.b.outbound.createsend.com. [27.126.146.34])
+        by mx.google.com with ESMTP id d14-v6si12236051plr.244.2018.06.17.05.00.11
+        for <ben@bencode.net>;
+        Sun, 17 Jun 2018 05:00:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of changelogweekly-udhkhyy1hltywjhy1t@cmail20.com designates 27.126.146.34 as permitted sender) client-ip=27.126.146.34;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@changelog.com header.s=cm header.b=JH4RkYzv;
+       spf=pass (google.com: domain of changelogweekly-udhkhyy1hltywjhy1t@cmail20.com designates 27.126.146.34 as permitted sender) smtp.mailfrom=ChangelogWeekly-udhkhyy1hltywjhy1t@cmail20.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=cm; d=changelog.com;
+ h=Subject:From:To:Reply-To:Date:MIME-Version:Content-Type:List-Unsubscribe:Message-ID; i=weekly@changelog.com;
+ bh=5Lpo8HwQ5C6AVB1eTs37mVRME1c=;
+ b=JH4RkYzvRgEHi288rUn7BrP4g9u3LHnMtIgxkDkI/yFY1R+MUOSwXBwKizu2t8uvOQVXpwDGRsmb
+   kpcp2nZyLPsAJCdhUqfdp2WeczLfIYwcRkk3NqvxEds655VVUI3uvBC9mBPJe6KjjkdfTECTu3sE
+   82GENTsIN3etUo3Iu+w=
+Subject: =?utf-8?Q?=f0=9f=94=a5_Founders_Talk_is_back!?=
+From: "Changelog Weekly #208" <weekly@changelog.com> 
+To: "Ben Simmonds" <ben@bencode.net>
+Reply-To: editors@changelog.com
+Date: Sun, 17 Jun 2018 22:00:03 +1000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_9331d7d6-ce79-433f-9246-d536f1237651_"; charset=utf-8
+X-Mailer: Create Send
+X-Complaints-To: abuse@cmail20.com
+X-Feedback-ID: CA1-t-udhkhyy:LI1-t-zjykt:CL1-t-kihjr:createSEND
+List-Unsubscribe: <http://unsub.cmail20.com/t/t-u-udhkhyy-hltywjhy/>,
+ <mailto:unsubscribe-udhkhyy2hltywjhy2t-F5B8101D@cmail20.com?subject=Unsubscribe>
+Message-ID: <cm.2200030708365.udhkhyy.hltywjhy.t@cmail20.com>
+
+--_9331d7d6-ce79-433f-9246-d536f1237651_
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Python at Microsoft, Growing Open Collective, Polly.js, Functional Go, Gi=
+t commit history, YubiKey, boilerplate Gatsby custom style guide, GraphQL=
+ Guide, and more.
+
+Issue #208 =E2=80=A2 2018-06-17 http://email.changelog.com/t/t-e-udhkhyy-=
+hltywjhy-cy/
+
+I=E2=80=99m stoked to say  Founders Talk is back [https://changelog.com/=
+founderstalk/founders-talk-is-back]!! The first show back  features Pia M=
+ancini [https://changelog.com/founderstalk/52]. If you've never listened=
+ to the show, now is a good time to start. Enjoy!
+
+The Changelog #301 [https://changelog.com/podcast]
+
+Python at Microsoft [https://changelog.com/podcast/301]
+
+We talked with Steve Dower and Dan Taylor at Microsoft Build 2018 about t=
+he history of Python at Microsoft, the origination of IronPython, Python =
+Tools for Visual Studio, flying under the radar to add support Python, fi=
+ghting from within to support open source, and more.
+
+logged by  @adamstac [https://twitter.com/adamstac] =E2=80=A2   #microso=
+ft [https://changelog.com/topic/microsoft]  #python [https://changelog.=
+com/topic/python]
+
+Founders Talk  [https://changelog.com/founderstalk]
+
+=F0=9F=94=A5 Founders Talk is back! [https://changelog.com/founderstalk/=
+founders-talk-is-back]
+
+It's been just shy of 5 years since I've published a new episode to this =
+podcast. The break was planned actually. Long story short, I had to focus=
+=2E If you want to hear the slightly longer explanation, you should listen.=
+
+
+logged by  @adamstac [https://twitter.com/adamstac]
+
+Founders Talk #52 [https://changelog.com/founderstalk]
+
+Growing Open Collective [https://changelog.com/founderstalk/52]
+
+Pia Mancini joined the show for the first episode back from a nearly 5 ye=
+ar hiatus. We talked about her work at DemocracyEarth, being a first time=
+ mother, her new role as CEO of Open Collective, their focus, supporting =
+ad-hoc community formation all around the world, their revenue and growth=
+ plans, and their path to sustainability.
+
+logged by  @adamstac [https://twitter.com/adamstac] =E2=80=A2   #sustain=
+ability [https://changelog.com/topic/sustainability]
+
+Hired =E2=80=93 Sponsored [https://hired.com/changelognews]
+
+Salary and benefits upfront? Yes please. [https://hired.com/changelognew=
+s]
+
+Our friends at Hired have more than 23,042 openings across the following =
+developer-focused roles in major cities all across the globe.
+
+Software Engineering Engineering Management Design Product Management Dat=
+a Analytics DevOps and QA
+
+Here's how Hired works =E2=80=94 1)  use our special link to create your =
+account [https://hired.com/changelognews] ( hired.com/changelog [https:=
+//hired.com/changelognews]), 2) answer a few questions about yourself and=
+ your skills, 3) companies get in touch with their offer 4) you select th=
+e job that's right for you and get a $600 bonus directly from Hired when =
+you accept a job.
+
+If you're looking to get hired, our friends at Hired can help.
+
+logged by  @logbot [https://twitter.com/changelog]
+
+Netflix Technology Blog [https://changelog.com/source/netflix]
+
+Polly.js records, replays, and stubs HTTP interactions [https://netflix.=
+github.io/pollyjs/]
+
+This looks really good:
+
+=F0=9F=9A=80 Fetch & XHR Support =E2=9A=A1=EF=B8=8F=EF=B8=8F Simple, Powe=
+rful, & Intuitive API =F0=9F=92=8E First Class Mocha & QUnit Test Helpers=
+ =F0=9F=94=A5 Intercept, Pass-Through, and Attach Events =F0=9F=93=BC Rec=
+ord to Disk or Local Storage =E2=8F=B1 Slow Down or Speed Up Time
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] =E2=80=A2   #tes=
+ting [https://changelog.com/topic/testing]  #javascript [https://change=
+log.com/topic/javascript]
+
+github.com [https://github.com/albrow/fo]
+
+Fo =3D Functional Go [https://github.com/albrow/fo]
+
+Go already supports many features that functional programmers might want:=
+ closures, first-class functions, errors as values, etc. The main feature=
+ (and in fact only feature for now) that Fo adds is type polymorphism via=
+ generics. Generics encourage functional programming techniques by making=
+ it possible to write flexible higher-order functions and type-agnostic d=
+ata structures.
+
+People have been asking for Generics in Go since the beginning of time. (=
+2009)
+
+At this time, Fo should be thought of primarily as an experiment or proof=
+ of concept. It shows what Go looks like and feels like with some new lan=
+guage features and allows us to explore how those features interact and w=
+hat you can build with them.
+
+Perhaps Fo's author is hoping that enough traction/excitement around this=
+ project will convince the Go team to add Generics to the language.
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] =E2=80=A2   #fp =
+[https://changelog.com/topic/fp]  #go [https://changelog.com/topic/go]
+
+github.com [https://github.com/klauscfhq/ao]
+
+Ao =E2=80=93 an elegant Microsoft To-Do desktop app [https://github.com/=
+klauscfhq/ao]
+
+Ao is an unofficial, featureful, open source, community-driven, free  Mic=
+rosoft To-Do [https://todo.microsoft.com/] app, used by people in more t=
+han 120 countries.
+
+This looks eerily similar to  Tusk [https://changelog.com/news/b089]... =
+(same author)
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] via  @yanphillip=
+ =E2=80=A2   #electron [https://changelog.com/topic/electron]  #microsof=
+t [https://changelog.com/topic/microsoft]
+
+Datadog =E2=80=93 Sponsored [https://www.dashcon.io/?utm_source=3DAdvert=
+isement&utm_medium=3DAdvertisement&utm_campaign=3DChangelog-DashRegistrat=
+ion]
+
+Learn to build and scale next generation applications at Dash [https://w=
+ww.dashcon.io/?utm_source=3DAdvertisement&utm_medium=3DAdvertisement&utm_=
+campaign=3DChangelog-DashRegistration]
+
+Our friends at Datadog started a conference called Dash =E2=80=94 a confe=
+rence for engineers across development and operations to come together fo=
+r 2 days of speaking sessions, hands-on labs, and training to learn about=
+ building and scaling next-generation applications, infrastructure, and t=
+echnical teams.
+
+Learn how EA Sports survives blockbuster game releases, how CapitalOne is=
+ using serverless, how Flatiron Health built their platform team, how Opt=
+imizely is avoiding continuous disintegration, how Airbnb developed a ser=
+vice-oriented architecture at 1,000-engineer-scale,  and more [https://w=
+ww.dashcon.io/agenda/#day2].
+
+Dash takes place in New York City (NYC) on July 11th and 12th =E2=80=94  =
+Learn more and register [https://www.dashcon.io/?utm_source=3DAdvertisem=
+ent&utm_medium=3DAdvertisement&utm_campaign=3DChangelog-DashRegistration]=
+=2E
+
+logged by  @logbot [https://twitter.com/changelog]
+
+GitLab [https://changelog.com/source/gitlab]
+
+How (and why!) to keep your Git commit history clean [https://about.gitl=
+ab.com/2018/06/07/keeping-git-commit-history-clean/]
+
+After explaining why it all matters, Kushal Pandya covers four common sit=
+uations that you might face while working with Git:
+
+I need to change the most recent commit I need to change a specific commi=
+t I need to add, remove, or combine commits My commit history doesn't mak=
+e sense, I need a fresh start!
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] =E2=80=A2   #git=
+ [https://changelog.com/topic/git]
+
+www.docz.site [https://www.docz.site/]
+
+Docz =E2=80=93 it has never been so easy to document your things! [https=
+://www.docz.site/]
+
+Docz' high-level principles give you an idea of what they're all about:
+
+Zero config and easy. No unnecessary build steps with confusing setups. B=
+lazing fast. Always use the fastest things to build our tools. Easy to cu=
+stomize. Create something that will be easy to use and customize. MDX Bas=
+ed. Have the best standard to write documents. Pluggable. Plugins are the=
+ best choice when you need to be custom and flexible.
+
+Watch the demo video on the homepage to see just how nice this tool is to=
+ use.
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] =E2=80=A2   #doc=
+umentation [https://changelog.com/topic/documentation]  #react [https:/=
+/changelog.com/topic/react]  #javascript [https://changelog.com/topic/ja=
+vascript]
+
+evilmartians.com [https://evilmartians.com/chronicles/stick-with-securit=
+y-yubikey-ssh-gnupg-macos]
+
+Stick with security: YubiKey, SSH, GnuPG, macOS [https://evilmartians.co=
+m/chronicles/stick-with-security-yubikey-ssh-gnupg-macos]
+
+A missing manual on setting up  YubiKey [https://www.yubico.com/product/=
+yubikey-4-series/] as an  OpenPGP [https://en.wikipedia.org/wiki/Pretty_=
+Good_Privacy#OpenPGP] smart card for SSH on macOS. Log into remote server=
+s and push to GitHub securely with hardware encryption. Make your setup s=
+tick once and for all.
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] via  @progapandi=
+st [https://twitter.com/progapandist] =E2=80=A2   #macos [https://chang=
+elog.com/topic/macos]  #hardware [https://changelog.com/topic/hardware] =
+ #security [https://changelog.com/topic/security]
+
+GoCD =E2=80=93 Sponsored [https://www.gocd.org/2018/05/30/ci-microservic=
+es-feature-toggles-trunk-based-development/?utm_source=3Dchangelog&utm_ca=
+mpaign=3Dchangelog-news]
+
+CD for microservices: Two key practices for your CI process [https://www=
+=2Egocd.org/2018/05/30/ci-microservices-feature-toggles-trunk-based-develop=
+ment/?utm_source=3Dchangelog&utm_campaign=3Dchangelog-news]
+
+Continuing the series on  CD for microservices [https://www.gocd.org/tag=
+s/cd-for-microservices.html] =E2=80=94 this post focuses on two key pract=
+ices, trunk based development and feature toggles. These two practices go=
+ a long way in implementing a simple and robust CI process.
+
+In trunk based development (TBD), developers collaborate on code in a sin=
+gle branch called =E2=80=9Ctrunk=E2=80=9D. The key benefit is to avoid dr=
+ift in development branches and the resulting merge hell.
+
+Feature toggles enable commits of a combination of work-in-progress and c=
+ompleted features. With these toggles, you can turn off the manifestation=
+ of incomplete features in production, until the features are dev complet=
+e and tested sufficiently in pre-production environments.
+
+logged by  @logbot [https://twitter.com/changelog]
+
+github.com [https://github.com/bradfrost/gatsby-style-guide-guide]
+
+A boilerplate for creating your own custom style guide [https://github.c=
+om/bradfrost/gatsby-style-guide-guide]
+
+Style Guide Guide is a boilerplate for creating a custom style guide for =
+your organization's design system. It provides just enough IA and hooks t=
+o get you going. As a bonus, I've provided links to helpful resources and=
+ inspiration to help you as you create your own custom style guide.
+
+Built with  Gatsby [https://www.gatsbyjs.org/]. Demo  here [https://bra=
+dfrost.github.io/gatsby-style-guide-guide/].
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] =E2=80=A2   #gat=
+sby [https://changelog.com/topic/gatsby]  #design [https://changelog.co=
+m/topic/design]
+
+github.com [https://github.com/]
+
+A Fully-functional, SEO-friendly static site blog system built on Ember [=
+https://github.com/stonecircle/ember-ghost]
+
+This project is designed to be a fully-functional, static site implementa=
+tion of a blog system that is mostly compatible with Ghost and is built o=
+n EmberJS with fully working out of the box SEO friendly output. It suppo=
+rts being hosted on AWS S3 or any other static site hosting solution.
+
+Check out  the demo [https://ember-ghost.stonecircle.io/]. It's 100% sta=
+tic and hosted on S3. =F0=9F=8E=89
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] via  @real_ate [=
+https://twitter.com/real_ate] =E2=80=A2   #jamstack [https://changelog.=
+com/topic/jamstack]  #ember [https://changelog.com/topic/ember]
+
+quii.gitbook.io [https://quii.gitbook.io/]
+
+Learn Go with tests: HTTP server [https://quii.gitbook.io/learn-go-with-=
+tests/build-an-application/http-server]
+
+Chris James:
+
+Write a simple web server in Go with test driven development. Learn how t=
+o use mocking to let you break the problem down into small iterative chun=
+ks. All using standard library, source code is available to read.
+
+The linked page is a sub-section of the  Learn Go with tests [https://qu=
+ii.gitbook.io/learn-go-with-tests/] GitBook. Do you enjoy TDD and want to=
+ learn Go? Or do you enjoy Go and want to learn TDD? Either way, this loo=
+ks like a great (WIP) resource.
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] via  @quii [htt=
+ps://twitter.com/quii] =E2=80=A2   #http [https://changelog.com/topic/ht=
+tp]  #learn [https://changelog.com/topic/learn]  #testing [https://chan=
+gelog.com/topic/testing]  #go [https://changelog.com/topic/go]
+
+Rollbar =E2=80=93 Sponsored [https://try.rollbar.com/observability-guide=
+/?utm_source=3Dchangelog&utm_medium=3Dnewsletter&utm_campaign=3Dchangelog=
+-news]
+
+The guide to modern observability challenges [https://try.rollbar.com/ob=
+servability-guide/?utm_source=3Dchangelog&utm_medium=3Dnewsletter&utm_cam=
+paign=3Dchangelog-news]
+
+Our friends at Rollbar are helping the developer community learn the insi=
+ghts necessary not just to identify and respond to problems after their a=
+pp has been deployed, but to also trace issues to their source and fix th=
+ings so those problems do not recur.
+
+Check out this free guide [https://try.rollbar.com/observability-guide/?=
+utm_source=3Dchangelog&utm_medium=3Dnewsletter&utm_campaign=3Dchangelog-n=
+ews] to modern observability.
+
+In this guide, we=E2=80=99ll explore:
+
+Modern observability challenges and why monitoring falls short Overview o=
+f tools and techniques to help you achieve observability How to implement=
+ best practices in your systems and development process
+
+logged by  @logbot [https://twitter.com/changelog]
+
+blog.graphql.guide [https://blog.graphql.guide/]
+
+Introducing the GraphQL Guide [https://blog.graphql.guide/introducing-th=
+e-graphql-guide-11a5ae48628a]
+
+John Resig and team at Khan Academy implemented a generic GraphQL platfor=
+m and their development practices changed overnight. The benefits they sa=
+w were so substantial that he and  Loren Sands-Ramshaw [https://twitter.=
+com/lorendsr] decided to write  a book [https://graphql.guide/] about it=
+=2E
+
+=2E..we=E2=80=99re using GraphQL in more and more places: we are transition=
+ing older pages over to use GraphQL and have a mandate in place that all =
+new pages need to use GraphQL.
+
+The benefits that we=E2=80=99ve reaped have been so substantial, even tho=
+ugh it=E2=80=99s still early days. We=E2=80=99re writing new products fas=
+ter, we=E2=80=99re able to rapidly iterate on designs, and we=E2=80=99re =
+keeping our server implementation slim.
+
+Wow, "REST APIs now feel quite antiquated..."
+
+I look at how well it=E2=80=99s worked for us and read stories about how =
+GraphQL has changed other organizations, and I can only think that GraphQ=
+L is going to dramatically change how we all build APIs going forward. RE=
+ST APIs now feel quite antiquated by comparison.
+
+Beta chapters of  The GraphQL Guide [https://graphql.guide/] are availab=
+le now.
+
+logged by  @adamstac [https://twitter.com/adamstac] =E2=80=A2   #api [h=
+ttps://changelog.com/topic/api]  #graphql [https://changelog.com/topic/g=
+raphql]
+
+medium.com [https://medium.com/]
+
+A bitter guide to open source [https://medium.com/@ken_wheeler/a-bitter-=
+guide-to-open-source-a8e3b6a3c1c4]
+
+Ken Wheeler (Director of open source at Formidable) shared some pretty he=
+lpful words to get you excited about open source and also how to launch y=
+our first project.
+
+Nothing makes your repo look more legit than badges. Too many badges look=
+s memey as fuck, but if you include useful ones, its a stamp of legitimac=
+y. It shows you care. Things like npm version, test status, coverage numb=
+ers. It=E2=80=99s nice flair.
+
+Also, Markdown supports raw HTML, so you can make your repo header look n=
+ice. Center things, add a quote, jazz it up a bit.
+
+Ken even shared his thoughts on the best time to launch.
+
+My recommendation is very specific. Release at 12pm EST on a Monday. It=E2=
+=80=99s the end of Europes day, New York=E2=80=99s lunch break and San Fr=
+anciscos hour in the morning before anything gets done.
+
+logged by  @adamstac [https://twitter.com/adamstac] =E2=80=A2   #practic=
+es [https://changelog.com/topic/practices]
+
+github.com [https://github.com/s-matyukevich/raspberry-pi-os]
+
+Learn OS development using the Linux kernel and a Raspberry Pi [https://=
+github.com/s-matyukevich/raspberry-pi-os]
+
+This repository contains a step-by-step guide that teaches how to create =
+a simple operating system (OS) kernel from scratch. I call this OS Raspbe=
+rry Pi OS or just RPi OS. The RPi OS source code is largely based on  Lin=
+ux kernel [https://github.com/torvalds/linux], but the OS has very limit=
+ed functionality and supports only  Raspberry PI 3 [https://www.raspberr=
+ypi.org/products/raspberry-pi-3-model-b/].
+
+6 lessons available with 5 more on the roadmap.
+
+logged by  @jerodsanto [https://twitter.com/jerodsanto] =E2=80=A2   #lin=
+ux [https://changelog.com/topic/linux]  #operating-systems [https://cha=
+ngelog.com/topic/operating-systems]  #raspberry-pi [https://changelog.co=
+m/topic/raspberry-pi]  #learn [https://changelog.com/topic/learn]
+
+O'Reilly Media [https://changelog.com/source/oreillymedia]
+
+Quick recap from Fluent/Velocity Conference [https://changelog.com/posts=
+/quick-recap-from-fluent-velocity-conference]
+
+Kevin Ball =E2=80=94 panelist and frequent emcee of  JS Party [https://c=
+hangelog.com/jsparty], and Tim Smith =E2=80=94 Senior Producer here at Ch=
+angelog were on location at O'Reilly's  Fluent Conference [https://oreil=
+=2Ely/2J4z8da] and  Velocity Conference [https://oreil.ly/2J3gCBP] for the=
+ past few days.
+
+Here's a sneak peek of our coverage!
+
+logged by  @adamstac [https://twitter.com/adamstac] =E2=80=A2   #confere=
+nces [https://changelog.com/topic/conferences]
+
+mixmax.com [https://mixmax.com/]
+
+To yarn and back (to npm) again [https://mixmax.com/blog/to-yarn-and-bac=
+k-again-npm]
+
+Yarn and npm was discussed in-depth on  JS Party #29 [https://changelog.=
+com/jsparty/29]. Spencer writes on the Mixmax blog:
+
+We tested that this flow with npm 6 would work for our needs and we sugge=
+st you do too. If you need the absolute fastest package manager, then you=
+ may still find Yarn to be best. But if you're looking to simplify your s=
+etup, we've found that npm 6 recaptures a critical balance between speed =
+and reliability.
+
+Spencer and team also shared  deyarn [https://github.com/mixmaxhq/deyarn=
+] a command-line tool for converting your projects from Yarn to npm.
+
+logged by  @adamstac [https://twitter.com/adamstac] =E2=80=A2   #yarn [=
+https://changelog.com/topic/yarn]  #npm [https://changelog.com/topic/npm=
+]
+
+View in Browser http://email.changelog.com/t/t-e-udhkhyy-=
+hltywjhy-cj/ =E2=80=A2  Manage Subscription https://changelogmedia.updatemyprof=
+ile.com/t-udhkhyy-F5B8101D-hltywjhy-ct =E2=80=A2  Un=
+subscribe http://email.changelog.com/t/t-u-udhkhyy-hltywjhy-ci/=
+
+
+You received this email because you're a subscriber of Changelog.com emai=
+ls with this email address: =
+ben@bencode.net=
+
+
+Changelog [https://changelog.com/] - News and podcasts for developers
+
+=F0=9F=92=9A
+
+--_9331d7d6-ce79-433f-9246-d536f1237651_
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Changelog Weekly - Issue #208</title>
+  <meta content=3D"IE=3Dedge,chrome=3D1" http-equiv=3D"X-UA-Compatible">
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <style type=3D"text/css">
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https:/=
+/fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jan=
+s920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://f=
+onts.gstatic.com/s/opensans/v15/xjAJXh38I15wypJXxuGMBogp9Q8gbYrhqGlRav_IX=
+fk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts=
+=2Egstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.w=
+off2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(=
+https://fonts.gstatic.com/s/opensans/v15/PRmiXeptR36kaC0GEAetxv79_ZuUxCig=
+M2DespTnFaw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(htt=
+ps://fonts.gstatic.com/s/opensans/v15/EInbV5DfGHOiMmvb1Xr-hhampu5_7CjHW5s=
+pxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fon=
+ts.gstatic.com/s/robotomono/v5/hMqPNLsu_dywMa4C_DEpY4gp9Q8gbYrhqGlRav_IXf=
+k.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Mono Italic'), local('RobotoMono-Italic'), url(https=
+://fonts.gstatic.com/s/robotomono/v5/mE0EPT_93c7f86_WQexR3AeOulFbQKHxPa89=
+BaxZzA0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Mono Bold'), local('RobotoMono-Bold'), url(https://f=
+onts.gstatic.com/s/robotomono/v5/N4duVc9C58uwPiY8_59Fz_79_ZuUxCigM2DespTn=
+Faw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Mono Bold Italic'), local('RobotoMono-BoldItalic'), =
+url(https://fonts.gstatic.com/s/robotomono/v5/1OsMuiiO6FCF2x67vzDKA8yRwA4=
+nzNmLFN68bwzDkMk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U=
++02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+body {
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #121921;
+  text-decoration: none;
+}
+@media (max-width:  600px) {
+  table {
+     width: 100%;
+  }
+}
+=2Eheader {
+  text-align: center;
+  padding: 25px 0;
+}
+=2Eheader p {
+  color: #121921;
+  font-family: "Roboto Mono",Menlo,"Courier New",Courier,monospace;
+  font-size: 12px;
+  margin: 12px 0 0 0;
+}
+=2Eheader-logo {
+  width: 145px
+}
+=2Eheader p a {
+  text-decoration: none;
+}
+=2Elast-of-type {
+  margin-bottom: 0 !important;
+}
+=2Eeditor_note {
+  margin-bottom: 0;
+  padding: 25px 20px;
+  border-bottom: 1px solid #e6e5e6;
+}
+=2Eeditor_note p {
+  color: #121921;
+  font-family: "Roboto Mono",Menlo,"Courier New",Courier,monospace;
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0;
+}
+=2Eeditor_note a {
+  color: #59b287;
+  text-decoration: underline;
+}
+=2Eeditor_note a:hover {
+  color: #44946d;
+  text-decoration: underline;
+}
+=2Enews_item {
+  padding: 30px 20px;
+  border-bottom: 1px solid #e6e5e6;
+}
+=2Enews_item--sponsored {
+  background-color: #fafafa;
+}
+=2Enews_item-source {
+  color: #121921;
+  font-family: "Roboto Mono",Menlo,"Courier New",Courier,monospace;
+  font-size: 12px;
+  line-height: 1em;
+  margin: 0 0 20px 0;
+}
+=2Enews_item-source-image {
+  display: inline-block;
+  font-size: 0;
+  margin-right: 5px;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+=2Enews_item-source a {
+  vertical-align: middle;
+}
+=2Enews_item-source-image img {
+  background: #ffffff;
+  box-shadow: 0 0 24px rgba(18,25,33,0.2);
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+}
+h2.news_item-title {
+  font-family: "Open Sans",Helvetica,Arial,Calibri,sans-serif;
+  font-weight: 800;
+}
+=2Enews_item-title {
+  color: #121921;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+=2Enews_item-title a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+=2Enews_item-meta {
+  font-family: "Roboto Mono",Menlo,"Courier New",Courier,monospace;
+  font-size: 12px;
+  margin: 20px 0 0 0;
+}
+=2Enews_item-meta-text {
+  vertical-align: middle;
+}
+=2Enews_item-toolbar-meta-item a {
+  display: inline-block;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+=2Enews_item-meta-play {
+  display: inline-block;
+  margin-right: 5px;
+  height: 26px;
+  vertical-align: middle;
+  width: 32px;
+}
+=2Enews_item-content a {
+  color: #59b287;
+  text-decoration: underline;
+}
+=2Enews_item-content a:hover {
+  color: #44946d;
+  text-decoration: underline;
+}
+=2Enews_item-content p {
+  font-family: "Open Sans",Helvetica,Arial,Calibri,sans-serif;
+  font-weight: 400;
+}
+=2Enews_item-content li {
+  font-family: "Open Sans",Helvetica,Arial,Calibri,sans-serif;
+  font-weight: 400;
+}
+=2Enews_item-content p,
+=2Enews_item-content li {
+  color: #121921;
+  font-size: 14px;
+  line-height: 22px;
+}
+=2Enews_item-content p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+=2Enews_item-content blockquote {
+  border-left: 4px solid #59b287;
+  margin: 10px 0;
+  padding-left: 15px;
+}
+=2Enews_item-image {
+  display: inline-block;
+  width: 110%;
+  margin: 10px -5%;
+}
+=2Enews_item-sponsored-image {
+  width: 100%;
+  margin: 10px 0;
+}
+@media (max-width:  600px) {
+  .news_item-content p img {
+     width: 100%;
+     margin: 10px 0;
+  }
+}
+=2Enews_item-content ul,
+=2Enews_item-content ol {
+  margin-top: 5px;
+  margin-bottom: 22px;
+  padding-left: 18px;
+}
+=2Enews_item-content li {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+=2Enews_item-content code,.news_item-content pre {
+  margin: 0;
+  padding: 0;
+}
+=2Enews_item-content pre {
+  display: block;
+  width: 110%;
+  margin: 15px -5%;
+}
+@media (max-width:  600px) {
+  .news_item-content pre {
+     width: 100%;
+     margin: 10px 0;
+  }
+}
+=2Enews_item-content code {
+  display: inline-block;
+}
+=2Enews_item-content pre code {
+  display: block;
+}
+=2Enews_item-content code {
+  border-top: 2px solid #59b287;
+  background-color: #121921;
+  color: #59b287;
+  font-family: "Roboto Mono",Menlo,"Courier New",Courier,monospace;
+  font-size: 14px;
+  padding: 15px;
+}
+=2Enews_item-content p code {
+  background-color: #f5f5f5;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  color: inherit;
+  font-family: "Roboto Mono",Menlo,"Courier New",Courier,monospace;
+  font-size: 12px;
+  margin: 0 2px;
+  padding: 2px 5px;
+}
+=2Enews_item-content em {
+  font-style: italic;
+}
+=2Enews_item-content mark,
+=2Enews_item-content .highlight {
+  color: #121921;
+  font-style: normal;
+  padding: 0px 4px 2px 4px;
+  background-color: #fffedb;
+}
+=2Enews_item-content .highlight-gray,
+=2Enews_item-content .highlight-grey {
+  font-style: normal;
+  padding: 0px 4px 2px 4px;
+  background-color: #f5f5f5;
+}
+=2Efooter {
+  color: #333333;
+  padding: 40px 0 80px 0;
+}
+@media (max-width:  600px) {
+  .footer {
+     background-color: #f5f5f5;
+  }
+}
+=2Efooter p {
+  font-family: "Roboto Mono",Menlo,"Courier New",Courier,monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  padding: 0 20px;
+}
+=2Efooter p.hacker-heart {
+  font-size: 22px;
+}
+=2Efooter a {
+  color: #121921;
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body style=3D"width:100%;background-color:#fff;margin-top:0;margin-botto=
+m:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-r=
+ight:0;padding-left:0;" >
+  <p style=3D"display:none !important;" >Python at Microsoft, Growing Ope=
+n Collective, Polly.js, Functional Go, Git commit history, YubiKey, boile=
+rplate Gatsby custom style guide, GraphQL Guide, and more.</p>
+  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+bgcolor=3D"#ffffff">
+    <tbody>
+      <tr>
+        <td width=3D"100%" bgcolor=3D"#ffffff">
+          <table width=3D"600" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" align=3D"center">
+            <tbody>
+              <tr>
+                <td width=3D"600">
+                  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0" bgcolor=3D"#ffffff">
+                    <tbody>
+                      <tr>
+                        <td width=3D"100%" bgcolor=3D"#ffffff">
+                          <table width=3D"600" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" align=3D"center">
+                            <tbody>
+                              <tr>
+                                <td width=3D"600">
+                                  <table width=3D"600" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class=3D"header" style=3D"=
+text-align:center;padding-top:25px;padding-bottom:25px;padding-right:0;pa=
+dding-left:0;" >
+                                            <a href=3D"http://email.chang=
+elog.com/t/t-l-udhkhyy-hltywjhy-r/" style=3D"color:#121921;text=
+-decoration:none;" >
+                                              <img class=3D"header-logo" =
+width=3D"300" alt=3D"Changelog" src=3D"http://i1.cmail20.com/ei/t/E5/CF8/=
+2CB/161029/csimport/changelog-logo_0.png" style=3D"width:145px;" >
+                                            </a>
+                                            <p style=3D"color:#121921;fon=
+t-family:'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12=
+px;margin-top:12px;margin-bottom:0;margin-right:0;margin-left:0;" ><a hre=
+f=3D"http://email.changelog.com/t/t-e-udhkhyy-hltywjhy-mt/" sty=
+le=3D"color:#121921;text-decoration:none;" >Issue #208 =E2=80=A2 2018-06-=
+17</a></p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0" bgcolor=3D"#e6e5e6">
+                    <tbody>
+                      <tr><td bgcolor=3D"#e6e5e6" height=3D"1" width=3D"1=
+00%"></td></tr>
+                    </tbody>
+                  </table>
+                    <table width=3D"600" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" bgcolor=3D"#ffffff">
+                      <tbody>
+                        <tr>
+                          <td bgcolor=3D"#ffffff">
+                            <div class=3D"editor_note" style=3D"margin-bo=
+ttom:0;padding-top:25px;padding-bottom:25px;padding-right:20px;padding-le=
+ft:20px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-c=
+olor:#e6e5e6;" >
+<p style=3D"color:#121921;font-family:'Roboto Mono',Menlo,'Courier New',C=
+ourier,monospace;font-size:13px;line-height:21px;margin-top:0;margin-bott=
+om:0;margin-right:0;margin-left:0;" >I=E2=80=99m stoked to say <a href=3D=
+"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-y/" style=3D=
+"color:#59b287;text-decoration:underline;" >Founders Talk is back</a>!! T=
+he first show back <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-j/" style=3D"color:#59b287;text-decoration:underline;" >=
+features Pia Mancini</a>. If you've never listened to the show, now is a =
+good time to start. Enjoy!</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <table width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" bgcolor=3D"#ffffff">
+                    <tbody>
+                      <tr>
+                        <td bgcolor=3D"#ffffff">
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+    <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Rob=
+oto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-heigh=
+t:1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+  <a class=3D"news_item-source-image news_item-source-image--2" data-news=
+=3D"true" href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-t/" title=3D"Python at Microsoft with Steve Dower and Dan Taylor" st=
+yle=3D"color:#121921;text-decoration:none;display:inline-block;font-size:=
+0;margin-right:5px;width:22px;height:22px;vertical-align:middle;" >
+     =20
+      <img src=3D"https://cdn.changelog.com/uploads/avatars/people/ljqY/a=
+vatar_small.png?v=3D63696076106" alt=3D"Dan Taylor Avatar" style=3D"backg=
+round-color:#ffffff;background-image:none;background-repeat:repeat;backgr=
+ound-position:top left;background-attachment:scroll;box-shadow:0 0 24px r=
+gba(18,25,33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>
+      <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-i/" title=3D"The Changelog" style=3D"color:#121921;text-decoration:no=
+ne;vertical-align:middle;" >The Changelog #301</a>
+    </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-d/" style=3D"color:#1219=
+21;text-decoration:none;" >Python at Microsoft</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >We talked with Steve=
+ Dower and Dan Taylor at Microsoft Build 2018 about the history of Python=
+ at Microsoft, the origination of IronPython, Python Tools for Visual Stu=
+dio, flying under the radar to add support Python, fighting from within t=
+o support open source, and more.</p>
+  </div>
+  <p class=3D"news_item-meta news_item-meta--audio" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-=
+h/" style=3D"color:#121921;text-decoration:none;" >
+    <img class=3D"news_item-meta-play" width=3D"32" alt=3D"Play" src=3D"h=
+ttp://i2.cmail20.com/ei/t/E5/CF8/2CB/161029/csimport/toolbar-play_1.png" =
+style=3D"display:inline-block;margin-right:5px;height:26px;vertical-align=
+:middle;width:32px;" >
+</a>
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-k/" style=3D"color:#121921;text-decoration:none;" >@a=
+damstac</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-u/" title=3D"View Microsoft" style=3D"color:#121921;display:inlin=
+e-block;margin-right:5px;text-decoration:underline;" >#microsoft</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-o/" title=3D"View Python" style=3D"color:#121921;display:inline-b=
+lock;margin-right:5px;text-decoration:underline;" >#python</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+    <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Rob=
+oto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-heigh=
+t:1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image news_item-source-image--1" data-news=3D=
+"true" href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-b/" title=3D"=F0=9F=94=A5 Founders Talk is back!" style=3D"color:#12192=
+1;text-decoration:none;display:inline-block;font-size:0;margin-right:5px;=
+width:22px;height:22px;vertical-align:middle;" >    <img  src=3D"https://=
+cdn.changelog.com/uploads/covers/founders-talk-small.png?v=3D63688781340"=
+ alt=3D"Founders Talk" style=3D"background-color:#121921;background-image=
+:none;background-repeat:repeat;background-position:top left;background-at=
+tachment:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2px;=
+height:20px;width:20px;" />
+</a>
+      <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-n/" title=3D"Founders Talk" style=3D"color:#121921;text-decoration:no=
+ne;vertical-align:middle;" >Founders Talk </a>
+    </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-p/" style=3D"color:#1219=
+21;text-decoration:none;" >=F0=9F=94=A5 Founders Talk is back!</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >It's been just shy o=
+f 5 years since I've published a new episode to this podcast. The break w=
+as planned actually. Long story short, I had to focus. If you want to hea=
+r the slightly longer explanation, you should listen.</p>
+  </div>
+  <p class=3D"news_item-meta news_item-meta--audio" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-=
+x/" style=3D"color:#121921;text-decoration:none;" >
+    <img class=3D"news_item-meta-play" width=3D"32" alt=3D"Play" src=3D"h=
+ttp://i2.cmail20.com/ei/t/E5/CF8/2CB/161029/csimport/toolbar-play_1.png" =
+style=3D"display:inline-block;margin-right:5px;height:26px;vertical-align=
+:middle;width:32px;" >
+</a>
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-m/" style=3D"color:#121921;text-decoration:none;" >@a=
+damstac</a></strong>
+    </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+    <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Rob=
+oto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-heigh=
+t:1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+  <a class=3D"news_item-source-image news_item-source-image--1" data-news=
+=3D"true" href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-c/" title=3D"Growing Open Collective with Pia Mancini" style=3D"colo=
+r:#121921;text-decoration:none;display:inline-block;font-size:0;margin-ri=
+ght:5px;width:22px;height:22px;vertical-align:middle;" >
+     =20
+      <img src=3D"https://cdn.changelog.com/uploads/avatars/people/JLA/av=
+atar_small.png?v=3D63696257910" alt=3D"Pia Mancini Avatar" style=3D"backg=
+round-color:#ffffff;background-image:none;background-repeat:repeat;backgr=
+ound-position:top left;background-attachment:scroll;box-shadow:0 0 24px r=
+gba(18,25,33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>
+      <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-q/" title=3D"Founders Talk" style=3D"color:#121921;text-decoration:no=
+ne;vertical-align:middle;" >Founders Talk #52</a>
+    </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-a/" style=3D"color:#1219=
+21;text-decoration:none;" >Growing Open Collective</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Pia Mancini joined t=
+he show for the first episode back from a nearly 5 year hiatus. We talked=
+ about her work at DemocracyEarth, being a first time mother, her new rol=
+e as CEO of Open Collective, their focus, supporting ad-hoc community for=
+mation all around the world, their revenue and growth plans, and their pa=
+th to sustainability.</p>
+  </div>
+  <p class=3D"news_item-meta news_item-meta--audio" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-=
+f/" style=3D"color:#121921;text-decoration:none;" >
+    <img class=3D"news_item-meta-play" width=3D"32" alt=3D"Play" src=3D"h=
+ttp://i2.cmail20.com/ei/t/E5/CF8/2CB/161029/csimport/toolbar-play_1.png" =
+style=3D"display:inline-block;margin-right:5px;height:26px;vertical-align=
+:middle;width:32px;" >
+</a>
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-z/" style=3D"color:#121921;text-decoration:none;" >@a=
+damstac</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-v/" title=3D"View Sustainability" style=3D"color:#121921;display:=
+inline-block;margin-right:5px;text-decoration:underline;" >#sustainabilit=
+y</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item news_item--sponsored" s=
+tyle=3D"padding-top:30px;padding-bottom:30px;padding-right:20px;padding-l=
+eft:20px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-=
+color:#e6e5e6;background-color:#fafafa;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-e/" title=3D"Hired" style=3D"color:#121921=
+;text-decoration:none;display:inline-block;font-size:0;margin-right:5px;w=
+idth:22px;height:22px;vertical-align:middle;" >      <img src=3D"https://=
+cdn.changelog.com/uploads/avatars/sponsors/mj/avatar_small.png?v=3D636960=
+33735" alt=3D"Hired Icon" style=3D"background-color:#ffffff;background-im=
+age:none;background-repeat:repeat;background-position:top left;background=
+-attachment:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2=
+px;height:20px;width:20px;" />
+</a>
+<a href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-s/=
+" title=3D"Hired" style=3D"color:#121921;text-decoration:none;vertical-al=
+ign:middle;" >Hired =E2=80=93 Sponsored</a>  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-g/" style=3D"color:#1219=
+21;text-decoration:none;" >Salary and benefits upfront? Yes please.</a></=
+h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Our friends at Hired=
+ have <strong>more than 23,042 openings</strong> across the following dev=
+eloper-focused roles in major cities all across the globe.</p>
+<ul style=3D"margin-top:5px;margin-bottom:22px;padding-left:18px;" >
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >Software Engineering</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >Engineering Management</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >Design</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >Product Management</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >Data Analytics</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >DevOps and QA</li>
+</ul>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Here's how Hired wor=
+ks =E2=80=94 1) <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-w/" style=3D"color:#59b287;text-decoration:underline;" >use=
+ our special link to create your account</a> (<a href=3D"http://email.cha=
+ngelog.com/t/t-l-udhkhyy-hltywjhy-yd/" style=3D"color:#59b287;t=
+ext-decoration:underline;" >hired.com/changelog</a>), 2) answer a few que=
+stions about yourself and your skills, 3) companies get in touch with the=
+ir offer 4) <mark style=3D"color:#121921;font-style:normal;padding-top:0p=
+x;padding-bottom:2px;padding-right:4px;padding-left:4px;background-color:=
+#fffedb;" >you select the job that's right for you and get <strong>a $600=
+=20
+bonus</strong></mark> directly from Hired when you accept a job.</p>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >If you're looking to=
+ <em style=3D"font-style:italic;" >get hired</em>, our friends at Hired c=
+an help.</p>
+      </div>
+  <p class=3D"news_item-meta" style=3D"font-family:'Roboto Mono',Menlo,'C=
+ourier New',Courier,monospace;font-size:12px;margin-top:20px;margin-botto=
+m:0;margin-right:0;margin-left:0;" >logged by <strong><a href=3D"http://e=
+mail.changelog.com/t/t-l-udhkhyy-hltywjhy-yh/" rel=3D"external"=
+ title=3D"Logbot" style=3D"color:#121921;text-decoration:none;" >@logbot<=
+/a></strong></p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-yk/" title=3D"Netflix Technology Blog" sty=
+le=3D"color:#121921;text-decoration:none;display:inline-block;font-size:0=
+;margin-right:5px;width:22px;height:22px;vertical-align:middle;" >  <img =
+src=3D"https://cdn.changelog.com/uploads/icons/news_sources/yWk/icon_smal=
+l.png?v=3D63691290746" alt=3D"Netflix Technology Blog Icon" style=3D"back=
+ground-color:#ffffff;background-image:none;background-repeat:repeat;backg=
+round-position:top left;background-attachment:scroll;box-shadow:0 0 24px =
+rgba(18,25,33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-yu/" title=3D"Netflix Technology Blog" style=3D"color:#121921;text-=
+decoration:none;vertical-align:middle;" >Netflix Technology Blog</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-jl/" style=3D"color:#121=
+921;text-decoration:none;" >Polly.js records, replays, and stubs HTTP int=
+eractions</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >This looks <em style=
+=3D"font-style:italic;" >really</em> good:</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<ul style=3D"margin-top:5px;margin-bottom:22px;padding-left:18px;" >
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >=F0=9F=9A=80 Fetch &amp; XHR Support</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >=E2=9A=A1=EF=B8=8F=EF=B8=8F Simple, Powerful, &amp;=
+ Intuitive API</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >=F0=9F=92=8E First Class Mocha &amp; QUnit Test Hel=
+pers</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >=F0=9F=94=A5 Intercept, Pass-Through, and Attach Ev=
+ents</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >=F0=9F=93=BC Record to Disk or Local Storage</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >=E2=8F=B1 Slow Down or Speed Up Time</li>
+</ul>
+</blockquote>
+      </div>
+<p class=3D"news_item-meta news_item-meta--project" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-jr/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-jy/" title=3D"View Testing" style=3D"color:#121921;display:inline=
+-block;margin-right:5px;text-decoration:underline;" >#testing</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-jj/" title=3D"View JavaScript" style=3D"color:#121921;display:inl=
+ine-block;margin-right:5px;text-decoration:underline;" >#javascript</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-jt/" title=3D"Functional Programming" styl=
+e=3D"color:#121921;text-decoration:none;display:inline-block;font-size:0;=
+margin-right:5px;width:22px;height:22px;vertical-align:middle;" >  <img s=
+rc=3D"https://cdn.changelog.com/uploads/icons/topics/W3O/icon_small.png?v=
+=3D63685665074" alt=3D"Functional Programming Icon" style=3D"background-c=
+olor:#ffffff;background-image:none;background-repeat:repeat;background-po=
+sition:top left;background-attachment:scroll;box-shadow:0 0 24px rgba(18,=
+25,33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ji/" rel=3D"external" title=3D"github.com" style=3D"color:#121921;t=
+ext-decoration:none;vertical-align:middle;" >github.com</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-jd/" style=3D"color:#121=
+921;text-decoration:none;" >Fo =3D Functional Go</a></h2>
+  <div class=3D"news_item-content">
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Go already supports =
+many features that functional programmers might want: closures, first-cla=
+ss functions, errors as values, etc. The main feature (and in fact only f=
+eature for now) that Fo adds is type polymorphism via generics. Generics =
+encourage functional programming techniques by making it possible to writ=
+e flexible higher-order functions and type-agnostic data structures.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >People have been ask=
+ing for Generics in Go since the beginning of time. (2009)</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >At this time, Fo sho=
+uld be thought of primarily as an experiment or proof of concept. It show=
+s what Go looks like and feels like with some new language features and a=
+llows us to explore how those features interact and what you can build wi=
+th them.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Perhaps Fo's author =
+is hoping that enough traction/excitement around this project will convin=
+ce the Go team to add Generics to the language.</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--project" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-jh/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-jk/" title=3D"View Functional Programming" style=3D"color:#121921=
+;display:inline-block;margin-right:5px;text-decoration:underline;" >#fp</=
+a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ju/" title=3D"View Go" style=3D"color:#121921;display:inline-bloc=
+k;margin-right:5px;text-decoration:underline;" >#go</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-tl/" title=3D"Electron" style=3D"color:#12=
+1921;text-decoration:none;display:inline-block;font-size:0;margin-right:5=
+px;width:22px;height:22px;vertical-align:middle;" >  <img src=3D"https://=
+cdn.changelog.com/uploads/icons/topics/NO/icon_small.png?v=3D63685157300"=
+ alt=3D"Electron Icon" style=3D"background-color:#ffffff;background-image=
+:none;background-repeat:repeat;background-position:top left;background-at=
+tachment:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2px;=
+height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-tr/" rel=3D"external" title=3D"github.com" style=3D"color:#121921;t=
+ext-decoration:none;vertical-align:middle;" >github.com</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-ty/" style=3D"color:#121=
+921;text-decoration:none;" >Ao =E2=80=93 an elegant Microsoft To-Do deskt=
+op app</a></h2>
+  <div class=3D"news_item-content">
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Ao is an unofficial,=
+ featureful, open source, community-driven, free <a href=3D"http://email.=
+changelog.com/t/t-l-udhkhyy-hltywjhy-tj/" style=3D"color:#59b28=
+7;text-decoration:underline;" >Microsoft To-Do</a> app, used by people in=
+ more than 120 countries.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >This looks eerily si=
+milar to <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-tt/" style=3D"color:#59b287;text-decoration:underline;" >Tusk</a>.=
+=2E.  (same author)</p>
+   =20
+      <p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-se=
+rif;font-weight:400;color:#121921;font-size:14px;line-height:22px;margin-=
+top:0;margin-bottom:16px;padding-top:0;padding-bottom:0;" >
+<a href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-ti=
+/" style=3D"color:#59b287;text-decoration:underline;" >          <img src=
+=3D"https://cdn.changelog.com/uploads/news_items/2b8E/large.gif?v=3D63696=
+203196" alt=3D"Ao =E2=80=93 an elegant Microsoft To-Do desktop app" class=
+=3D"news_item-image" style=3D"display:inline-block;width:110%;margin-top:=
+10px;margin-bottom:10px;margin-right:-5%;margin-left:-5%;" >
+</a>      </p>
+  </div>
+<p class=3D"news_item-meta news_item-meta--project" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-td/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+    via <strong><a href=3D"#" style=3D"color:#121921;text-decoration:none=
+;" >@yanphillip</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-th/" title=3D"View Electron" style=3D"color:#121921;display:inlin=
+e-block;margin-right:5px;text-decoration:underline;" >#electron</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-tk/" title=3D"View Microsoft" style=3D"color:#121921;display:inli=
+ne-block;margin-right:5px;text-decoration:underline;" >#microsoft</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item news_item--sponsored" s=
+tyle=3D"padding-top:30px;padding-bottom:30px;padding-right:20px;padding-l=
+eft:20px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-=
+color:#e6e5e6;background-color:#fafafa;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-tu/" title=3D"Datadog" style=3D"color:#121=
+921;text-decoration:none;display:inline-block;font-size:0;margin-right:5p=
+x;width:22px;height:22px;vertical-align:middle;" >      <img src=3D"https=
+://cdn.changelog.com/uploads/avatars/sponsors/yWk/avatar_small.png?v=3D63=
+684084345" alt=3D"Datadog Icon" style=3D"background-color:#ffffff;backgro=
+und-image:none;background-repeat:repeat;background-position:top left;back=
+ground-attachment:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-ra=
+dius:2px;height:20px;width:20px;" />
+</a>
+<a href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-il=
+/" title=3D"Datadog" style=3D"color:#121921;text-decoration:none;vertical=
+-align:middle;" >Datadog =E2=80=93 Sponsored</a>  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-ir/" style=3D"color:#121=
+921;text-decoration:none;" >Learn to build and scale next generation appl=
+ications at Dash</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Our friends at Datad=
+og started a conference called Dash =E2=80=94 a conference for engineers =
+across development and operations to come together for 2 days of speaking=
+ sessions, hands-on labs, and training to learn about building and scalin=
+g next-generation applications, infrastructure, and technical teams.</p>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" ><mark style=3D"color=
+:#121921;font-style:normal;padding-top:0px;padding-bottom:2px;padding-rig=
+ht:4px;padding-left:4px;background-color:#fffedb;" >Learn how EA Sports s=
+urvives blockbuster game releases, how CapitalOne is using serverless, ho=
+w Flatiron Health built their platform team, how Optimizely is avoiding c=
+ontinuous disintegration, how Airbnb developed a service-oriented archite=
+cture at 1,000-engineer-scale, <a href=3D"http://email.changelog.com/t/t-=
+l-udhkhyy-hltywjhy-iy/" style=3D"color:#59b287;text-decoration:=
+underline;" >and more</a>.</mark></p>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Dash takes place in =
+New York City (NYC) on July 11th and 12th =E2=80=94 <a href=3D"http://ema=
+il.changelog.com/t/t-l-udhkhyy-hltywjhy-ij/" style=3D"color:#59=
+b287;text-decoration:underline;" >Learn more and register</a>.</p>
+      </div>
+  <p class=3D"news_item-meta" style=3D"font-family:'Roboto Mono',Menlo,'C=
+ourier New',Courier,monospace;font-size:12px;margin-top:20px;margin-botto=
+m:0;margin-right:0;margin-left:0;" >logged by <strong><a href=3D"http://e=
+mail.changelog.com/t/t-l-udhkhyy-hltywjhy-it/" rel=3D"external"=
+ title=3D"Logbot" style=3D"color:#121921;text-decoration:none;" >@logbot<=
+/a></strong></p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-ii/" title=3D"GitLab" style=3D"color:#1219=
+21;text-decoration:none;display:inline-block;font-size:0;margin-right:5px=
+;width:22px;height:22px;vertical-align:middle;" >  <img src=3D"https://cd=
+n.changelog.com/uploads/icons/news_sources/YL/icon_small.png?v=3D63688364=
+658" alt=3D"GitLab Icon" style=3D"background-color:#ffffff;background-ima=
+ge:none;background-repeat:repeat;background-position:top left;background-=
+attachment:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2p=
+x;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-id/" title=3D"GitLab" style=3D"color:#121921;text-decoration:none;v=
+ertical-align:middle;" >GitLab</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-ih/" style=3D"color:#121=
+921;text-decoration:none;" >How (and why!) to keep your Git commit histor=
+y clean</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >After explaining why=
+ it all matters, Kushal Pandya covers four common situations that you mig=
+ht face while working with Git:</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<ol style=3D"margin-top:5px;margin-bottom:22px;padding-left:18px;" >
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >I need to change the most recent commit</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >I need to change a specific commit</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >I need to add, remove, or combine commits</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >My commit history doesn't make sense, I need a fres=
+h start!</li>
+</ol>
+</blockquote>
+      </div>
+<p class=3D"news_item-meta news_item-meta--link" style=3D"font-family:'Ro=
+boto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin-to=
+p:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-ik/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-iu/" title=3D"View Git" style=3D"color:#121921;display:inline-blo=
+ck;margin-right:5px;text-decoration:underline;" >#git</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-dl/" title=3D"React" style=3D"color:#12192=
+1;text-decoration:none;display:inline-block;font-size:0;margin-right:5px;=
+width:22px;height:22px;vertical-align:middle;" >  <img src=3D"https://cdn=
+=2Echangelog.com/uploads/icons/topics/J3q/icon_small.png?v=3D63684550679" a=
+lt=3D"React Icon" style=3D"background-color:#ffffff;background-image:none=
+;background-repeat:repeat;background-position:top left;background-attachm=
+ent:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2px;heigh=
+t:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-dr/" rel=3D"external" title=3D"www.docz.site" style=3D"color:#12192=
+1;text-decoration:none;vertical-align:middle;" >www.docz.site</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-dy/" style=3D"color:#121=
+921;text-decoration:none;" >Docz =E2=80=93 it has never been so easy to d=
+ocument your things!</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Docz' high-level pri=
+nciples give you an idea of what they're all about:</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<ul style=3D"margin-top:5px;margin-bottom:22px;padding-left:18px;" >
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" ><strong>Zero config and easy</strong>. No unnecessa=
+ry build steps with confusing setups.</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" ><strong>Blazing fast</strong>. Always use the faste=
+st things to build our tools.</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" ><strong>Easy to customize</strong>. Create somethin=
+g that will be easy to use and customize.</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" ><strong>MDX Based</strong>. Have the best standard =
+to write documents.</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" ><strong>Pluggable</strong>. Plugins are the best ch=
+oice when you need to be custom and flexible.</li>
+</ul>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Watch the demo video=
+ on the homepage to see just how nice this tool is to use.</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--project" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-dj/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-dt/" title=3D"View Documentation" style=3D"color:#121921;display:=
+inline-block;margin-right:5px;text-decoration:underline;" >#documentation=
+</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-di/" title=3D"View React" style=3D"color:#121921;display:inline-b=
+lock;margin-right:5px;text-decoration:underline;" >#react</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-dd/" title=3D"View JavaScript" style=3D"color:#121921;display:inl=
+ine-block;margin-right:5px;text-decoration:underline;" >#javascript</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-dh/" title=3D"macOS" style=3D"color:#12192=
+1;text-decoration:none;display:inline-block;font-size:0;margin-right:5px;=
+width:22px;height:22px;vertical-align:middle;" >  <img src=3D"https://cdn=
+=2Echangelog.com/uploads/icons/topics/wwM/icon_small.png?v=3D63687156922" a=
+lt=3D"macOS Icon" style=3D"background-color:#ffffff;background-image:none=
+;background-repeat:repeat;background-position:top left;background-attachm=
+ent:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2px;heigh=
+t:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-dk/" rel=3D"external" title=3D"evilmartians.com" style=3D"color:#12=
+1921;text-decoration:none;vertical-align:middle;" >evilmartians.com</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-du/" style=3D"color:#121=
+921;text-decoration:none;" >Stick with security: YubiKey, SSH, GnuPG, mac=
+OS</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >A missing manual on =
+setting up <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-hl/" style=3D"color:#59b287;text-decoration:underline;" >YubiKey=
+</a> as an <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-hr/" style=3D"color:#59b287;text-decoration:underline;" >OpenPGP=
+</a> smart card for SSH on macOS.  Log into remote servers and push to Gi=
+tHub securely with hardware encryption. Make your setup <em style=3D"font=
+-style:italic;" >stick</em> once and for all.</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--link" style=3D"font-family:'Ro=
+boto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin-to=
+p:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-hy/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+    via <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-hj/" style=3D"color:#121921;text-decoration:none;" >@progap=
+andist</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ht/" title=3D"View macOS" style=3D"color:#121921;display:inline-b=
+lock;margin-right:5px;text-decoration:underline;" >#macos</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-hi/" title=3D"View Hardware" style=3D"color:#121921;display:inlin=
+e-block;margin-right:5px;text-decoration:underline;" >#hardware</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-hd/" title=3D"View Security" style=3D"color:#121921;display:inlin=
+e-block;margin-right:5px;text-decoration:underline;" >#security</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item news_item--sponsored" s=
+tyle=3D"padding-top:30px;padding-bottom:30px;padding-right:20px;padding-l=
+eft:20px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-=
+color:#e6e5e6;background-color:#fafafa;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-hh/" title=3D"GoCD" style=3D"color:#121921=
+;text-decoration:none;display:inline-block;font-size:0;margin-right:5px;w=
+idth:22px;height:22px;vertical-align:middle;" >      <img src=3D"https://=
+cdn.changelog.com/uploads/avatars/sponsors/aN/avatar_small.png?v=3D636850=
+81512" alt=3D"GoCD Icon" style=3D"background-color:#ffffff;background-ima=
+ge:none;background-repeat:repeat;background-position:top left;background-=
+attachment:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2p=
+x;height:20px;width:20px;" />
+</a>
+<a href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-hk=
+/" title=3D"GoCD" style=3D"color:#121921;text-decoration:none;vertical-al=
+ign:middle;" >GoCD =E2=80=93 Sponsored</a>  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-hu/" style=3D"color:#121=
+921;text-decoration:none;" >CD for microservices: Two key practices for y=
+our CI process</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Continuing the serie=
+s on <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-kl/" style=3D"color:#59b287;text-decoration:underline;" >CD for micros=
+ervices</a> =E2=80=94 this post focuses on two key practices, trunk based=
+ development and feature toggles. These two practices go a long way in im=
+plementing a simple and robust CI process.</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" ><strong>In trunk bas=
+ed development (TBD)</strong>, developers collaborate on code in a single=
+ branch called =E2=80=9Ctrunk=E2=80=9D. The key benefit is to avoid drift=
+ in development branches and the resulting merge hell.</p>
+</blockquote>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" ><strong>Feature togg=
+les</strong> enable commits of a combination of work-in-progress and comp=
+leted features. With these toggles, you can turn off the manifestation of=
+ incomplete features in production, until the features are dev complete a=
+nd tested sufficiently in pre-production environments.</p>
+</blockquote>
+      </div>
+  <p class=3D"news_item-meta" style=3D"font-family:'Roboto Mono',Menlo,'C=
+ourier New',Courier,monospace;font-size:12px;margin-top:20px;margin-botto=
+m:0;margin-right:0;margin-left:0;" >logged by <strong><a href=3D"http://e=
+mail.changelog.com/t/t-l-udhkhyy-hltywjhy-kr/" rel=3D"external"=
+ title=3D"Logbot" style=3D"color:#121921;text-decoration:none;" >@logbot<=
+/a></strong></p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-ky/" title=3D"Gatsby" style=3D"color:#1219=
+21;text-decoration:none;display:inline-block;font-size:0;margin-right:5px=
+;width:22px;height:22px;vertical-align:middle;" >  <img src=3D"https://cd=
+n.changelog.com/uploads/icons/topics/aQo/icon_small.png?v=3D63696255224" =
+alt=3D"Gatsby Icon" style=3D"background-color:#ffffff;background-image:no=
+ne;background-repeat:repeat;background-position:top left;background-attac=
+hment:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2px;hei=
+ght:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-kj/" rel=3D"external" title=3D"github.com" style=3D"color:#121921;t=
+ext-decoration:none;vertical-align:middle;" >github.com</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-kt/" style=3D"color:#121=
+921;text-decoration:none;" >A boilerplate for creating your own custom st=
+yle guide</a></h2>
+  <div class=3D"news_item-content">
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Style Guide Guide is=
+ a boilerplate for creating a custom style guide for your organization's =
+design system. It provides just enough IA and hooks to get you going. As =
+a bonus, I've provided links to helpful resources and inspiration to help=
+ you as you create your own custom style guide.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Built with <a href=3D=
+"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-ki/" style=3D=
+"color:#59b287;text-decoration:underline;" >Gatsby</a>. Demo <a href=3D"h=
+ttp://email.changelog.com/t/t-l-udhkhyy-hltywjhy-kd/" style=3D"=
+color:#59b287;text-decoration:underline;" >here</a>.</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--project" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-kh/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-kk/" title=3D"View Gatsby" style=3D"color:#121921;display:inline-=
+block;margin-right:5px;text-decoration:underline;" >#gatsby</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ku/" title=3D"View Design" style=3D"color:#121921;display:inline-=
+block;margin-right:5px;text-decoration:underline;" >#design</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-ul/" rel=3D"external" title=3D"Chris Manso=
+n" style=3D"color:#121921;text-decoration:none;display:inline-block;font-=
+size:0;margin-right:5px;width:22px;height:22px;vertical-align:middle;" > =
+ <img src=3D"https://secure.gravatar.com/avatar/45d0b9f773f3ab874e795a5b3=
+a61e48f.jpg?s=3D150&amp;d=3Dmm" alt=3D"Chris Manson" style=3D"background-=
+color:#ffffff;background-image:none;background-repeat:repeat;background-p=
+osition:top left;background-attachment:scroll;box-shadow:0 0 24px rgba(18=
+,25,33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ur/" rel=3D"external" title=3D"Chris Manson" style=3D"color:#121921=
+;text-decoration:none;vertical-align:middle;" >github.com</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-uy/" style=3D"color:#121=
+921;text-decoration:none;" >A Fully-functional, SEO-friendly static site =
+blog system built on Ember</a></h2>
+  <div class=3D"news_item-content">
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >This project is desi=
+gned to be a fully-functional, static site implementation of a blog syste=
+m that is mostly compatible with Ghost and is built on EmberJS with fully=
+ working out of the box SEO friendly output. It supports being hosted on =
+AWS S3 or any other static site hosting solution.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Check out <a href=3D=
+"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-uj/" style=3D=
+"color:#59b287;text-decoration:underline;" >the demo</a>. It's 100% stati=
+c and hosted on S3. =F0=9F=8E=89</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--project" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-ut/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+    via <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ui/" style=3D"color:#121921;text-decoration:none;" >@real_a=
+te</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ud/" title=3D"View JAMStack" style=3D"color:#121921;display:inlin=
+e-block;margin-right:5px;text-decoration:underline;" >#jamstack</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-uh/" title=3D"View Ember" style=3D"color:#121921;display:inline-b=
+lock;margin-right:5px;text-decoration:underline;" >#ember</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-uk/" rel=3D"external" title=3D"Chris James=
+" style=3D"color:#121921;text-decoration:none;display:inline-block;font-s=
+ize:0;margin-right:5px;width:22px;height:22px;vertical-align:middle;" >  =
+<img src=3D"https://secure.gravatar.com/avatar/03ba53c50132509d417d62f3fc=
+81592a.jpg?s=3D150&amp;d=3Dmm" alt=3D"Chris James" style=3D"background-co=
+lor:#ffffff;background-image:none;background-repeat:repeat;background-pos=
+ition:top left;background-attachment:scroll;box-shadow:0 0 24px rgba(18,2=
+5,33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-uu/" rel=3D"external" title=3D"Chris James" style=3D"color:#121921;=
+text-decoration:none;vertical-align:middle;" >quii.gitbook.io</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-ol/" style=3D"color:#121=
+921;text-decoration:none;" >Learn Go with tests: HTTP server</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Chris James:</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Write a simple web s=
+erver in Go with test driven development. Learn how to use mocking to let=
+ you break the problem down into small iterative chunks. All using standa=
+rd library, source code is available to read.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >The linked page is a=
+ sub-section of the <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-or/" style=3D"color:#59b287;text-decoration:underline;"=
+ >Learn Go with tests</a> GitBook. Do you enjoy TDD and want to learn Go?=
+ Or do you enjoy Go and want to learn TDD? Either way, this looks like a =
+great (WIP) resource.</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--link" style=3D"font-family:'Ro=
+boto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin-to=
+p:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-oy/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+    via <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-oj/" style=3D"color:#121921;text-decoration:none;" >@quii</=
+a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ot/" title=3D"View HTTP" style=3D"color:#121921;display:inline-bl=
+ock;margin-right:5px;text-decoration:underline;" >#http</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-oi/" title=3D"View Learn" style=3D"color:#121921;display:inline-b=
+lock;margin-right:5px;text-decoration:underline;" >#learn</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-od/" title=3D"View Testing" style=3D"color:#121921;display:inline=
+-block;margin-right:5px;text-decoration:underline;" >#testing</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-oh/" title=3D"View Go" style=3D"color:#121921;display:inline-bloc=
+k;margin-right:5px;text-decoration:underline;" >#go</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item news_item--sponsored" s=
+tyle=3D"padding-top:30px;padding-bottom:30px;padding-right:20px;padding-l=
+eft:20px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-=
+color:#e6e5e6;background-color:#fafafa;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-ok/" title=3D"Rollbar" style=3D"color:#121=
+921;text-decoration:none;display:inline-block;font-size:0;margin-right:5p=
+x;width:22px;height:22px;vertical-align:middle;" >      <img src=3D"https=
+://cdn.changelog.com/uploads/avatars/sponsors/qw/avatar_small.png?v=3D636=
+84482902" alt=3D"Rollbar Icon" style=3D"background-color:#ffffff;backgrou=
+nd-image:none;background-repeat:repeat;background-position:top left;backg=
+round-attachment:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-rad=
+ius:2px;height:20px;width:20px;" />
+</a>
+<a href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-ou=
+/" title=3D"Rollbar" style=3D"color:#121921;text-decoration:none;vertical=
+-align:middle;" >Rollbar =E2=80=93 Sponsored</a>  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-bl/" style=3D"color:#121=
+921;text-decoration:none;" >The guide to modern observability challenges<=
+/a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Our friends at Rollb=
+ar are helping the developer community learn the insights necessary not j=
+ust to identify and respond to problems after their app has been deployed=
+, but to also trace issues to their source and fix things so those proble=
+ms do not recur.</p>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" ><a href=3D"http://em=
+ail.changelog.com/t/t-l-udhkhyy-hltywjhy-br/" style=3D"color:#5=
+9b287;text-decoration:underline;" >Check out this free guide</a> to moder=
+n observability.</p>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >In this guide, we=E2=
+=80=99ll explore:</p>
+<ul style=3D"margin-top:5px;margin-bottom:22px;padding-left:18px;" >
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >Modern observability challenges and why monitoring =
+falls short</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >Overview of tools and techniques to help you achiev=
+e observability</li>
+<li style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;f=
+ont-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0=
+;margin-bottom:4px;" >How to implement best practices in your systems and=
+ development process</li>
+</ul>
+      </div>
+  <p class=3D"news_item-meta" style=3D"font-family:'Roboto Mono',Menlo,'C=
+ourier New',Courier,monospace;font-size:12px;margin-top:20px;margin-botto=
+m:0;margin-right:0;margin-left:0;" >logged by <strong><a href=3D"http://e=
+mail.changelog.com/t/t-l-udhkhyy-hltywjhy-by/" rel=3D"external"=
+ title=3D"Logbot" style=3D"color:#121921;text-decoration:none;" >@logbot<=
+/a></strong></p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-bj/" rel=3D"external" title=3D"John Resig"=
+ style=3D"color:#121921;text-decoration:none;display:inline-block;font-si=
+ze:0;margin-right:5px;width:22px;height:22px;vertical-align:middle;" >  <=
+img src=3D"https://cdn.changelog.com/uploads/avatars/people/QRQM/avatar_s=
+mall.png?v=3D63696055554" alt=3D"John Resig" style=3D"background-color:#f=
+fffff;background-image:none;background-repeat:repeat;background-position:=
+top left;background-attachment:scroll;box-shadow:0 0 24px rgba(18,25,33,0=
+=2E2);border-radius:2px;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-bt/" rel=3D"external" title=3D"John Resig" style=3D"color:#121921;t=
+ext-decoration:none;vertical-align:middle;" >blog.graphql.guide</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-bi/" style=3D"color:#121=
+921;text-decoration:none;" >Introducing the GraphQL Guide</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >John Resig and team =
+at Khan Academy implemented a generic GraphQL platform and their developm=
+ent practices changed overnight. The benefits they saw were so substantia=
+l that he and <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-bd/" style=3D"color:#59b287;text-decoration:underline;" >Lore=
+n Sands-Ramshaw</a> decided to write <a href=3D"http://email.changelog.co=
+m/t/t-l-udhkhyy-hltywjhy-bh/" style=3D"color:#59b287;text-decor=
+ation:underline;" >a book</a> about it.</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >...we=E2=80=99re usi=
+ng GraphQL in more and more places: we are transitioning older pages over=
+ to use GraphQL and have a mandate in place that all new pages need to us=
+e GraphQL.</p>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >The benefits that we=
+=E2=80=99ve reaped have been so substantial, even though it=E2=80=99s sti=
+ll early days. We=E2=80=99re writing new products faster, we=E2=80=99re a=
+ble to rapidly iterate on designs, and we=E2=80=99re keeping our server i=
+mplementation slim.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Wow, &quot;REST APIs=
+ now feel quite antiquated...&quot;</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >I look at how well i=
+t=E2=80=99s worked for us and read stories about how GraphQL has changed =
+other organizations, and I can only think that GraphQL is going to dramat=
+ically change how we all build APIs going forward. <strong>REST APIs now =
+feel quite antiquated by comparison.</strong></p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Beta chapters of <a =
+href=3D"http://email.changelog.com/t/t-l-udhkhyy-hltywjhy-bk/" =
+style=3D"color:#59b287;text-decoration:underline;" >The GraphQL Guide</a>=
+ are available now.</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--link" style=3D"font-family:'Ro=
+boto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin-to=
+p:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-bu/" style=3D"color:#121921;text-decoration:none;" >@=
+adamstac</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-nl/" title=3D"View API" style=3D"color:#121921;display:inline-blo=
+ck;margin-right:5px;text-decoration:underline;" >#api</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-nr/" title=3D"View GraphQL" style=3D"color:#121921;display:inline=
+-block;margin-right:5px;text-decoration:underline;" >#graphql</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-ny/" rel=3D"external" title=3D"Ken Wheeler=
+" style=3D"color:#121921;text-decoration:none;display:inline-block;font-s=
+ize:0;margin-right:5px;width:22px;height:22px;vertical-align:middle;" >  =
+<img src=3D"https://secure.gravatar.com/avatar/4751e2e9fe7b876958d38f86a7=
+18ca91.jpg?s=3D150&amp;d=3Dmm" alt=3D"Ken Wheeler" style=3D"background-co=
+lor:#ffffff;background-image:none;background-repeat:repeat;background-pos=
+ition:top left;background-attachment:scroll;box-shadow:0 0 24px rgba(18,2=
+5,33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-nj/" rel=3D"external" title=3D"Ken Wheeler" style=3D"color:#121921;=
+text-decoration:none;vertical-align:middle;" >medium.com</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"https://med=
+ium.com/@ken_wheeler/a-bitter-guide-to-open-source-a8e3b6a3c1c4" style=3D=
+"color:#121921;text-decoration:none;" >A bitter guide to open source</a><=
+/h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Ken Wheeler (Directo=
+r of open source at Formidable) shared some pretty helpful words to get y=
+ou excited about open source and also how to launch your first project.</=
+p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Nothing makes your r=
+epo look more legit than badges. Too many badges looks memey as fuck, but=
+ if you include useful ones, its a stamp of legitimacy. It shows you care=
+=2E Things like npm version, test status, coverage numbers. It=E2=80=99s ni=
+ce flair.</p>
+</blockquote>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Also, Markdown suppo=
+rts raw HTML, so you can make your repo header look nice. Center things, =
+add a quote, jazz it up a bit.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Ken even shared his =
+thoughts on the best time to launch.</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >My recommendation is=
+ very specific. <strong>Release at 12pm EST on a Monday.</strong> It=E2=80=
+=99s the end of Europes day, New York=E2=80=99s lunch break and San Franc=
+iscos hour in the morning before anything gets done.</p>
+</blockquote>
+      </div>
+<p class=3D"news_item-meta news_item-meta--link" style=3D"font-family:'Ro=
+boto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin-to=
+p:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-nt/" style=3D"color:#121921;text-decoration:none;" >@=
+adamstac</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ni/" title=3D"View Practices" style=3D"color:#121921;display:inli=
+ne-block;margin-right:5px;text-decoration:underline;" >#practices</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-nd/" title=3D"Linux" style=3D"color:#12192=
+1;text-decoration:none;display:inline-block;font-size:0;margin-right:5px;=
+width:22px;height:22px;vertical-align:middle;" >  <img src=3D"https://cdn=
+=2Echangelog.com/uploads/icons/topics/3PN/icon_small.png?v=3D63682389453" a=
+lt=3D"Linux Icon" style=3D"background-color:#ffffff;background-image:none=
+;background-repeat:repeat;background-position:top left;background-attachm=
+ent:scroll;box-shadow:0 0 24px rgba(18,25,33,0.2);border-radius:2px;heigh=
+t:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-nh/" rel=3D"external" title=3D"github.com" style=3D"color:#121921;t=
+ext-decoration:none;vertical-align:middle;" >github.com</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-nk/" style=3D"color:#121=
+921;text-decoration:none;" >Learn OS development using the Linux kernel a=
+nd a Raspberry Pi</a></h2>
+  <div class=3D"news_item-content">
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >This repository cont=
+ains a step-by-step guide that teaches how to create a simple operating s=
+ystem (OS) kernel from scratch. I call this OS Raspberry Pi OS or just RP=
+i OS. The RPi OS source code is largely based on <a href=3D"http://email.=
+changelog.com/t/t-l-udhkhyy-hltywjhy-nu/" style=3D"color:#59b28=
+7;text-decoration:underline;" >Linux kernel</a>, but the OS has very limi=
+ted functionality and supports only <a href=3D"http://email.changelog.com=
+/t/t-l-udhkhyy-hltywjhy-pl/" style=3D"color:#59b287;text-decora=
+tion:underline;" >Raspberry PI 3</a>.</p>
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >6 lessons available =
+with 5 more on the roadmap.</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--project" style=3D"font-family:=
+'Roboto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin=
+-top:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-pr/" style=3D"color:#121921;text-decoration:none;" >@=
+jerodsanto</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-py/" title=3D"View Linux" style=3D"color:#121921;display:inline-b=
+lock;margin-right:5px;text-decoration:underline;" >#linux</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-pj/" title=3D"View Operating systems" style=3D"color:#121921;disp=
+lay:inline-block;margin-right:5px;text-decoration:underline;" >#operating=
+-systems</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-pt/" title=3D"View Raspberry Pi" style=3D"color:#121921;display:i=
+nline-block;margin-right:5px;text-decoration:underline;" >#raspberry-pi</=
+a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-pi/" title=3D"View Learn" style=3D"color:#121921;display:inline-b=
+lock;margin-right:5px;text-decoration:underline;" >#learn</a>
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-pd/" title=3D"O&#39;Reilly Media" style=3D=
+"color:#121921;text-decoration:none;display:inline-block;font-size:0;marg=
+in-right:5px;width:22px;height:22px;vertical-align:middle;" >  <img src=3D=
+"https://cdn.changelog.com/uploads/icons/news_sources/J3q/icon_small.png?=
+v=3D63691289420" alt=3D"O&#39;Reilly Media Icon" style=3D"background-colo=
+r:#ffffff;background-image:none;background-repeat:repeat;background-posit=
+ion:top left;background-attachment:scroll;box-shadow:0 0 24px rgba(18,25,=
+33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-ph/" title=3D"O&#39;Reilly Media" style=3D"color:#121921;text-decor=
+ation:none;vertical-align:middle;" >O&#39;Reilly Media</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-pk/" style=3D"color:#121=
+921;text-decoration:none;" >Quick recap from Fluent/Velocity Conference</=
+a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Kevin Ball =E2=80=94=
+ panelist and frequent emcee of <a href=3D"http://email.changelog.com/t/t=
+-l-udhkhyy-hltywjhy-pu/" style=3D"color:#59b287;text-decoration=
+:underline;" >JS Party</a>, and Tim Smith =E2=80=94 Senior Producer here =
+at Changelog were on location at O'Reilly's <a href=3D"http://email.chang=
+elog.com/t/t-l-udhkhyy-hltywjhy-xl/" style=3D"color:#59b287;tex=
+t-decoration:underline;" >Fluent Conference</a> and <a href=3D"http://ema=
+il.changelog.com/t/t-l-udhkhyy-hltywjhy-xr/" style=3D"color:#59=
+b287;text-decoration:underline;" >Velocity Conference</a> for the past fe=
+w days.</p>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Here's a sneak peek =
+of our coverage!</p>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" ><a href=3D"http://em=
+ail.changelog.com/t/t-l-udhkhyy-hltywjhy-xy/" style=3D"color:#5=
+9b287;text-decoration:underline;" ><img src=3D"https://embedwistia-a.akam=
+aihd.net/deliveries/3ad9b6a501994d8dbbf9413413b5eeac602b02c7.jpg?image_pl=
+ay_button_size=3D1x&amp;image_crop_resized=3D960x540&amp;image_play_butto=
+n=3D1&amp;image_play_button_color=3D61c192e0" class=3D"news_item-image" s=
+tyle=3D"display:inline-block;width:110%;margin-top:10px;margin-bottom:10p=
+x;margin-right:-5%;margin-left:-5%;" /></a></p>
+</div>
+<p class=3D"news_item-meta news_item-meta--link" style=3D"font-family:'Ro=
+boto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin-to=
+p:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-xj/" style=3D"color:#121921;text-decoration:none;" >@=
+adamstac</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-xt/" title=3D"View Conferences" style=3D"color:#121921;display:in=
+line-block;margin-right:5px;text-decoration:underline;" >#conferences</a>=
+
+      </span>
+  </span>
+</p>
+</div>
+                          <div class=3D"news_item" style=3D"padding-top:3=
+0px;padding-bottom:30px;padding-right:20px;padding-left:20px;border-botto=
+m-width:1px;border-bottom-style:solid;border-bottom-color:#e6e5e6;" >
+  <p class=3D"news_item-source" style=3D"color:#121921;font-family:'Robot=
+o Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;line-height:=
+1em;margin-top:0;margin-bottom:20px;margin-right:0;margin-left:0;" >
+<a class=3D"news_item-source-image" href=3D"http://email.changelog.com/t/=
+t-l-udhkhyy-hltywjhy-xi/" rel=3D"external" title=3D"Spencer Bro=
+wn" style=3D"color:#121921;text-decoration:none;display:inline-block;font=
+-size:0;margin-right:5px;width:22px;height:22px;vertical-align:middle;" >=
+  <img src=3D"https://secure.gravatar.com/avatar/41c029f1499612a33df5e523=
+20d2fcf0.jpg?s=3D150&amp;d=3Dmm" alt=3D"Spencer Brown" style=3D"backgroun=
+d-color:#ffffff;background-image:none;background-repeat:repeat;background=
+-position:top left;background-attachment:scroll;box-shadow:0 0 24px rgba(=
+18,25,33,0.2);border-radius:2px;height:20px;width:20px;" />
+</a>    <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-xd/" rel=3D"external" title=3D"Spencer Brown" style=3D"color:#12192=
+1;text-decoration:none;vertical-align:middle;" >mixmax.com</a>
+  </p>
+  <h2 class=3D"news_item-title" style=3D"color:#121921;font-size:18px;lin=
+e-height:26px;margin-top:0;margin-bottom:10px;font-family:'Open Sans',Hel=
+vetica,Arial,Calibri,sans-serif;font-weight:800;" ><a href=3D"http://emai=
+l.changelog.com/t/t-l-udhkhyy-hltywjhy-xh/" style=3D"color:#121=
+921;text-decoration:none;" >To yarn and back (to npm) again</a></h2>
+  <div class=3D"news_item-content">
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Yarn and npm was dis=
+cussed in-depth on <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-xk/" style=3D"color:#59b287;text-decoration:underline;" =
+>JS Party #29</a>. Spencer writes on the Mixmax blog:</p>
+<blockquote style=3D"border-left-width:4px;border-left-style:solid;border=
+-left-color:#59b287;margin-top:10px;margin-bottom:10px;margin-right:0;mar=
+gin-left:0;padding-left:15px;" >
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >We tested that this =
+flow with npm 6 would work for our needs and we suggest you do too. If yo=
+u need the absolute fastest package manager, then you may still find Yarn=
+ to be best. But if you're looking to simplify your setup, we've found th=
+at npm 6 recaptures a critical balance between speed and reliability.</p>=
+
+</blockquote>
+<p style=3D"font-family:'Open Sans',Helvetica,Arial,Calibri,sans-serif;fo=
+nt-weight:400;color:#121921;font-size:14px;line-height:22px;margin-top:0;=
+margin-bottom:16px;padding-top:0;padding-bottom:0;" >Spencer and team als=
+o shared <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-xu/" style=3D"color:#59b287;text-decoration:underline;" >deyarn</a=
+> a command-line tool for converting your projects from Yarn to npm.</p>
+      </div>
+<p class=3D"news_item-meta news_item-meta--link" style=3D"font-family:'Ro=
+boto Mono',Menlo,'Courier New',Courier,monospace;font-size:12px;margin-to=
+p:20px;margin-bottom:0;margin-right:0;margin-left:0;" >
+  <span class=3D"news_item-meta-text" style=3D"vertical-align:middle;" >
+    logged by <strong><a href=3D"http://email.changelog.com/t/t-l-udhkhyy=
+-hltywjhy-ml/" style=3D"color:#121921;text-decoration:none;" >@=
+adamstac</a></strong>
+ =20
+    =E2=80=A2 <span class=3D"news_item-toolbar-meta-item">
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-mr/" title=3D"View Yarn" style=3D"color:#121921;display:inline-bl=
+ock;margin-right:5px;text-decoration:underline;" >#yarn</a>
+          <a href=3D"http://email.changelog.com/t/t-l-udhkhyy-=
+hltywjhy-my/" title=3D"View npm" style=3D"color:#121921;display:inline-blo=
+ck;margin-right:5px;text-decoration:underline;" >#npm</a>
+      </span>
+  </span>
+</p>
+</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" bgcolor=3D"#ffffff">
+                    <tbody>
+                      <tr>
+                        <td bgcolor=3D"#ffffff" align=3D"center">
+                          <div class=3D"footer" style=3D"color:#333333;pa=
+dding-top:40px;padding-bottom:80px;padding-right:0;padding-left:0;" >
+                            <p style=3D"font-family:'Roboto Mono',Menlo,'=
+Courier New',Courier,monospace;font-size:12px;line-height:1.5;margin-top:=
+0;margin-bottom:20px;margin-right:0;margin-left:0;padding-top:0;padding-b=
+ottom:0;padding-right:20px;padding-left:20px;" ><a href=3D"http://email.c=
+hangelog.com/t/t-e-udhkhyy-hltywjhy-mi/" style=3D"color:#121921=
+;text-decoration:underline;" >View in Browser</a> &bull; <a href=3D"https=
+://changelogmedia.updatemyprofile.com/t-udhkhyy-F5B8101D-=
+hltywjhy-md" style=3D"color:#121921;text-decoration:underline;" >Man=
+age Subscription</a> &bull; <a href=3D"http://email.changelog.com/t/t-u-u=
+dhkhyy-hltywjhy-mh/" style=3D"color:#121921;text-decoration:und=
+erline;" >Unsubscribe</a></p>
+                            <p style=3D"font-family:'Roboto Mono',Menlo,'=
+Courier New',Courier,monospace;font-size:12px;line-height:1.5;margin-top:=
+0;margin-bottom:20px;margin-right:0;margin-left:0;padding-top:0;padding-b=
+ottom:0;padding-right:20px;padding-left:20px;" >You received this email b=
+ecause you're a subscriber of Changelog.com emails with this email addres=
+s: =
+ben@bencode.net=
+</p>
+                            <p style=3D"font-family:'Roboto Mono',Menlo,'=
+Courier New',Courier,monospace;font-size:12px;line-height:1.5;margin-top:=
+0;margin-bottom:20px;margin-right:0;margin-left:0;padding-top:0;padding-b=
+ottom:0;padding-right:20px;padding-left:20px;" ><a href=3D"http://email.c=
+hangelog.com/t/t-l-udhkhyy-hltywjhy-mj/" style=3D"color:#121921=
+;text-decoration:underline;" >Changelog</a> - News and podcasts for devel=
+opers</p>
+                            <p class=3D"last-of-type hacker-heart" style=3D=
+"font-family:'Roboto Mono',Menlo,'Courier New',Courier,monospace;line-hei=
+ght:1.5;margin-top:0;margin-bottom:0 !important;margin-right:0;margin-lef=
+t:0;padding-top:0;padding-bottom:0;padding-right:20px;padding-left:20px;f=
+ont-size:22px;" >=F0=9F=92=9A</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<img src=3D"https://changelogmedia.cmail20.com/t/t-o-udhkhyy-=
+hltywjhy/o.gif"  width=3D"1" height=3D"1" border=3D"0" alt=3D"" style=3D"vi=
+sibility:hidden !important;display:block !important;height:1px !important=
+;width:1px !important;border-width:0 !important;margin-top:0 !important;m=
+argin-bottom:0 !important;margin-right:0 !important;margin-left:0 !import=
+ant;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 =
+!important;padding-left:0 !important;" /></body>
+</html>=
+
+
+
+
+--_9331d7d6-ce79-433f-9246-d536f1237651_--

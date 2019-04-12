@@ -1,0 +1,160 @@
+Delivered-To: ben@bencode.net
+Received: by 2002:adf:f082:0:0:0:0:0 with SMTP id n2-v6csp2540461wro;
+        Sat, 23 Jun 2018 17:04:36 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKIBzp9ljD/tvtuSZc5oX8R6jsnYACw3PZYlNoL2s4UN0VWMDSdZ/OuX6eUcdDF2fnq665UD
+X-Received: by 2002:a62:4a0c:: with SMTP id x12-v6mr7396525pfa.142.1529798676208;
+        Sat, 23 Jun 2018 17:04:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1529798676; cv=none;
+        d=google.com; s=arc-20160816;
+        b=b2BDhIU71IK4GXiSANjBZHvlVxa1LnIm30g1n0jz5ffrnnbhjKv65kDgJm+lzKFgOL
+         eAtkcO3qVaAihrw570QHYW4WOkosh6bKw0KzNCA9vj5KSscvM1xqp0aaPyiAWW7ot+SI
+         CagxfmYUILkQ/xfIUK+tOSqnM5rR88LRfKQA5NgdJlAAnj4IzfR1sxosRLzDlUKJFYH6
+         zCeK3Z5SGX7lOqNKBF0z1VZ6s80HmyokIRP3PvDysR9yaHV/4oRnvNqkCyoLfK4xp8/j
+         nR8pGxMir1JtiaufczgyhVzXTjnZBlejgTRaDtNwagFW9VGSPZbJfRPGOvaLPFT+hg0R
+         96xQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-language:in-reply-to:mime-version:user-agent:date
+         :message-id:from:references:to:subject:arc-authentication-results;
+        bh=UDI1sVY94RL5gQda1vqAYXhI0oZkqtcm347QboCfwzg=;
+        b=YorGgFcdA68nyRLHgNBt7+oT1PFirKHhN1KMSZ/BMbtKgS/TyQIf4htQqCzDXVU0i4
+         DjzhlrKpFTx6UOimKAHu9JHKBiUrFe7PUp1+iLKWi/+QY7oBmHsPc+LkXAnP75VFVSTi
+         t8TThim8zlCF5AxI6emQNyJss1kDRnM3P/Y16Li/w2puslCdvyJrnPw2965IMEVOevUH
+         e4gpDxl3TzUF/6S2IV/jgGQqirtxAyO6FzBt3vWr7uN0vvQltp/2ekvcCDbyKwPRbIKE
+         JeY7LFnFYSACuYwPxYnrNuzgPp7gKLlnSl4YPzw5Jbbduv8zRH2fKpf6e1586BiE3xDg
+         JHtw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 122.56.84.53 is neither permitted nor denied by best guess record for domain of info@karamea-express.co.nz) smtp.mailfrom=info@karamea-express.co.nz
+Return-Path: <info@karamea-express.co.nz>
+Received: from out2106.sparkbusinessmail.co.nz (out2106.sparkbusinessmail.co.nz. [122.56.84.53])
+        by mx.google.com with ESMTPS id o128-v6si11069709pfg.5.2018.06.23.17.04.34
+        for <ben@bencode.net>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 23 Jun 2018 17:04:35 -0700 (PDT)
+Received-SPF: neutral (google.com: 122.56.84.53 is neither permitted nor denied by best guess record for domain of info@karamea-express.co.nz) client-ip=122.56.84.53;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 122.56.84.53 is neither permitted nor denied by best guess record for domain of info@karamea-express.co.nz) smtp.mailfrom=info@karamea-express.co.nz
+Received: from [125.236.172.202] by smtp.sparkbusinessmail.co.nz with ESMTP
+	(using TLSv1.2 with cipher DHE-RSA-AES128-SHA (128/128 bits))
+	id 5B2EE010-12140853@mta2101.omr;
+	Sun, 24 Jun 2018 00:04:32 +0000
+Subject: Re: Heaphy track transport
+To: Ben Simmonds <ben@bencode.net>
+References: <CAChDVzqLo7GNLTnwy0rkUFOBncz-bNRC5ifebVsDkVD+nA3vmQ@mail.gmail.com>
+From: Karamea Express <info@karamea-express.co.nz>
+Message-ID: <c80a697c-a7a6-bf31-a5cf-f2e95c85e0c8@karamea-express.co.nz>
+Date: Sun, 24 Jun 2018 12:04:27 +1200
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101
+ Thunderbird/52.8.0
+MIME-Version: 1.0
+In-Reply-To: <CAChDVzqLo7GNLTnwy0rkUFOBncz-bNRC5ifebVsDkVD+nA3vmQ@mail.gmail.com>
+Content-Type: multipart/alternative;
+ boundary="------------17BF524F7D0362279E5AB1DE"
+Content-Language: en-US
+
+This is a multi-part message in MIME format.
+--------------17BF524F7D0362279E5AB1DE
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Hi Ben
+
+Thanks for your inquiry. We can pick you up at a time to suit you both. 
+to go straight thru to Westport it will cost $250-00 total. This is an 
+on demand service.
+
+If you overnight in Karamea & catch our bus the next morning it will be 
+$35-00pp.
+
+$25-00pp to bring you into Karamea to your accommodation if you go for 
+this option.
+
+Please keep in touch for further info or bookings.
+
+Cheers
+
+Carol Higgs
+
+
+On 23/06/2018 8:05 PM, Ben Simmonds wrote:
+> Hello guys, my brother and I are looking at doing the Heaphy Track in 
+> late September this year, and are interested in getting some transport 
+> quotes for the following:
+>
+> Pickup at Kohaihai Shelter Thursday 27th September 2018 – Drop Off at 
+> Westport
+>
+> There will be two adults. Please advise if you can assist us, and if 
+> so a rough quote.
+>
+> Regards
+>
+> Ben Simmonds
+
+
+--------------17BF524F7D0362279E5AB1DE
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body text="#000000" bgcolor="#FFFFFF">
+    <p>Hi Ben</p>
+    <p>Thanks for your inquiry. We can pick you up at a time to suit you
+      both. to go straight thru to Westport it will cost $250-00 total.
+      This is an on demand service.</p>
+    <p>If you overnight in Karamea &amp; catch our bus the next morning
+      it will be $35-00pp.</p>
+    <p>$25-00pp to bring you into Karamea to your accommodation if you
+      go for this option.</p>
+    <p>Please keep in touch for further info or bookings.</p>
+    <p>Cheers</p>
+    <p>Carol Higgs<br>
+    </p>
+    <br>
+    <div class="moz-cite-prefix">On 23/06/2018 8:05 PM, Ben Simmonds
+      wrote:<br>
+    </div>
+    <blockquote type="cite"
+cite="mid:CAChDVzqLo7GNLTnwy0rkUFOBncz-bNRC5ifebVsDkVD+nA3vmQ@mail.gmail.com">
+      <div dir="ltr">
+        <div class="gmail_default">
+          <div class="gmail_default"><font face="arial, helvetica,
+              sans-serif">Hello guys, my brother and I are looking at
+              doing the Heaphy Track in late September this year, and
+              are interested in getting some transport quotes for the
+              following:</font></div>
+          <div class="gmail_default"><br>
+          </div>
+          <div class="gmail_default"><span
+              style="font-family:arial,helvetica,sans-serif">Pickup at
+              Kohaihai Shelter Thursday 27th September 2018 – Drop Off
+              at Westport</span><br>
+          </div>
+          <div class="gmail_default"><span
+              style="font-family:arial,helvetica,sans-serif"><br>
+            </span></div>
+          <div class="gmail_default"><span
+              style="font-family:arial,helvetica,sans-serif">There will
+              be two adults. </span><span
+              style="font-family:arial,helvetica,sans-serif">Please
+              advise if you can assist us, and if so a rough quote.</span></div>
+          <div class="gmail_default"><span
+              style="font-family:arial,helvetica,sans-serif"><br>
+            </span></div>
+          <div class="gmail_default"><span
+              style="font-family:arial,helvetica,sans-serif">Regards</span><br>
+          </div>
+          <div class="gmail_default"><br>
+          </div>
+          <div class="gmail_default"><font face="arial, helvetica,
+              sans-serif">Ben Simmonds</font></div>
+        </div>
+      </div>
+    </blockquote>
+    <br>
+  </body>
+</html>
+
+--------------17BF524F7D0362279E5AB1DE--

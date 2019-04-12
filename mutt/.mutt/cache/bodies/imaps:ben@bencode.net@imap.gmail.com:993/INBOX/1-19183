@@ -1,0 +1,838 @@
+Delivered-To: ben@bencode.net
+Received: by 2002:adf:f082:0:0:0:0:0 with SMTP id n2-v6csp2491214wro;
+        Thu, 21 Jun 2018 11:30:57 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKJ8wurgpL1AKF8/iqG0ziTyF4HFVCCYnV9AC8r2+oLm+OTjHqkfleQK6iv09zYgp4PXETNF
+X-Received: by 2002:a37:8704:: with SMTP id j4-v6mr22618282qkd.235.1529605857206;
+        Thu, 21 Jun 2018 11:30:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1529605857; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PjHcy7cvviAMjcluUvoO5ue0Y+8S5QWvAPYEVYQLbg0pZj7xHGOdPIlwOWllvwN9Yu
+         P9WFpzVgr83jjHA5k470og6fvEBkyCzjwYtedpNeqteJpLexFTxvSN0caf3JKPiyPSv9
+         JUr2zOVD8F5ACo7JCBPd5wyu33ZLUvuc5vuxcx5U8qONBZHRSy6oqColYD7kCKTHd61B
+         Qk6X9PmCU4x5r31KOitfUgZ99PzSkt24XmakaQryGVNdYo5YmczzDNuKCUhyqV9UZHdK
+         NTWqpABGYm2U7SGDe5akFV2cGSKui55ReG0Y0n2dEChKj/OOzJm8LcNMkE5Z8pTEp3aK
+         pNZw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:mime-version:subject:message-id:to:reply-to:from
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=0txng2pK6fpwfcz9KUaJy/Tttt1nMideK3NhfEgJwq4=;
+        b=ZmqDGII/zHPhpkiG4Oii1CcN0vfSmkAVXcMP1uw/cr6k1TAXVOKQKcnXNYCON8hsJ7
+         D7+nnU7QnT9NkMaAxi6Rj6muiJQ9wsVe9dd33OIvROG6C+c7nou+V30jEzlBiO3Wa5/n
+         GnBdjAPoigAjQlKuSyVIr3ZGq99fYvVE6t7vF6TrHh4KK6/KsR21SrJ2t6xALBi1Jfip
+         85WrqAoh/IgeGRFM4kHNEb1DQHMJ7bLGCR3o1UoCJpAcveWE1y/rCo+mpiIvoMWgfVHd
+         C/qMosmzrg+nGVFtRxt+wqZdqH0wRn9Z2eubnPEK/2FjDhQTU0Bbxq3UCI1r6RbJrX1S
+         dwPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@news.digitalocean.com header.s=m1 header.b=OIFGraJB;
+       dkim=pass header.i=@mktdns.com header.s=m1 header.b=DE+Xpnw7;
+       spf=pass (google.com: domain of 937-eid-756.0.9206.0.0.7092.9.13181561@info.digitalocean.com designates 192.28.144.201 as permitted sender) smtp.mailfrom=937-EID-756.0.9206.0.0.7092.9.13181561@info.digitalocean.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=news.digitalocean.com
+Return-Path: <937-EID-756.0.9206.0.0.7092.9.13181561@info.digitalocean.com>
+Received: from info.digitalocean.com (info.digitalocean.com. [192.28.144.201])
+        by mx.google.com with ESMTPS id x6-v6si5222834qvb.261.2018.06.21.11.30.56
+        for <ben@bencode.net>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 21 Jun 2018 11:30:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 937-eid-756.0.9206.0.0.7092.9.13181561@info.digitalocean.com designates 192.28.144.201 as permitted sender) client-ip=192.28.144.201;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@news.digitalocean.com header.s=m1 header.b=OIFGraJB;
+       dkim=pass header.i=@mktdns.com header.s=m1 header.b=DE+Xpnw7;
+       spf=pass (google.com: domain of 937-eid-756.0.9206.0.0.7092.9.13181561@info.digitalocean.com designates 192.28.144.201 as permitted sender) smtp.mailfrom=937-EID-756.0.9206.0.0.7092.9.13181561@info.digitalocean.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=news.digitalocean.com
+Return-Path: <newsletter@news.digitalocean.com>
+X-MSFBL: YmVuQGJlbmNvZGUubmV0QGR2cC0xOTItMjgtMTQ0LTIwMUBiZy1hYmQtMzQ2QDkz
+	Ny1FSUQtNzU2OjM5NTk6NTU0MDoyMzE2OTowOjcwOTI6OTo5MjA2OjEzMTgxNTYx
+Received: from [10.1.87.249] ([10.1.87.249:33171] helo=abmas02.marketo.org)
+	by abmta11.marketo.org (envelope-from <newsletter@news.digitalocean.com>)
+	(ecelerity 3.6.8.47404 r(Core:3.6.8.0)) with ESMTP
+	id 4E/83-16763-0EEEB2B5; Thu, 21 Jun 2018 13:30:56 -0500
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1529605856;
+	s=m1; d=news.digitalocean.com; i=@news.digitalocean.com;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	bh=0txng2pK6fpwfcz9KUaJy/Tttt1nMideK3NhfEgJwq4=;
+	b=OIFGraJBq4o8S/s0M2BLlTWyBKBjzcvvQgniaTbJClgXcSTYRmmO/vBnmmn4nn3/
+	0ojNLEW++6wirnXXtiCzmKE1bOSuLITJvSDhB11+R8GYMQQET3HeFfJfHfsYc0WETAx
+	i2Kjs3XzozHapMjHezDuIHx0Kb5gEUZnRAtRZdy8=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1529605856;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	bh=0txng2pK6fpwfcz9KUaJy/Tttt1nMideK3NhfEgJwq4=;
+	b=DE+Xpnw7+CGtoAoyJUzEdp42qT3ggUZuD4+Mv+MJurut6dceedukBZrMTZeyzwqN
+	0Big13yfOv9Rcas6bNd6FhUndFzwfhnuu5n3fFqHI8Nv0KJNlWHpGfjomJgaJ+I/359
+	ANMVh/xn2mEzTHCXAvSwKR3Va73CPUJKzXD8Pgc8=
+Date: Thu, 21 Jun 2018 13:30:56 -0500 (CDT)
+From: "Sammy @ DigitalOcean" <newsletter@news.digitalocean.com>
+Reply-To: newsletter@digitalocean.com
+To: ben@bencode.net
+Message-ID: <239212251.451812509.1529605856410.JavaMail.root@abmas02.marketo.org>
+Subject: Infrastructure as a Newsletter - June 21, 2018
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_451812508_448370282.1529605856410"
+X-Binding: bg-abd-346
+X-MarketoID: 937-EID-756:3959:5540:23169:0:7092:9:9206:13181561
+X-MktArchive: false
+List-Unsubscribe: <mailto:LA2HAVLFINRUWMDSIVME2VDLMNJDGT3UMJIT2PI.9206.7092.9@unsub-ab.mktomail.com>
+X-Mailfrom: 937-EID-756.0.9206.0.0.7092.9.13181561@info.digitalocean.com
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+
+------=_Part_451812508_448370282.1529605856410
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Deploying multi-region Docker registries, get Bash-full with us, and feelin=
+g electronic skins.
+
+Infrastructure as a Newsletter
+
+Your biweekly tech roundup from DigitalOcean. Have ideas for future issues?=
+ Reply to this email with article suggestions or feedback!
+
+
+
+
+Fresh off the Press:
+
+
+Here are the featured picks from our blog <https://blog.digitalocean.com/?u=
+tm_medium=3Demail&utm_source=3DIaaN&utm_campaign=3D06212018> and growing li=
+brary of tutorials <https://www.digitalocean.com/community/tutorials?utm_me=
+dium=3Demail&utm_source=3DIaaN&utm_campaign=3D06212018>.
+
+
+
+=09- Here=E2=80=99s how to verify code and encrypt data with Python-GnuPG a=
+nd Python 3 <https://www.digitalocean.com/community/tutorials/how-to-verify=
+-code-and-encrypt-data-with-python-gnupg-and-python-3?utm_medium=3Demail&ut=
+m_source=3DIaaN&utm_campaign=3D06212018>
+
+
+
+
+=09- Here=E2=80=99s how to install MongoDB on Ubuntu 18.04 <https://www.dig=
+italocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04?ut=
+m_medium=3Demail&utm_source=3DIaaN&utm_campaign=3D06212018>
+
+
+
+
+=09- Here=E2=80=99s how we deployed a multi-region Docker registry to impro=
+ve performance <https://blog.digitalocean.com/deploying-a-multi-region-dock=
+er-registry-to-improve-performance/?utm_medium=3Demail&utm_source=3DIaaN&ut=
+m_campaign=3D06212018>
+
+
+
+
+
+
+
+Open Source Highlights:
+
+
+This week we go all-in for the Unix shell and command language Bash <https:=
+//www.gnu.org/software/bash/?utm_source=3DDigitalOcean_Newsletter>.
+
+
+=09- Check out Google=E2=80=99s Bash style guide <https://google.github.io/=
+styleguide/shell.xml?utm_source=3DDigitalOcean_Newsletter>
+
+
+
+
+=09- Learn ways to do things safely in Bash <https://github.com/anordal/she=
+llharden/blob/master/how_to_do_things_safely_in_bash.md?utm_source=3DDigita=
+lOcean_Newsletter>
+
+
+
+
+=09- And here are some common errors that Bash programmers make <http://myw=
+iki.wooledge.org/BashPitfalls?utm_source=3DDigitalOcean_Newsletter>
+
+
+
+
+=09- As a bonus, here=E2=80=99s a fun graphic sharing some Bash tricks <htt=
+ps://pbs.twimg.com/media/DeF0p2kW0AYdvg9.jpg?utm_source=3DDigitalOcean_News=
+letter>
+
+
+
+
+
+
+
+News:
+
+
+=09- A team of engineers has created an electronic skin that, when layered =
+on top of prosthetic hands, brings back for amputees a real sense of touch =
+<https://www.sciencedaily.com/releases/2018/06/180620171004.htm?utm_source=
+=3DDigitalOcean_Newsletter>
+=09- Meanwhile, in the UK, astronauts are showcasing methods to clean up sp=
+ace junk <https://www.bbc.com/news/science-environment-44550082?utm_source=
+=3DDigitalOcean_Newsletter>, with an estimated 7,500 tonnes orbiting our pl=
+anet
+=09- Lastly, think eight hours of sleep are enough? Probably not, says a le=
+ading sleep scientist. <https://qz.com/1301123/why-eight-hours-a-night-isnt=
+-enough-according-to-a-leading-sleep-scientist/?utm_source=3DDigitalOcean_N=
+ewsletter> If you want more, try a cold, quiet environment with no light
+
+
+
+
+
+Book of the Month:
+
+
+We=E2=80=99re still reading Andrew Hodges=E2=80=99 acclaimed biography of c=
+omputing legend Alan Mathison Turing, titled =E2=80=9CAlan Turing: The Enig=
+ma <http://www.turing.org.uk/book/?utm_source=3DDigitalOcean_Newsletter>.=
+=E2=80=9D Let us know if you=E2=80=99re reading it too.
+
+
+
+
+Featured=C2=A0@ DigitalOcean:
+ <http://do.co/currents-survey>
+
+ <https://go.digitalocean.com/elastic-webinar-series>We have a new webinar =
+series on leveraging Elastic stack on DigitalOcean <https://go.digitalocean=
+.com/elastic-webinar-series>. You=E2=80=99ll learn about:
+
+
+
+=09- Searching using Elasticsearch
+
+
+
+
+=09- Data ingestion using Logstash
+
+
+
+
+=09- Visualizations & dashboards using Kibana
+
+
+
+
+=09- Service monitoring using Beats.
+
+
+
+
+If you miss a session, no worries! All the sessions are recorded and availa=
+ble to watch at any time.
+
+
+Follow us on Twitter for more content <http://do.co/email_twitter>=C2=A0=C2=
+=A0 Sign up for DO <https://www.digitalocean.com/?utm_source=3Demail_footer=
+>=20
+=20
+ Trouble seeing this email? View it as a web page. <https://go.digitalocean=
+.com/index.php/email/emailWebview?mkt_tok=3DeyJpIjoiTnpRME5HWmlabVk1WldRNCI=
+sInQiOiJoR3NNdVlZREZzTXluMmx3M2pwS0xpMXN6Rkp4emxHL3NTemhHUjZ5KzFPU0NENEM0L2=
+xaOG1GenBaZklOWENZbkNkY2FyRFY1TThEaGpJM0hxY2ljY214ZXFGODVrbWRyOFd2aDA2VDduV=
+zlWblpRU25EUnpabTZ4VGJTYTdrNSJ9>
+Copyright =C2=A9 2018 DigitalOcean
+ Floor 10, 101 Avenue of the Americas, New York, NY, 10013
+ All rights reserved.
+
+This email was sent to ben@bencode.net. If you no longer wish to receive th=
+ese emails you may unsubscribe here: https://go.digitalocean.com/Unsubscrib=
+ePage.html?mkt_unsubscribe=3D1&mkt_tok=3DeyJpIjoiTnpRME5HWmlabVk1WldRNCIsIn=
+QiOiJoR3NNdVlZREZzTXluMmx3M2pwS0xpMXN6Rkp4emxHL3NTemhHUjZ5KzFPU0NENEM0L2xaO=
+G1GenBaZklOWENZbkNkY2FyRFY1TThEaGpJM0hxY2ljY214ZXFGODVrbWRyOFd2aDA2VDduVzlW=
+blpRU25EUnpabTZ4VGJTYTdrNSJ9.
+
+------=_Part_451812508_448370282.1529605856410
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>=20
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />=
+=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width" />=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />=20
+<title>DigitalOcean</title>=20
+<style type=3D"text/css">
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none; bac=
+kground-color: #F7F7F7; -webkit-font-smoothing: antialiased; -moz-osx-font-=
+smoothing: grayscale; margin:0;padding:0;}
+        table td {border-collapse: collapse;}
+        table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt;}
+        p {margin:0; padding:0; margin-bottom:0;}
+        /*ul,
+        li {margin:0;padding:0;}*/
+        h1,h2,h3,h4,h5,h6 {margin:0;padding:0;}
+
+        body,
+        #body_style {background-color: #F7F7F7; width: 100%; min-width: 100=
+%!important;}
+       =20
+        a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+        }
+
+        .content a,
+        .content a:link,
+        .content a:visited,
+        .content a:active {color: #0080ff; text-decoration:none;}
+
+        @media only screen and (max-width: 600px) {
+            body {min-width: 100%!important;}
+            table[class~=3D"button"] {width:100% !important;}
+            p {padding-left:0; padding-right:0!important;}
+            table[class=3D"devicewidth"] {width: 100%!important; text-align=
+:center!important;}
+            table[class~=3D"tableCollapse"] {width: 100%!important;}
+            table[class~=3D"tableCollapse2"] {width: 95%!important;}
+            td[class~=3D"w22"] {width:21px!important;}
+            td[class~=3D"h26"] {height:21px!important;}
+            td[class~=3D"h20"] {height:20px!important;}
+            td[class~=3D"h24"] {height:30px!important;}
+            td[class~=3D"H29"] {height:29px!important;}
+            td[class~=3D"headline"] {font-size:30px!important; line-height:=
+ 35px!important;}
+            td[class~=3D"content"] {font-size:18px!important; line-height: =
+26.1px!important;}
+            td[class~=3D"footer"] {font-size:14px!important; line-height:16=
+px!important;}
+            td[class~=3D"footer2"] {font-size:14px!important; line-height:3=
+5px!important; padding-left:50px; padding-right:50px; }
+            a[class~=3D"mobButton"] {font-size:18px!important;}
+        }
+</style>=20
+<!--[if mso]>
+    <style>
+    * {
+      font-family: Calibri, Helvetica, sans-serif !important;
+    }
+    </style>
+    <![endif]-->=20
+<!--[if !mso]><!-->=20
+<style type=3D"text/css">
+
+                @font-face {
+                            font-family: 'Proxima Nova';
+                            src: url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.eot');
+                            src: url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.woff') format('woff'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.ttf') format('truetype'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.svg#ProximaNovaLight') format('svg');
+                            font-weight: normal;
+                            font-style: normal;
+
+                        }
+                @font-face {
+                            font-family: 'Proxima Nova';
+                            src: url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.eot');
+                            src: url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.woff') format('woff'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.ttf') format('truetype'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.svg#ProximaNovaLight') format('svg');
+                            font-weight: 100;
+                            font-style: normal;
+
+                        }
+</style>=20
+<!--<![endif]-->=20
+</head>=20
+<body bgcolor=3D"#F7F7F7" style=3D"">=20
+<div id=3D"body_style" style=3D"background-color:#F7F7F7; ">=20
+<table width=3D"100%" bgcolor=3D"#F7F7F7" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0" style=3D"text-align:center; ">=20
+<tbody>=20
+<tr style=3D"">=20
+<td style=3D"">=20
+<table bgcolor=3D"#F7F7F7" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"600" class=3D"tableCollapse2" align=3D"center" style=3D"margin:0p=
+x auto; ">=20
+<!-- Start Pre Header -->=20
+<tbody>=20
+<tr style=3D"">=20
+<td bgcolor=3D"#F7F7F7" align=3D"center" style=3D"">=20
+<table width=3D"100%" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0" class=3D"devicewidth" style=3D"">=20
+<tbody>=20
+<tr style=3D"">=20
+<td width=3D"100%" align=3D"center" height=3D"1" style=3D"font-size:1px; li=
+ne-height:1px; ">=20
+<div class=3D"mktEditable" id=3D"Preview-Text" style=3D"display:none; font-=
+size:1px; color:#F7F7F7; line-height:1px; max-height:0px; max-width:0px; op=
+acity:0; overflow:hidden; ">
+<p style=3D"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span =
+style=3D"font-size: 11pt; font-family: Arial; color: #000000; background-co=
+lor: transparent; font-weight: 400; font-variant: normal; text-decoration: =
+none; vertical-align: baseline; white-space: pre-wrap;">Deploying multi-reg=
+ion Docker registries, get Bash-full with us, and feeling electronic skins.=
+</span></p>
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<!-- End Pre Header -->=20
+<!-- *************************** -->=20
+<!-- Start Header Links -->=20
+<tr>=20
+<td bgcolor=3D"#F7F7F7" align=3D"right" valign=3D"top">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alig=
+n=3D"right" class=3D"tableCollapse">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" width=3D"100%">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"devicewidth" align=3D"right">=20
+<tbody>=20
+<tr>=20
+<td class=3D"H29" height=3D"39" style=3D"font-size:1px; line-height:1px;">&=
+nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<!-- End Header Links -->=20
+<!-- *************************** -->=20
+<!-- Start of Logo-->=20
+<tr style=3D"">=20
+<td align=3D"center" valign=3D"top" style=3D"">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alig=
+n=3D"center" class=3D"tableCollapse" style=3D"">=20
+<tbody style=3D"">=20
+<tr style=3D"">=20
+<td valign=3D"top" width=3D"100%" style=3D"">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"devicewidth" align=3D"center" style=3D"">=20
+<tbody>=20
+<tr style=3D"">=20
+<td align=3D"center" class=3D"mktEditable" id=3D"Top-Banner" style=3D"">
+<div>=20
+<img width=3D"60" border=3D"0" alt=3D"DigitalOcean Logo" style=3D"display: =
+block; border: none; outline: none; text-decoration: none;" src=3D"https://=
+go.digitalocean.com/rs/937-EID-756/images/logo2.png" />=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#F7F7F7" height=3D"40" style=3D"font-size:1px; line-height:1=
+px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<!-- End of Logo -->=20
+<!-- *************************** -->=20
+<!-- Start of Main Title -->=20
+<tr style=3D"">=20
+<td align=3D"center" style=3D"">=20
+<table width=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" class=3D"devicewidth" style=3D"">=20
+<tbody style=3D"">=20
+<tr style=3D"">=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td class=3D"mktEditable headline" id=3D"headline_text" style=3D"font-famil=
+y:'Proxima Nova', Calibri, Helvetica, sans-serif; font-size:36px; color:#44=
+4444; text-align:center; line-height:55px; font-weight:100; ">
+<div>
+ Infrastructure as a Newsletter=20
+</div></td>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+</tr>=20
+<!-- Start Spacer -->=20
+<tr>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td height=3D"50" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<!-- End of Main Title-->=20
+<!-- *************************** -->=20
+<!-- Start of Hero Banner -->=20
+<tr style=3D"">=20
+<td bgcolor=3D"#FFFFFF" align=3D"center" valign=3D"top" style=3D"">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alig=
+n=3D"center" class=3D"tableCollapse" style=3D"">=20
+<tbody>=20
+<tr style=3D"">=20
+<td valign=3D"top" width=3D"100%" style=3D"">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"devicewidth" align=3D"center" style=3D"">=20
+<tbody>=20
+<tr style=3D"">=20
+<td align=3D"center" class=3D"mktEditable" id=3D"headline_image" style=3D"f=
+ont-size:1px; line-height:1px; ">
+<div>=20
+<img width=3D"100%" border=3D"0" alt=3D"Hero Banner" style=3D"display: bloc=
+k; border: none; outline: none; text-decoration: none; width: 100%!importan=
+t; height: auto!important;" src=3D"https://assets.digitalocean.com/email/ia=
+an/IN_header.gif?1" />=20
+</div></td>=20
+</tr>=20
+<!-- Start Spacer -->=20
+<tr>=20
+<td class=3D"h26" height=3D"36" style=3D"font-size:1px; line-height:1px;">&=
+nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<!-- End of Hero Banner-->=20
+<!-- Start of Main Content -->=20
+<tr style=3D"">=20
+<td bgcolor=3D"#FFFFFF" align=3D"center" style=3D"">=20
+<table width=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" class=3D"devicewidth" style=3D"">=20
+<tbody style=3D"">=20
+<tr style=3D"">=20
+<td class=3D"w22" width=3D"41" style=3D"font-size:1px; line-height:1px;">&n=
+bsp;</td>=20
+<td class=3D"mktEditable content" id=3D"edit_text_1" style=3D"font-family:'=
+Proxima Nova', Calibri, Helvetica, sans-serif; font-size:16px; color:#50505=
+0; text-align:left; line-height:25.6px; font-weight:normal; text-transform:=
+none; "><p>Your biweekly tech roundup from DigitalOcean. Have ideas for fut=
+ure issues? Reply to this email with article suggestions or feedback!<br />=
+</p>=20
+<hr /> <p><span style=3D"color: #101d69; font-size: 25px; font-weight: 100;=
+ font-family: 'Proxima Nova Light', 'Open Sans', 'Helvetica Neue', Calibri,=
+ Helvetica, sans-serif;"><br />Fresh off the Press:</span></p> <p><br />Her=
+e are the featured picks from our <a href=3D
+"http://pages.news.digitalocean.com/n/O0v0PTjD0300XE6t0f0V97I" target=3D"_b=
+lank" class=3D"mktNoTok"
+>blog</a> and <a href=3D
+"http://pages.news.digitalocean.com/n/a0300609jE0700gDuIXvTPV" target=3D"_b=
+lank" class=3D"mktNoTok"
+>growing library of tutorials</a>.<br /></p>=20
+<ul>=20
+<li>Here=E2=80=99s how to <a href=3D
+"http://pages.news.digitalocean.com/n/b0000VI6vEv0DP9h030j7TX" target=3D"_b=
+lank" class=3D"mktNoTok"
+>verify code and encrypt data with <strong>Python-GnuPG and Python 3</stron=
+g></a></li>=20
+</ul>=20
+<ul>=20
+<li>Here=E2=80=99s how to <a href=3D
+"http://pages.news.digitalocean.com/n/h6P9wTI00E000jVvX030Di7" target=3D"_b=
+lank" class=3D"mktNoTok"
+>install <strong>MongoDB on Ubuntu 18.04</strong></a></li>=20
+</ul>=20
+<ul>=20
+<li>Here=E2=80=99s how we <a href=3D
+"http://pages.news.digitalocean.com/n/n0EP0xj03jX60DI07900VvT" target=3D"_b=
+lank" class=3D"mktNoTok"
+>deployed a <strong>multi-region Docker registry</strong> to improve perfor=
+mance</a></li>=20
+</ul>=20
+<hr /> <p><br /></p> <p><span style=3D"color: #101d69; font-size: 25px; fon=
+t-weight: 100; font-family: 'Proxima Nova Light', 'Open Sans', 'Helvetica N=
+eue', Calibri, Helvetica, sans-serif;">Open Source Highlights:</span></p> <=
+p><br />This week we go all-in for the <strong>Unix shell and command langu=
+age <a href=3D
+"http://pages.news.digitalocean.com/n/v0T70Xvy0V6DEPk9I03j000" target=3D"_b=
+lank" class=3D"mktNoTok"
+>Bash</a></strong>.</p>=20
+<ul>=20
+<li>Check out Google=E2=80=99s Bash <a href=3D
+"http://pages.news.digitalocean.com/n/dV06P9zXvj0D700ITl030E0" target=3D"_b=
+lank" class=3D"mktNoTok"
+>style guide</a></li>=20
+</ul>=20
+<ul>=20
+<li>Learn ways to <a href=3D
+"http://pages.news.digitalocean.com/n/JI36Ej0A9D0Xmv70VP000T0" target=3D"_b=
+lank" class=3D"mktNoTok"
+>do things safely in Bash</a></li>=20
+</ul>=20
+<ul>=20
+<li>And here are some <a href=3D
+"http://pages.news.digitalocean.com/n/s0Bv06907IXn0E0jTP30V0D" target=3D"_b=
+lank" class=3D"mktNoTok"
+>common errors that Bash programmers make</a></li>=20
+</ul>=20
+<ul>=20
+<li>As a bonus, here=E2=80=99s a <a href=3D
+"http://pages.news.digitalocean.com/n/MX0D0j07EvT9V00o60PI0C3" target=3D"_b=
+lank" class=3D"mktNoTok"
+>fun graphic sharing some Bash tricks</a></li>=20
+</ul>=20
+<hr /> <p><br /></p> <p><span style=3D"color: #101d69; font-size: 25px; fon=
+t-weight: 100; font-family: 'Proxima Nova Light', 'Open Sans', 'Helvetica N=
+eue', Calibri, Helvetica, sans-serif;">News:</span></p>=20
+<ul>=20
+<li>A team of engineers has created an <a href=3D
+"http://pages.news.digitalocean.com/n/R006T79IjV0030P0EDDvpX0" target=3D"_b=
+lank" class=3D"mktNoTok"
+><strong>electronic skin</strong> that, when layered on top of prosthetic h=
+ands, brings back for amputees a real sense of touch</a></li>=20
+<li>Meanwhile, in the UK, <a href=3D
+"http://pages.news.digitalocean.com/n/f00vV0607E009I3jEXDqP0T" target=3D"_b=
+lank" class=3D"mktNoTok"
+>astronauts are showcasing <strong>methods to clean up space junk</strong><=
+/a>, with an estimated 7,500 tonnes orbiting our planet</li>=20
+<li>Lastly, <strong>think eight hours of sleep are enough</strong>? <a href=
+=3D
+"http://pages.news.digitalocean.com/n/G9I0Dv307rTFE0V60000PXj" target=3D"_b=
+lank" class=3D"mktNoTok"
+>Probably not, says a leading sleep scientist.</a> If you want more, try a =
+cold, quiet environment with no light</li>=20
+</ul>=20
+<hr /> <p style=3D"color: #505050; font-family: 'Proxima Nova', Calibri, He=
+lvetica, sans-serif; font-size: 16px; font-style: normal; font-variant-liga=
+tures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing:=
+ normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: no=
+ne; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-=
+width: 0px; text-decoration-style: initial; text-decoration-color: initial;=
+"><br /></p> <p style=3D"color: #505050; font-family: 'Proxima Nova', Calib=
+ri, Helvetica, sans-serif; font-size: 16px; font-style: normal; font-varian=
+t-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-sp=
+acing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transfo=
+rm: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-s=
+troke-width: 0px; text-decoration-style: initial; text-decoration-color: in=
+itial;"><span style=3D"color: #101d69; font-size: 25px; font-weight: 100; f=
+ont-family: 'Proxima Nova Light', 'Open Sans', 'Helvetica Neue', Calibri, H=
+elvetica, sans-serif;">Book of the Month:</span></p> <p><br />We=E2=80=99re=
+ still reading Andrew Hodges=E2=80=99 acclaimed <strong>biography of comput=
+ing legend Alan Mathison Turing</strong>, titled =E2=80=9C<a href=3D
+"http://pages.news.digitalocean.com/n/O0v0PTjD0300XE6G0s0V97I" target=3D"_b=
+lank" class=3D"mktNoTok"
+>Alan Turing: The Enigma</a>.=E2=80=9D Let us know if you=E2=80=99re readin=
+g it too.</p>=20
+<hr style=3D"cursor: default; color: #505050; font-family: 'Proxima Nova', =
+Calibri, Helvetica, sans-serif; font-size: 16px; font-style: normal; font-v=
+ariant-ligatures: normal; font-variant-caps: normal; font-weight: 400; lett=
+er-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-tr=
+ansform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-t=
+ext-stroke-width: 0px; text-decoration-style: initial; text-decoration-colo=
+r: initial;" /> <p style=3D"color: #505050; font-family: 'Proxima Nova', Ca=
+libri, Helvetica, sans-serif; font-size: 16px; font-style: normal; font-var=
+iant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter=
+-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-tran=
+sform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-tex=
+t-stroke-width: 0px; text-decoration-style: initial; text-decoration-color:=
+ initial;"><br /></p> <p><span style=3D"color: #101d69; font-size: 25px; fo=
+nt-weight: 100; font-family: 'Proxima Nova Light', 'Open Sans', 'Helvetica =
+Neue', Calibri, Helvetica, sans-serif;">Featured&nbsp;@ DigitalOcean:</span=
+><a href=3D
+"http://pages.news.digitalocean.com/n/ZIXTP09tV0000j07H306DEv" target=3D"_b=
+lank" class=3D"mktNoTok"
+><br /></a></p> <p><a href=3D
+"http://pages.news.digitalocean.com/n/P000X0VE6I0PIT0v07uD9j3" target=3D"_b=
+lank" class=3D"mktNoTok"
+><img width=3D"50%" border=3D"0" alt=3D"" style=3D"display: block; border: =
+none; outline: none; text-decoration: none; width: 100%!important; height: =
+auto!important; margin: 20px auto;" src=3D"https://marketing.nyc3.digitaloc=
+eanspaces.com/Newsletter-Images/Elastic-Webinars-IaaN75.png" /></a>We have =
+<strong>a new webinar series on <a href=3D
+"http://pages.news.digitalocean.com/n/P000X0VE6I0PIT0v07uD9j3" target=3D"_b=
+lank" class=3D"mktNoTok"
+>leveraging Elastic stack on DigitalOcean</a></strong>. You=E2=80=99ll lear=
+n about:<br /></p>=20
+<ul>=20
+<li>Searching using Elasticsearch</li>=20
+</ul>=20
+<ul>=20
+<li>Data ingestion using Logstash</li>=20
+</ul>=20
+<ul>=20
+<li>Visualizations &amp; dashboards using Kibana</li>=20
+</ul>=20
+<ul>=20
+<li>Service monitoring using Beats.<br /></li>=20
+</ul> <p>If you miss a session, no worries! All the sessions are recorded a=
+nd available to watch at any time.<br /></p></td>=20
+<td class=3D"w22" width=3D"41" style=3D"font-size:1px; line-height:1px;">&n=
+bsp;</td>=20
+</tr>=20
+<!-- Start Spacer -->=20
+<tr>=20
+<td class=3D"w22" width=3D"41" style=3D"font-size:1px; line-height:1px;">&n=
+bsp;</td>=20
+<td height=3D"30" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td class=3D"w22" width=3D"41" style=3D"font-size:1px; line-height:1px;">&n=
+bsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<!-- End of Main Content -->=20
+<!-- start of Button -->=20
+<tr style=3D"">=20
+<td bgcolor=3D"#FFFFFF" align=3D"center" class=3D"mktEditable" id=3D"edit_c=
+ta_button" style=3D"">
+<div></div></td>=20
+</tr>=20
+<!-- end of Button -->=20
+<!-- Start of Main Content -->=20
+<tr style=3D"">=20
+<td bgcolor=3D"#FFFFFF" align=3D"center" style=3D"">=20
+<table width=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" class=3D"devicewidth" style=3D"">=20
+<tbody style=3D"">=20
+<tr style=3D"">=20
+<td class=3D"w22" width=3D"41" style=3D"font-size:1px; line-height:1px;">&n=
+bsp;</td>=20
+<td class=3D"mktEditable content" id=3D"edit_signature" style=3D"font-famil=
+y:'Proxima Nova', Calibri, Helvetica, sans-serif; font-size:16px; color:#50=
+5050; text-align:left; line-height:25.6px; font-weight:normal; text-transfo=
+rm:none; "><p class=3D"align-center mtb"><img src=3D"https://assets.digital=
+ocean.com/email/iaan/IN_signature.png" style=3D"display: block; margin-left=
+: auto; margin-right: auto;" /></p></td>=20
+<td class=3D"w22" width=3D"41" style=3D"font-size:1px; line-height:1px;">&n=
+bsp;</td>=20
+</tr>=20
+<!-- Start Spacer -->=20
+<tr>=20
+<td class=3D"w22" width=3D"41" style=3D"font-size:1px; line-height:1px;">&n=
+bsp;</td>=20
+<td class=3D"h20" height=3D"41" style=3D"font-size:1px; line-height:1px;">&=
+nbsp;</td>=20
+<td class=3D"w22" width=3D"41" style=3D"font-size:1px; line-height:1px;">&n=
+bsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<!-- End of Main Content -->=20
+<!-- *************************** -->=20
+<!-- Start of Footer -->=20
+<tr style=3D"">=20
+<td bgcolor=3D"#F7F7F7" align=3D"center" style=3D"">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alig=
+n=3D"center" class=3D"devicewidth" style=3D"">=20
+<tbody>=20
+<tr style=3D"">=20
+<td align=3D"center" style=3D"">=20
+<table width=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" class=3D"devicewidth" style=3D"">=20
+<!-- Start Spacer -->=20
+<tbody>=20
+<tr>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td class=3D"h24" height=3D"40" style=3D"font-size:1px; line-height:1px;">&=
+nbsp;</td>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+<!-- Start of Footer Links -->=20
+<tr style=3D"">=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td class=3D"mktEditable footer2" id=3D"edit_text_2" style=3D"font-family:'=
+Proxima Nova', Calibri, Helvetica, sans-serif; font-size:12px; color:#80808=
+0; font-weight:normal; text-align:center; line-height:150%; ">
+<div>=20
+<span style=3D"color: #606060; text-decoration: underline;"><a href=3D
+"http://pages.news.digitalocean.com/n/ZIXTP09vV0000j07J306DEv" style=3D"col=
+or: #606060; text-decoration: underline;" target=3D"_blank" class=3D"mktNoT=
+ok"
+> Follow us on Twitter for more content</a></span>&nbsp;&nbsp;=20
+<span style=3D"color: #606060; text-decoration: underline;"><a href=3D
+"http://pages.news.digitalocean.com/n/v0T70XvK0V6DEPw9I03j000" style=3D"col=
+or: #606060; text-decoration: underline;" target=3D"_blank" class=3D"mktNoT=
+ok"
+>Sign up for DO</a></span>=20
+</div>=20
+<div>=20
+<span color=3D"#606060" style=3D"color: #606060;">Trouble seeing this email=
+? <a href=3D"https://go.digitalocean.com/index.php/email/emailWebview?mkt_t=
+ok=3DeyJpIjoiTnpRME5HWmlabVk1WldRNCIsInQiOiJoR3NNdVlZREZzTXluMmx3M2pwS0xpMX=
+N6Rkp4emxHL3NTemhHUjZ5KzFPU0NENEM0L2xaOG1GenBaZklOWENZbkNkY2FyRFY1TThEaGpJM=
+0hxY2ljY214ZXFGODVrbWRyOFd2aDA2VDduVzlWblpRU25EUnpabTZ4VGJTYTdrNSJ9" style=
+=3D"color: #606060; text-decoration: underline;" target=3D"_blank" class=3D=
+"mktNoTok">View it as a web page.</a></span>=20
+</div></td>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+</tr>=20
+<!-- Start Spacer -->=20
+<tr>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td height=3D"20" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+<!-- End of Footer Links -->=20
+<!-- Start of Copyright/Address/All Right Reserved -->=20
+<tr style=3D"">=20
+<td width=3D"25" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td class=3D"mktEditable footer" id=3D"edit_text_3" style=3D"font-family:'P=
+roxima Nova', Calibri, Helvetica, sans-serif; font-size:12px; color:#808080=
+; font-weight:normal; text-align:center; line-height:150%; ">
+<div>=20
+<em>Copyright =C2=A9 2018 DigitalOcean<br /> Floor 10, 101 Avenue of the Am=
+ericas, New York, NY, 10013<br /> All rights reserved.</em>=20
+</div></td>=20
+<td width=3D"25" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+</tr>=20
+<!-- Start Spacer -->=20
+<tr>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td height=3D"20" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+<td width=3D"41" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+<!-- End of Copyright/Address/All Right Reserved -->=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<!-- End of Footer -->=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div> =20
+<a href=3D
+"http://pages.news.digitalocean.com/NI00LEjV0009PvD0xXT0736"
+></a>
+<img src=3D"http://pages.news.digitalocean.com/trk?t=3D1&mid=3DOTM3LUVJRC03=
+NTY6Mzk1OTo1NTQwOjIzMTY5OjA6NzA5Mjo5OjkyMDY6MTMxODE1NjE6YmVuQGJlbmNvZGUubmV=
+0" width=3D"1" height=3D"1" style=3D"display:none !important;" alt=3D"" />
+
+<p style=3D"text-align:center"><font face=3D"'Proxima Nova', 'Open Sans', '=
+Helvetica Neue', Calibri, Helvetica, sans-serif" size=3D"1">
+This email was sent to ben@bencode.net. If you no longer wish to receive th=
+ese emails you may <a href=3D
+"http://pages.news.digitalocean.com/u/x0E0000v3M906XI0yVTP7Dj"
+>unsubscribe</a> at any time.=20
+</font> </p>
+</body>
+</html>
+------=_Part_451812508_448370282.1529605856410--
