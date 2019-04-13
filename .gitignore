@@ -2,4 +2,5 @@ mutt/.mutt/cache
 mutt/.mutt/certifcates
 vim/bundle
 vim/plugged
+*.uuid
 

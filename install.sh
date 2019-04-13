@@ -92,8 +92,15 @@ replace_file_with_symlink ~/dotfiles/i3 ~/.config/i3
 replace_file_with_symlink ~/dotfiles/i3status ~/.config/i3status
 
 
+# gtk
+replace_file_with_symlink ~/dotfiles/gtk/gtkrc-2.0 ~/.gtkrc-2.0
+
 
 # mpd
+replace_file_with_symlink ~/dotfiles/mpd ~/.config/mpd
+replace_file_with_symlink ~/dotfiles/ncmpcpp ~/.config/ncmpcpp
+
+
 
 
 
