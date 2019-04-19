@@ -2,5 +2,12 @@ mutt/.mutt/cache
 mutt/.mutt/certifcates
 vim/bundle
 vim/plugged
+vim/.netrwhist
+
 *.uuid
+fonts/.uuid
+mpd/database
+mpd/log
+mpd/pid
+mpd/state
 

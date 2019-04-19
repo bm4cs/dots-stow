@@ -5,7 +5,6 @@ for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 10
 set $term --no-startup-id urxvt
-set $mod Mod4
 set $stoprec --no-startup-id dmenurecord kill
 set $shutdown sudo -A shutdown -h now
 set $reboot sudo -A reboot
@@ -20,6 +19,8 @@ set $hibernate sudo -A systemctl suspend
 exec_always --no-startup-id xrdb -load ~/.Xresources
 # set wallpaper
 exec_always --no-startup-id feh --bg-scale /home/ben/Pictures/Wallpapers/nature3.jpg
+# gtk theme
+#exec_always --no-startup-id gnome-settings-daemon
 # music player daemon
 exec --no-startup-id mpd
 
@@ -28,7 +29,7 @@ exec --no-startup-id mpd
 
 
 # font for window titles, and bar
-font pango:SFNS Display 8
+font pango:Noto Sans 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -168,3 +169,8 @@ bar {
         position top
         status_command i3status --config ~/.config/i3status/config
 }
+
+# custom shortcuts
+bindsym Print       exec --no-startup-id maim pic-full-"$(date '+%y%m%d-%H%M-%S').png"
+bindsym Shift+Print exec --no-startup-id maimpick
+
