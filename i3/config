@@ -29,7 +29,8 @@ exec --no-startup-id mpd
 
 
 # font for window titles, and bar
-font pango:Noto Sans 9
+font pango:SauceCodePro Nerd Font 9
+#, Font Awesome 5 Free Regular 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

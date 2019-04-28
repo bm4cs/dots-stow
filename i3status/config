@@ -46,7 +46,7 @@ volume master {
     device = "default"
     mixer_idx = "0"
     mixer = "Master"
-    format = "♪: %volume"
+    format = "♪ %volume"
 }
 
 disk / {
@@ -69,7 +69,7 @@ run_watch DHCP {
 }
 
 time {
-    format = "%A %-d %b %H:%M"
+    format = "%A %-d %b %H:%M "
 }
 
 order += "disk /home"

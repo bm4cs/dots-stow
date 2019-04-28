@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Author: bm4cs
-# Purpose: To symlink in the `dotfiles` repo.
+# Purpose: To symlink in various configuration files.
 #          Run as `./install.sh override` or `./install.sh`
 #          Optional `override` will replace existing symlinks
 
 
 # for coloring messages
-# echo "${red}red text ${green}green text${reset}"
+# usage: `echo "${red}red text ${green}green text${reset}"`
 red=`tput setaf 1`
 green=`tput setaf 2`
 yellow=`tput setaf 3`
@@ -71,10 +71,11 @@ if [[ ! -d "~/.oh-my-zsh" ]]; then sh -c "$(curl -fsSL https://raw.githubusercon
 
 
 echo "${cyan}setting up vim${reset}"
-replace_file_with_symlink ~/dotfiles/vim/vimrc ~/.vimrc 
+replace_file_with_symlink ~/dotfiles/neovim/init.vim ~/.vimrc 
 replace_file_with_symlink ~/dotfiles/vim ~/.vim
+replace_file_with_symlink ~/dotfiles/vim ~/.local/share/nvim/site
 replace_file_with_symlink ~/dotfiles/neovim/init.vim ~/.config/nvim/init.vim
-replace_file_with_symlink ~/dotfiles/vim/autoload ~/.local/share/nvim/site/autoload
+replace_file_with_symlink ~/dotfiles/neovim/coc-settings.json ~/.config/nvim/coc-settings.json
 # ycm needs vim python integration, install this with `pip install neovim`
 echo "${green}done${reset}"
 
