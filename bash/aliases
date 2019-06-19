@@ -1,6 +1,25 @@
-alias ls="ls --color=auto"
-alias ll="ls -lah"
-alias l.="ls -d .* --color=auto"
-alias g=git
-alias vim="nvim"
-alias vimdiff="nvim -d"
+#!/bin/sh
+
+alias ka="killall" \
+	mkd="mkdir -pv" \
+	calcurse="calcurse -D ~/.config/calcurse" \
+	magit="nvim -c MagitOnly" \
+	p="sudo pacman" \
+	SS="sudo systemctl" \
+	f="$FILE" \
+	g="git" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	x="sxiv -ft *" \
+	gua="git remote | xargs -L1 git push --all" \
+	ls="ls -hN --color=auto --group-directories-first" \
+	ll="ls -lah" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	yt="youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'" \
+	yta="yt -x -f bestaudio/best" \
+	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
+	ffmpeg="ffmpeg -hide_banner" \
+	vim="nvim" \
+	vimdiff="nvim -d"
+

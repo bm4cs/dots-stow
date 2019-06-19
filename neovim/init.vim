@@ -3,19 +3,11 @@
 " See :options for further details.
 
 
-"set runtimepath^=~/.vim runtimepath+=~/.vim/after
-"let &packpath = &runtimepath
-"source ~/.vimrc
 
 
 
 
-
-" Package management with Vundle
-" Just git clone packages into ~/.vim/bundles
-set nocompatible
-filetype off
-
+" load plugins with vimplug
 call plug#begin('~/.vim/plugged')
 
 " File explorer
@@ -30,7 +22,7 @@ Plug 'easymotion/vim-easymotion'
 " status line
 Plug 'vim-airline/vim-airline'
 
-" enable git changes to be shown in sign column
+" show git changes in left gutter
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 
@@ -49,7 +41,7 @@ Plug 'mzlogin/vim-markdown-toc'
 " code formatter
 "Plugin 'prettier/vim-prettier'
 
-" align things nicely
+" shorthand notation
 Plug 'junegunn/vim-easy-align'
 
 " intellisense engine
@@ -69,6 +61,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 call plug#end()
 
 
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -84,7 +78,7 @@ set cursorline "highlight the screen line of the cursor (local to window)
 set encoding=utf-8 "character encoding to be used in Vim
 set fileencoding=utf-8 "character encoding to be used by current file
 set gdefault "use the 'g' (global) flag for :substitute by default
-set hlsearch "highlight search results
+set nohlsearch "highlight search results
 set hidden "don't unload a buffer when no longer shown in a window
 set ignorecase "ignore case when searching
 set incsearch "show match for partly typed search command
@@ -113,10 +107,10 @@ set wildignore+=*~,*.swp,*.tmp
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text, tab and indents
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-set expandtab "expand <Tab> to spaces in Insert mode
-set tabstop=2 "number of spaces a <Tab> in the text stands for
-set softtabstop=2 "number of spaces to insert for a <Tab>
-set shiftwidth=2 "number of spaces used for each step of (auto)indent
+"set expandtab "expand <Tab> to spaces in Insert mode
+set tabstop=4 "number of spaces a <Tab> in the text stands for
+set softtabstop=4 "number of spaces to insert for a <Tab>
+set shiftwidth=4 "number of spaces used for each step of (auto)indent
 set autoindent "automatically set the indent of a new line
 set smartindent "do clever autoindenting
 set wrap "wrap long lines
@@ -141,7 +135,7 @@ set nowb "don't write a backup file before overwriting a file
 
 "set termguicolors "enable true color
 syntax enable "syntax highlighting
-colorscheme monokai "default color scheme
+colorscheme OceanicNext "monokai "default color scheme
 set t_Co=256 "the number of colors the terminal supports
 let $TERM="xterm-256color"
 "set term=screen-256color "what terminal type to use "neovim choked on this
@@ -207,9 +201,6 @@ noremap - <PageUp>
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
-
 " === Denite setup ==="
 " Use ripgrep for searching current directory for files
 " By default, ripgrep will respect rules in .gitignore
@@ -240,15 +231,6 @@ call denite#custom#var('grep', 'final_opts', [])
 " Remove date from buffer list
 call denite#custom#var('buffer', 'date_format', '')
 
-" Custom options for Denite:
-"   auto_resize             - Auto resize the Denite window height automatically.
-"   prompt                  - Customize denite prompt
-"   direction               - Specify Denite window direction as directly below current pane
-"   winminheight            - Specify min height for Denite window
-"   highlight_mode_insert   - Specify h1-CursorLine in insert mode
-"   prompt_highlight        - Specify color of prompt
-"   highlight_matched_char  - Matched characters highlight
-"   highlight_matched_range - matched range highlight
 let s:denite_options = {'default' : {
 \ 'auto_resize': 1,
 \ 'prompt': 'λ:',
@@ -278,7 +260,7 @@ endtry
 
 
 
-" === Coc.nvim === "
+" === coc.nvim === "
 " use <tab> for trigger completion and navigate to next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -297,7 +279,7 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 
 
-" === NERDTree === "
+" === nerdtree === "
 let g:NERDTreeShowHidden = 1 "hidden files
 let g:NERDTreeMinimalUI = 1 " remove bookmarks and help text
 "let g:NERDTreeDirArrowExpandable = '⬏' "custom icons for expandable
@@ -307,7 +289,7 @@ let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir
 
 
 
-" === Vim airline ==== "
+" === vim airline ==== "
 try
 
 " Enable extensions
@@ -363,22 +345,21 @@ endtry
 
 
 
-
 " === vim-go ==="
 " use gopls (googles lang server protocol plugin)
 let g:go_def_mode='gopls'
 
 
-" === YouCompleteMe ==="
-"let ycm_trigger_key = '<C-n>' " use semantic completion only on ctrl+n
-"let g:ycm_auto_trigger = 0 "disable auto triggering suggestions pane
-"let g:ycm_key_invoke_completion = ycm_trigger_key
+
+
+
+" References
 "
-"" this is some arcane magic to allow cycling through the YCM options
-"" with the same key that opened it.
-"let g:ycm_key_list_select_completion = ['<TAB>', '<C-j>']
-"inoremap <expr> ycm_trigger_key pumvisible() ? "<C-j>" : ycm_trigger_key;
-
-
-
-
+" A guide to modern Web Development with (Neo)vim
+" https://medium.freecodecamp.org/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2
+"
+" How I revamped my Vim setup
+" https://alex.dzyoba.com/blog/vim-revamp/
+" 
+" How I'm still not using GUIs in 2019: A guide to the terminal
+" https://lucasfcosta.com/2019/02/10/terminal-guide-2019.html

@@ -4,7 +4,7 @@ set $mod Mod4
 for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 10
-set $term --no-startup-id urxvt
+set $term --no-startup-id $TERMINAL
 set $stoprec --no-startup-id dmenurecord kill
 set $shutdown sudo -A shutdown -h now
 set $reboot sudo -A reboot
