@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+date +"%H:%M %a %d %b"
+
+echo "
+Memory use:";free -h | awk '/^Mem:/ {print $3 "/" $2}'
+#echo "
+#Top users:"; ps axch -o cmd,%mem --sort=-%mem | head
+echo "
+CPU Temp:";sensors | awk '/^Core 0:/ {print $3}'
+echo " "
+
