@@ -1,25 +1,22 @@
 #!/bin/sh
 
-alias ka="killall" \
-	mkd="mkdir -pv" \
-	calcurse="calcurse -D ~/.config/calcurse" \
-	magit="nvim -c MagitOnly" \
-	p="sudo pacman" \
-	SS="sudo systemctl" \
-	f="$FILE" \
-	g="git" \
-	e="$EDITOR" \
-	v="$EDITOR" \
-	x="sxiv -ft *" \
-	gua="git remote | xargs -L1 git push --all" \
-	ls="ls -hN --color=auto --group-directories-first" \
-	ll="ls -lah" \
-	grep="grep --color=auto" \
-	diff="diff --color=auto" \
-	yt="youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'" \
-	yta="yt -x -f bestaudio/best" \
-	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
-	ffmpeg="ffmpeg -hide_banner" \
-	vim="nvim" \
-	vimdiff="nvim -d"
+alias ka="killall"
+alias mkd="mkdir -pv"
+alias calcurse="calcurse -D ~/.config/calcurse"
+alias p="sudo pacman"
+alias s="sudo systemctl"
+alias f="$FILE"
+alias g="git"
+alias e="$EDITOR"
+alias v="$EDITOR"
+alias x="sxiv -ft *"
+alias ls="ls -hN --color=auto --group-directories-first"
+alias ll="ls -lah"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias rank='sudo reflector --verbose -l 200 -p http --sort rate --save /etc/pacman.d/mirrorlist'
+alias yt="youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'"
+alias yta="yt -x -f bestaudio/best"
+alias vim="nvim"
+alias vimdiff="nvim -d"
 

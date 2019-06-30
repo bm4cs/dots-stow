@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+~/opt/GoLand-2019.1.3/bin/goland.sh
+

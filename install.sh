@@ -151,7 +151,6 @@ echo "${green}done${reset}"
 
 # setup handy scripts in ~/bin, this is PATHed by .profile
 echo "setting up ${magenta}handy scripts${reset}"
-if [[ ! -d "~/bin" ]]; then mkdir -p ~/bin; fi
-replace_file_with_symlink ~/dotfiles/scripts/maimpick ~/bin/maimpick
+replace_file_with_symlink ~/dotfiles/bin ~/bin
 echo "${green}done${reset}"
 

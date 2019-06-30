@@ -1,2 +1,2 @@
-exec i3
+exec dwm
 xrdb -merge ~/.Xresources &
