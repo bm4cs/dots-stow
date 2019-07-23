@@ -1,0 +1,4 @@
+defaults.bluealsa.service "org.bluealsa"
+defaults.bluealsa.device "C0:28:8D:71:18:D6"
+defaults.bluealsa.profile "a2dp"
+defaults.bluealsa.delay 10000

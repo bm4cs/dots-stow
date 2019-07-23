@@ -130,6 +130,9 @@ replace_file_with_symlink ~/dotfiles/mpd ~/.config/mpd
 replace_file_with_symlink ~/dotfiles/ncmpcpp ~/.config/ncmpcpp
 echo "${green}done${reset}"
 
+echo "${cyan}setting up alsa${reset}"
+replace_file_with_symlink ~/dotfiles/alsa/asoundrc ~/.asoundrc
+echo "${green}done${reset}"
 
 # zsh custom
 if [[ ! -f ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme ]]; then
