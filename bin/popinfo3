@@ -1,7 +1,0 @@
-#!/bin/sh
-
-FG='yellow'
-BG='#1a1a1a'
-FONT='-*-Courier-*-r-normal-*-*-120-*-*-*-*-iso8859-*'
-conky | dzen2 -e 'onstart=uncollapse' -p 6 -x 1500 -y 600 -w 420 -fg $FG -bg $BG -fn $FONT -u -ta c -sa c -l 10 -h 30 -expand &
-
