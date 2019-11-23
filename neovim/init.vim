@@ -29,8 +29,14 @@ Plug 'tpope/vim-fugitive'
 " auto-close plugin
 Plug 'rstacruz/vim-closer'
 
+" surround things quotes, tags, anything!
 Plug 'tpope/vim-surround'
+
+" lang aware commenter
 Plug 'tpope/vim-commentary'
+
+" TOML syntax support
+Plug 'cespare/vim-toml'
 
 " denite - fuzzy finding, buffer management
 Plug 'shougo/denite.nvim'

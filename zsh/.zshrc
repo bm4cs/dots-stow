@@ -111,4 +111,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+[[ -e ~/.bash_aliases ]] && emulate sh -c 'source ~/.bash_aliases'
 

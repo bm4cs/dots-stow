@@ -157,3 +157,7 @@ echo "setting up ${magenta}handy scripts${reset}"
 replace_file_with_symlink ~/dotfiles/bin ~/bin
 echo "${green}done${reset}"
 
+
+echo "${cyan}setting up conky${reset}"
+replace_file_with_symlink ~/dotfiles/conky/conkyrc ~/.conkyrc
+echo "${green}done${reset}"
