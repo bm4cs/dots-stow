@@ -5,45 +5,6 @@ Xft.rgba:                   rgb
 Xft.hinting:                true
 Xft.hintstyle:              hintslight
 
-
-
-! st (suckless simple terminal)
-st.font: SauceCodePro Nerd Font-10
-
-
-! urxvt
-URxvt*buffered: true
-URxvt*cursorBlink: true
-URxvt*underlineColor: yellow
-URxvt*font: xft:SauceCodePro Nerd Font:size=10
-!URxvt*font: xft:Source\ Code\ Pro\ for\ Powerline:size=11,xft:Sauce\ Code\ Pro\ Nerd\ Font\ Complete\ Mono:size=11,xft:Noto Sans:size=8
-!xft:Hack:size=9:antialias=true, xft:Noto Sans:size=7
-URxvt*letterSpace: 0
-URxvt*depth: 32
-URxvt*borderless: 1
-URxvt*scrollBar: false
-URxvt*loginShell: true
-Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
-URxvt*saveLines: 5000
-URxvt*termName: rxvt-unicode
-URxvt.perl-ext-common: default,matcher,resize-font,url-select
-URxvt.url-launcher: firefox
-URxvt.matcher.button: 1
-
-
-! rebind copy and paste to shift-c shift-v
-! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings
-URxvt.iso14755:        false
-URxvt.iso14755_52:     false
-
-! Disable Ctrl-Alt-c & Ctrl-Alt-v bindings (optional)
-!URxvt.keysym.C-M-c:    builtin-string:
-!URxvt.keysym.C-M-v:    builtin-string:
-
-! Bind Ctrl-Shift-c & Ctrl-Shift-v to copy and paste
-URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
-URxvt.keysym.C-S-0x56: eval:paste_clipboard
-
 ! Base16 OceanicNext
 ! Scheme: https://github.com/voronianski/oceanic-next-color-scheme
 #define base00 #1b2b34

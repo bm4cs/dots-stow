@@ -1,23 +1,14 @@
-# .bashrc
+#!/bin/bash
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+set -o vi #vi mode
+stty -ixon #disable ctrl-s and ctrl-q.
+shopt -s autocd #allows you to cd into directory merely by typing the directory name
+HISTSIZE= HISTFILESIZE= #infinite history
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
+[ -f $HOME/.bash_aliases ] && source $HOME/.bash_aliases
+[ -f /usr/share/autojump/autojump.bash ] && source /usr/share/autojump/autojump.bash
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# User specific aliases and functions
-export GOROOT=/usr/local/go
-export GOPATH=~/code/go
-export PATH=$PATH:$GOROOT/bin:/usr/local/tools/gradle-2.3/bin
+source ~/.profile
 
-alias pbcopy='xel --clipboard --input'
-alias pbpaste='xel --clipboard --output'
-
-export PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/ben/.sdkman"
-[[ -s "/home/ben/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ben/.sdkman/bin/sdkman-init.sh"
