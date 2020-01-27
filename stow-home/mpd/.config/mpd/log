@@ -3253,3 +3253,9 @@ Jan 24 18:48 : exception: OutputThread could not get realtime scheduling, contin
 Jan 27 14:21 : client: [0] opened from [::1]:41096
 Jan 27 14:21 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jan 27 14:22 : client: [0] closed
+Jan 27 14:24 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Jan 27 18:36 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 18:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 19:16 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Jan 27 19:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 19:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
