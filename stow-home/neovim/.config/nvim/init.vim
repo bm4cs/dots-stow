@@ -8,7 +8,7 @@
 
 
 " load plugins with vimplug
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " File explorer
 Plug 'scrooloose/nerdtree'
