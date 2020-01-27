@@ -1,15 +1,16 @@
 
-All my computer configuration to support my computer usage workflows, as a software developer and terminal nerd.
+All my program configuration in one place. This small set of programs is optimised to my computer use workflows, as a software developer, security researcher and terminal nerd.
 
-*Update 2020-01-27*: I've just heavy refactored, replacing much custom bash with GNU stow.
+This repo experienced a major refactoring in late January 2020, large hunks of custom bash and inconsistency file structures have been replaced (and simplified) with GNU stow.
 
 My setup is opionated:
 
 * It's minimalist and elistist.
 * I don't use a desktop environment (DE).
-* I use a tiler (`dwm`).
+* I use a tiler (tiling window manager) called `dwm`.
 * I like suckless programs.
-* I use archlinux.
-* neovim is gods text editor.
-* My key bindings are unusual (thx ErgoDox EZ).
+* I use Arch Linux.
+* Vim keys everywhere.
+* neovim is my editor.
+* Many esoteric key bindings (thx ErgoDox EZ).
 

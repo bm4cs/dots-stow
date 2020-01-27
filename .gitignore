@@ -1,13 +1,10 @@
-mutt/.mutt/cache
-mutt/.mutt/certifcates
-vim/bundle
-vim/plugged
-vim/.netrwhist
+stow-home/neovim/.config/nvim/plugged
+stow-home/neovim/.config/nvim/.netrwhist
 
 *.uuid
 fonts/.uuid
-mpd/database
-mpd/log
-mpd/pid
-mpd/state
+stow-home/mpd/.config/mpd/database
+stow-home/mpd/.config/mpd/mpd/log
+stow-home/mpd/.config/mpd/mpd/pid
+stow-home/mpd/.config/mpd/mpd/state
 

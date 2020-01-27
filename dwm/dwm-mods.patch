@@ -1,0 +1,107 @@
+diff --git a/config.def.h b/config.def.h
+index 1c0b587..197ba13 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -26,15 +26,16 @@ static const Rule rules[] = {
+ 	 *	WM_CLASS(STRING) = instance, class
+ 	 *	WM_NAME(STRING) = title
+ 	 */
+-	/* class      instance    title       tags mask     isfloating   monitor */
+-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
++	/* class         instance       title            tags mask     iscentered     isfloating   monitor */
++	{ "Gimp",        NULL,          NULL,            0,            0,             1,           -1 },
++	{ "Firefox",     NULL,          NULL,            1 << 8,       0,             0,           -1 },
++	{ "st-256color", "st-256color", "pulsemixer",    0,            1,             1,           -1 },
+ };
+ 
+ /* layout(s) */
+-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
++static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
+ static const int nmaster     = 1;    /* number of clients in master area */
+-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
++static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
+ 
+ static const Layout layouts[] = {
+ 	/* symbol     arrange function */
+@@ -44,7 +45,9 @@ static const Layout layouts[] = {
+ };
+ 
+ /* key definitions */
+-#define MODKEY Mod1Mask
++#define MODKEY Mod4Mask //Mod4Mask = windows key
++#define HYPER Mod4Mask|ControlMask|ShiftMask|Mod1Mask
++#define MEH ControlMask|ShiftMask|Mod1Mask
+ #define TAGKEYS(KEY,TAG) \
+ 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+ 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+@@ -55,9 +58,12 @@ static const Layout layouts[] = {
+ #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+ 
+ /* commands */
+-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
+-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+-static const char *termcmd[]  = { "st", NULL };
++static char dmenumon[2]            = "0"; /* component of dmenucmd, manipulated in spawn() */
++static const char *dmenucmd[]      = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
++static const char *pulsemixercmd[] = { "st", "-e", "pulsemixer", NULL };
++static const char *taskmgrcmd[]    = { "st", "-n", "top", "-e", "htop", NULL };
++static const char *termcmd[]       = { "st", NULL };
++static const char *timecmd[]       = { "popinfo2", NULL };
+ 
+ static Key keys[] = {
+ 	/* modifier                     key        function        argument */
+@@ -94,6 +100,12 @@ static Key keys[] = {
+ 	TAGKEYS(                        XK_8,                      7)
+ 	TAGKEYS(                        XK_9,                      8)
+ 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
++
++	/* bens keys */
++
++	{ HYPER,                        XK_i,      spawn,          {.v = pulsemixercmd } },
++	{ HYPER,                        XK_Escape, spawn,          {.v = taskmgrcmd } },
++	{ HYPER,                        XK_Return, spawn,          {.v = timecmd } },
+ };
+ 
+ /* button definitions */
+diff --git a/dwm.c b/dwm.c
+index 4465af1..1dfecc9 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -92,7 +92,7 @@ struct Client {
+ 	int basew, baseh, incw, inch, maxw, maxh, minw, minh;
+ 	int bw, oldbw;
+ 	unsigned int tags;
+-	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
++	int isfixed, iscentered, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
+ 	Client *next;
+ 	Client *snext;
+ 	Monitor *mon;
+@@ -137,6 +137,7 @@ typedef struct {
+ 	const char *instance;
+ 	const char *title;
+ 	unsigned int tags;
++	int iscentered;
+ 	int isfloating;
+ 	int monitor;
+ } Rule;
+@@ -297,6 +298,7 @@ applyrules(Client *c)
+ 		&& (!r->class || strstr(class, r->class))
+ 		&& (!r->instance || strstr(instance, r->instance)))
+ 		{
++			c->iscentered = r->iscentered;
+ 			c->isfloating = r->isfloating;
+ 			c->tags |= r->tags;
+ 			for (m = mons; m && m->num != r->monitor; m = m->next);
+@@ -1049,6 +1051,11 @@ manage(Window w, XWindowAttributes *wa)
+ 		&& (c->x + (c->w / 2) < c->mon->wx + c->mon->ww)) ? bh : c->mon->my);
+ 	c->bw = borderpx;
+ 
++	if(c->iscentered) {
++		c->x = (c->mon->mw - WIDTH(c)) / 2;
++		c->y = (c->mon->mh - HEIGHT(c)) / 2;
++	}
++
+ 	wc.border_width = c->bw;
+ 	XConfigureWindow(dpy, w, CWBorderWidth, &wc);
+ 	XSetWindowBorder(dpy, w, scheme[SchemeNorm][ColBorder].pixel);
