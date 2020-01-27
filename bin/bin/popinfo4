@@ -1,7 +1,0 @@
-#!/bin/sh
-
-FG='#aaaaaa'
-BG='#1a1a1a'
-FONT='-*-fira-sans-*-r-normal-*-*-120-*-*-*-*-iso8859-*'
-echo "$(popinfo)" | dzen2 -p 4 -x 500 -y 300 -w 420 -l 10 -fg $FG -bg $BG -fn $FONT -u -ta c -sa c -expand &
-
