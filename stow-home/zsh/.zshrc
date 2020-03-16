@@ -65,7 +65,10 @@ plugins=(
   git
   fzf
   zsh-autosuggestions
+  colored-man-pages
   #golang
+  archlinux
+  colorize
 )
 
 source $ZSH/oh-my-zsh.sh
