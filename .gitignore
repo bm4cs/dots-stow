@@ -1,4 +1,4 @@
-stow-home/neovim/.config/nvim/plugged
+stow-home/neovim/.config/nvim/plugged/*
 stow-home/neovim/.config/nvim/.netrwhist
 
 *.uuid
