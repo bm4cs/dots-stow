@@ -1,9 +1,8 @@
-sw_volume: 60
+sw_volume: 72
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
-state: pause
-current: 25
-time: 8.082000
+state: stop
+current: 28
 random: 0
 repeat: 0
 single: 0
@@ -38,4 +37,7 @@ playlist_begin
 23:Soundtracks/Hans Zimmer - Blade Runner 2049 (Soundtrack) (2017) (Mp3 320kbps) [Hunter]/Hans Zimmer - Blade Runner 2049 (Original Motion Picture Soundtrack)/16 - One For My Baby (And One More For The Road) (Remastered).mp3
 24:Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 04 - Hold Tight London.mp3
 25:Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3
+26:Electronic/Jerome isamae/2010.mp3
+27:Electronic/Jerome isamae/2011.mp3
+28:Electronic/Jerome isamae/2012 edit.mp3
 playlist_end

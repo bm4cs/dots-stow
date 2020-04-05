@@ -3259,3 +3259,407 @@ Jan 27 18:36 : exception: OutputThread could not get realtime scheduling, contin
 Jan 27 19:16 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
 Jan 27 19:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jan 27 19:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 27 21:53 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Jan 28 18:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 18:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 21:31 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Jan 29 18:30 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 29 18:30 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 29 21:32 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Jan 30 18:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 30 18:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 30 21:17 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Jan 31 19:31 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 31 19:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 02 21:29 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 03 19:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 03 19:08 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 03 21:21 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 04 18:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 04 18:44 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 04 21:57 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 05 20:30 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 05 20:30 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 05 21:12 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 06 18:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 06 18:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 06 21:19 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 07 19:27 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 07 19:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 07 20:19 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 07 20:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 07 20:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 07 22:00 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 08 08:33 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 08 08:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 08 21:54 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 09 12:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 09 12:32 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 09 13:22 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 09 13:23 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 09 13:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 09 21:45 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 10 17:22 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 10 17:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 10 20:50 : player: played "Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3"
+Feb 11 18:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 11 18:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 11 19:37 : client: [0] opened from [::1]:53286
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/05. Cache Money - WOTW.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/08. MODERNS - CKFM.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/11. AMB - Barrel of Belief.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/12. Ill-Esha - Whiplash Recovery (Radio Edit).mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/06. Bil Bless - Wipher Snapher.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/18. Richard Cheese - Let's Lounge.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/03. Mikal kHill & Keyza Soulsay - Get In (feat. Keyza Soulsay).mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/09. Left & Right - Don't Give It Up.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/10. Whitebear - The Beast Within.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/01. Dirtyphonics - Anonymous.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/13. Psymbionic - Short Circuit.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/17. Bassline Drift - Nature.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/14. Mochipet & Mr. Lif & Great Scott - Spark (feat. Mr. Lif) [Great Scott Remix].mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/15. Sulfur & Tribe One - Unrestricted (feat. Tribe One).mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/07. Information Society & Inertia vs. The Crusher - (We Don't Need This) Fascist Groove Thang (Inertia vs. The Crusher Remix).mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/16. Mindex - Jazzy Mood (Crystal Mix).mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/04. Dubvirus - Razorgirl.mp3
+Feb 11 19:40 : update: added Soundtracks/DEF CON 24 The Official Soundtrack (2016)/02. Vokab Kompany - Bang Bang.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/21 - TRON Legacy (End Titles).mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/08 - The Game Has Changed.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/13 - Derezzed.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/10 - Adagio For TRON.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/07 - Rinzler.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/06 - Arena.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/16 - Rectifier.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/12 - End of Line.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/09 - Outlands.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/02 - The Grid.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/01 - Overture.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/15 - Solar Sailer.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/18 - C.L.U..mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/14 - Fall.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/20 - Flynn Lives.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/11 - Nocturne.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/03 - The Son of Flynn.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/22 - Finale.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/05 - Armory.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/19 - Arrival.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/17 - Disc Wars.mp3
+Feb 11 19:40 : update: added Soundtracks/Daft Punk - Tron Legacy OST [2010-MP3-Cov][Bubanee]/04 - Recognizer.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 03 - Out of Control.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 12 - Hey Boy Hey Girl.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 05 - Let Forever Be.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 06 - The Sunshine Underground.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 04 - Orange Wedge.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 07 - Asleep from Day.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 08 - Got Glint.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 01 - Music- Response.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Surrender (2000)/Chemical Brothers - Surrender - 02 - Under the Influence.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 01 - Block Rockin' Beats.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 11 - The Private Psychedelic Reel.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 08 - Get Up On It Like This.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 03 - Elektrobank.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 06 - It Doesn't Matter.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 02 - Dig Your Own Hole.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 04 - Piku.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 09 - Lost In the K-hole.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 07 - Don't Stop the Rock.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 10 - Where Do I Begin.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Dig Your Own Hole (1997)/The Chemical Brothers - Dig Your Own Hole - 05 - Setting Sun.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 11 - Out Of Control.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 03 - Block Rockin' Beats.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 13 - Setting Sun.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 14 - Chemical Beats.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 06 - Star Guitar.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 12 - The Golden Path.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 09 - Keep My Composure.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 05 - Believe.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 07 - Let Forever Be.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 08 - Leave Home.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 10 - Saturate.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 04 - Do It Again.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 02 - Hey Boy Hey Girl.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Brotherhood (2008)/The Chemical Brothers - Brotherhood - 01 - Galvanize.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 09 - Life Is Sweet.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 10 - Playground For A Wedgeless Firm.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 04 - Three Little Birdies Down Beats.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 06 - Chemical Beats.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 11 - Alive Alone.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 02 - In Dust We Trust.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 05 - Fuck Up Beats.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 03 - Song To Te Siren.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 08 - One Too Many Mornings.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Exit Planet Dust (1995)/The Chemical Brothers - Exit Planet Dust - 07 - Chico's Groove.aac
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 10 - Star Guitar.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 02 - Chemical Beats.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 11 - The Test.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 07 - Hey Boy Hey Girl.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 12 - Get Yourself High.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 13 - The Golden Path.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 08 - Let Forever Be.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 04 - Setting Sun.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 09 - Out Of Control.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 06 - Private Psychedelic Reel.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 05 - Block Rockin' Beats.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 03 - Leave Home.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Collection Disc1 (2003)/The Chemical Brothers - Singles 93-03 Collection Disc1 - 01 - Song To The Siren.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 08 - Delik.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 03 - If You Kling To Me I'll Klong To You.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 05 - Morning Lemon.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 09 - Electrobank (Live).mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 11 - Piku Playground (Live).mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 01 - Not Another Drugstore (Planet Nine Mix).mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 02 - The Duke.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 04 - Otter Rock.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 07 - Loops Of Fury.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 06 - Galaxy Bounce.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Singles 93-03 Bonus Disc (2003)/The Chemical Brothers - Singles 93-03 Bonus Disc - 10 - Under The Influence (Mix 2).mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 04 - Hold Tight London.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 06 - Big Jump.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 03 - Believe.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 10 - Marvo Ging.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 05 - Come Inside.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 09 - Shake Break Bounce.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/The Chemical Brothers - Push The Button - 11 - Surface To Air.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 07 - Left Right.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 02 - Boxer.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 11 - Surface To Air.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Push the Button (2005)/Chemical Brothers - Push the Button - 08 - Close Your Eyes.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers - Come With Us - 05 - Hoops.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers - Come With Us - 08 - Denmark.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers - Come With Us - 09 - Pioneer Skies.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers - Come With Us - 01 - Come With Us.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers - Come With Us - 04 - Star Guitar.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers - Come With Us - 06 - My Elastic Eye.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers Feat. Beth Orton - Come With Us - 07 - The State We're In.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers Feat. Richard Ashcroft - Come With Us - 10 - The Test.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers - Come With Us - 03 - Galaxy Bounce.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/Come With Us (2002)/The Chemical Brothers - Come With Us - 02 - It Began In Afrika.m4a
+Feb 11 19:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers - Block Rockin' Beat.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Fuck Up Beats.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Playground For a Wedgeless Firm.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - In Dust We Trust.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Chemical Beats.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Leave Home.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Three Little Birdies Down Beats.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers - Hey Boy Hey Girl.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Life Is Sweet (Daft Punk).mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Life Is Sweet.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Alive Alone.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - One Too Many Mornings.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - K-Hole.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - let Forever Be.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Hey Boy, Hey Girl (Exteneded Mix).mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Hey Boy Hey Girl.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers - Asleep From Today.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Song To the Siren.mp3
+Feb 11 19:40 : update: updating Electronic/Chemical Brothers/MixBag/Chemical Brothers, The - Chico's Groove.mp3
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 4092.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 11 19:40 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 11 19:40 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 11 19:40 : ffmpeg/mp3: Failed to read frame size: Could not seek to 5119.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 4092.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 11 19:40 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 11 19:40 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 11 19:40 : ffmpeg/mp3: Failed to read frame size: Could not seek to 5119.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 4092.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 11 19:40 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 11 19:40 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 11 19:40 : ffmpeg/mp3: Failed to read frame size: Could not seek to 5119.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 4092.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 11 19:40 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 11 19:40 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 11 19:40 : ffmpeg/mp3: Failed to read frame size: Could not seek to 5119.
+Feb 11 19:40 : update: added Electronic/Jerome isamae/2013.mp3
+Feb 11 19:40 : update: added Electronic/Jerome isamae/2012 edit.mp3
+Feb 11 19:40 : update: added Electronic/Jerome isamae/2010.mp3
+Feb 11 19:40 : update: added Electronic/Jerome isamae/2011.mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/trafik--le_beeatch_(roland_klinkenberg_instrumental).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/Ash-poow_-_Get_Going.mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/Nic Fanciulli vs Zoo Brazil - Ide [Tiger Stripes Main Mix].mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/Tommyboy & Sultan feat. Zara - Come Together [Edu Reyes Remix].mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/jay_lumen_feat_panoptic-surface_reborn_(original_mix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/dennis_sheperd-infinity_(shiloh_remix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/Moonface - Overactive.mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/tomcraft--boogie_nights_(original_mix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/Fog - Crazy Rection.mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/tim_davison-smash_and_grab_(original_mix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/rogue_audio--get_down_(tigerskins_remix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/Sebastian Ingrosso & Laidback Luke - Chaa Chaa.mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/audionova-motion_(tim_davison_mix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/shara_nelson--go_that_deep_feat._shara_nelson_(redankas_93_vocal_mix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/x-press_2--muzik_xpress_(skylark_mix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/ozgur_can-smoothie_(original_mix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/dj 3000 - b2 alia (perception remix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/chris_meehan_-_once_upon_a_time(original_mix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/lustral-everytime_(funkagenda_remix).mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/Skitish - Backlash [Sten D Remix].mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/Mauritzio - Old Bastard [Cory Minto Remix].mp3
+Feb 11 19:40 : update: added Electronic/VA - Progressive House Selection 2008/jay_lumen-passion_and_glory_(original_mix).mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Orkidea Mixes-Promo/02_Orkidea_Vs_Dallas_Superstars_Mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Orkidea Mixes-Promo/01_Orkidea_Mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/The Fall WEB/01_The_Fall_Richard_Durand_remix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/06_way_out_west_fear.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/11_way_out_west_melt.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/09_way_out_west_killa.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/02_way_out_west_don_t_forget_me.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/08_way_out_west_just_like_a_man.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/03_way_out_west_everyday.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/05_way_out_west_Chasing_Rainbows.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/12_way_out_west_absinthe_dreams.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/10_way_out_west_northern_lights.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/01_way_out_west_anything_but_you.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/07_way_out_west_coming_home.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Don't Look Now/04_way_out_west_apollo.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/12_The_Fall_Bedrock_Vocal_Mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/09_Secret.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/05_Sharkhunt.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/11_Intensify_Part_02.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/10_Intensify_Part_01.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/08_Mindcircus.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/03_Call_Me.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/02_Activity.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/06_Stealth.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/04_Hypnotise.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/07_UB_Devoid.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Intensify/01_The_Fall.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Dont Forget Me/04_dont_forget_me_slam_return_to_mono_vox_mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Dont Forget Me/02_dont_forget_me_alt_radio_mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Dont Forget Me/01_dont_forget_me_radio_edit.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Dont Forget Me/08_dont_forget_me_slam_return_to_mono_tone_mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Dont Forget Me/05_dont_forget_me_hiroshi_watanabe_mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Dont Forget Me/07_dont_forget_me_clifton_high_mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Dont Forget Me/03_dont_forget_me_w_o_w_dust_biter_mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Dont Forget Me/06_dont_forget_me_riley_and_durant_mix.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Anything But You CDM/01_Apollo.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/09_King_Of_The_Funk.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/06_Sequoia.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/01_Blue.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/05_Questions_Never_Answered.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/08_Drive_By.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/07_Ajare.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/02_The_Gift.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/03_Domination.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/04_Dancehall_Tornado.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/Way Out West/10_Earth.mp3
+Feb 11 19:40 : update: added Electronic/Way Out West/2005-04-03/01_April_2005_Ministry_Of_Sound_S.mp3
+Feb 11 19:42 : client: [0] closed
+Feb 11 19:46 : client: [1] opened from [::1]:53382
+Feb 11 19:46 : client: [1] closed
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 4092.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 11 19:46 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 11 19:46 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 11 19:46 : ffmpeg/mp3: Failed to read frame size: Could not seek to 5119.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 4092.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 11 19:46 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 11 19:46 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 11 19:46 : ffmpeg/mp3: Failed to read frame size: Could not seek to 5119.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 4092.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 11 19:46 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 11 19:46 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 11 19:46 : ffmpeg/mp3: Failed to read frame size: Could not seek to 5119.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 4092.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 11 19:46 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 11 19:46 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 11 19:46 : ffmpeg/mp3: Failed to read frame size: Could not seek to 5119.
+Feb 11 19:47 : client: [2] opened from [::1]:53388
+Feb 11 19:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 11 20:38 : client: [2] closed
+Feb 11 21:21 : player: played "Electronic/Jerome isamae/2012 edit.mp3"
+Feb 12 19:27 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 12 19:27 : exception: Failed to decode /home/ben/music/Electronic/Jerome isamae/2012 edit.mp3
+Feb 12 19:27 : exception: nested: Failed to open '/home/ben/music/Electronic/Jerome isamae/2012 edit.mp3': No such file or directory
+Feb 12 19:27 : player: played "Electronic/Jerome isamae/2012 edit.mp3"
+Feb 12 19:27 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 12 19:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 13 19:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 13 19:32 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 15 09:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 15 09:17 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 17 13:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 17 13:47 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 18 17:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 18 17:42 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 19 19:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 19 19:51 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 20 18:30 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 20 18:30 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 21 18:15 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 21 18:15 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 23 13:45 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 23 13:45 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 24 19:24 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 24 19:24 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 25 17:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 25 17:20 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 26 18:26 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 26 18:26 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 27 19:24 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 19:24 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 28 19:55 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 28 19:55 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 29 09:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 29 09:18 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 02 18:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 02 18:04 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 05 20:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 05 20:44 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 06 17:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 06 17:32 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 07 12:02 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 07 12:02 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 11 18:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 11 18:51 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 14 09:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 14 09:04 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 16 18:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 16 18:34 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 19 21:31 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 19 21:31 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 20 19:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 20 19:34 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 21 14:54 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 14:54 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 24 20:13 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 24 20:13 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 25 19:54 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 25 19:54 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 27 09:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 27 09:32 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 31 10:41 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 31 10:41 : exception: inotify_add_watch() has failed: No such file or directory
+Apr 01 10:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 01 10:42 : exception: inotify_add_watch() has failed: No such file or directory
+Apr 02 10:03 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 02 10:03 : exception: inotify_add_watch() has failed: No such file or directory
+Apr 03 11:52 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 03 11:52 : exception: inotify_add_watch() has failed: No such file or directory
+Apr 04 15:22 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 04 15:22 : exception: inotify_add_watch() has failed: No such file or directory
+Apr 05 12:24 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 05 12:24 : exception: inotify_add_watch() has failed: No such file or directory

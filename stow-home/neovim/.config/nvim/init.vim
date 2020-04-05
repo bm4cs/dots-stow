@@ -1,69 +1,40 @@
-" Yet another .vimrc
+" Yet another .vimrc (YAVR)
 " Ben Simmonds (2015)
 " See :options for further details.
-
-
-
+"
+" ▄▄▄▄· • ▌ ▄ ·. .▄▄
+" ▐█ ▀█▪·██ ▐███▪▐█ ▀.
+" ▐█▀▀█▄▐█ ▌▐▌▐█·▄▀▀▀█▄
+" ██▄▪▐███ ██▌▐█▌▐█▄▪▐█
+" ·▀▀▀▀ ▀▀  █▪▀▀▀ ▀▀▀▀
 
 
 
 " load plugins with vimplug
 call plug#begin('~/.config/nvim/plugged')
-
-" File explorer
-Plug 'scrooloose/nerdtree'
-
-" trailing whitespace highlighting & automatic fixing
-Plug 'ntpeters/vim-better-whitespace'
-
-" improved motion
-Plug 'easymotion/vim-easymotion'
-
-" status line
-Plug 'vim-airline/vim-airline'
-
-" show git changes in left gutter
-Plug 'mhinz/vim-signify'
-Plug 'tpope/vim-fugitive'
-
-" auto-close plugin
-Plug 'rstacruz/vim-closer'
-
-" surround things quotes, tags, anything!
-Plug 'tpope/vim-surround'
-
-" lang aware commenter
-Plug 'tpope/vim-commentary'
-
-" TOML syntax support
-Plug 'cespare/vim-toml'
-
-" denite - fuzzy finding, buffer management
-Plug 'shougo/denite.nvim'
-
-" generate tocs for markdown
-Plug 'mzlogin/vim-markdown-toc'
-
-" code formatter
-"Plugin 'prettier/vim-prettier'
-
-" shorthand notation
-Plug 'junegunn/vim-easy-align'
-
-" intellisense engine
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-
-" golang plugins
-Plug 'fatih/vim-go'
-Plug 'nsf/gocode'
-
-" colorscheme
-Plug 'mhartington/oceanic-next'
-
-" Icons
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
+Plug 'ntpeters/vim-better-whitespace' "trailing whitespace
+Plug 'easymotion/vim-easymotion' "precise motioning
+Plug 'vim-airline/vim-airline' "status line
+Plug 'mhinz/vim-signify' "git gutter
+Plug 'tpope/vim-fugitive' "git integration
+"Plug 'jiangmiao/auto-pairs' "auto clode brackets
+Plug 'tpope/vim-surround' "wrap text
+Plug 'tpope/vim-commentary' "smart commenter
+Plug 'shougo/denite.nvim' "file jumper
+Plug 'mzlogin/vim-markdown-toc' "contents generator
+Plug 'junegunn/vim-easy-align' "code neatener
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}} "autocomplete
+Plug 'fatih/vim-go' "golang
+Plug 'nsf/gocode' "golang
+Plug 'arcticicestudio/nord-vim' "colorscheme
+Plug 'ryanoasis/vim-devicons' "file type icons
+"Plug 'scrooloose/nerdtree' "file explorer
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "nerdtree devicons
+Plug 'mcchrish/nnn.vim' "file explorer
+Plug 'ap/vim-css-color' "colorise hashcodes
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'yaml', 'html'] }
 call plug#end()
 
 
@@ -77,15 +48,15 @@ filetype on "file specific goodness
 filetype plugin on
 filetype indent on
 set autoread "refresh file contents when modified externally
-set autochdir "use the current file's dir as working dir
+set autochdir "use the current file as working dir
 set backspace=indent,eol,start "specifies what <BS> can do in Insert mode
-"set colorcolumn=80 "columns to highlight (local to window)
-set cursorline "highlight the screen line of the cursor (local to window)
+set colorcolumn=80 "visual ruler
+set cursorline "highlight the screen line of the cursor
 set encoding=utf-8 "character encoding to be used in Vim
 set fileencoding=utf-8 "character encoding to be used by current file
 set gdefault "use the 'g' (global) flag for :substitute by default
 set nohlsearch "highlight search results
-set hidden "don't unload a buffer when no longer shown in a window
+set hidden "dont unload a buffer when no longer shown in a window
 set ignorecase "ignore case when searching
 set incsearch "show match for partly typed search command
 set list "show non-vis characters
@@ -113,15 +84,13 @@ set wildignore+=*~,*.swp,*.tmp
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text, tab and indents
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-"set expandtab "expand <Tab> to spaces in Insert mode
+set expandtab "expand <Tab> to spaces in Insert mode
 set tabstop=4 "number of spaces a <Tab> in the text stands for
 set softtabstop=4 "number of spaces to insert for a <Tab>
 set shiftwidth=4 "number of spaces used for each step of (auto)indent
 set autoindent "automatically set the indent of a new line
 set smartindent "do clever autoindenting
 set wrap "wrap long lines
-"set formatoptions=aw "mutt friendly; a=auto format para, w=para termination 
-"non-white space
 
 
 
@@ -141,10 +110,10 @@ set nowb "don't write a backup file before overwriting a file
 
 "set termguicolors "enable true color
 syntax enable "syntax highlighting
-colorscheme OceanicNext "monokai "default color scheme
+colorscheme nord "default color scheme
 set t_Co=256 "the number of colors the terminal supports
-let $TERM="xterm-256color"
-"set term=screen-256color "what terminal type to use "neovim choked on this
+let $TERM="st-256color"
+"set term=st-256color "what terminal type to use
 au BufNewFile,BufRead *.adoc set filetype=asciidoc
 
 
@@ -167,36 +136,45 @@ inoremap <Right> <nop>
 cmap w!! w !sudo tee %
 
 
-" === Denite shorcuts === "
-"   ;         - Browser currently open buffers
-"   <leader>t - Browse list of files in current directory
-"   <leader>g - Search current directory for occurences of given term and
-"   close window if no results
-"   <leader>j - Search current directory for occurences of word under cursor
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keys denite
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ; - search open buffers
 nmap ; :Denite buffer -split=floating -winrow=1<CR>
+" <leader>t - list files in current dir
 nmap <leader>t :Denite file/rec -split=floating -winrow=1<CR>
+" <leader>g - grep files in current dir
 nnoremap <leader>g :<C-u>Denite grep:. -no-empty -mode=normal<CR>
+" <leader>j - search for term under cursor
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
 
 
-
-
-
-" === coc.nvim === "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keys COC
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <silent> <leader>dd <Plug>(coc-definition)
 nmap <silent> <leader>dr <Plug>(coc-references)
 nmap <silent> <leader>dj <Plug>(coc-implementation)
 
 
-" === Nerdtree shorcuts === "
-" Toggle NERDTree on/off
-nmap <leader>n :NERDTreeToggle<CR>
-" Opens current file location in NERDTree
-nmap <leader>f :NERDTreeFind<CR>
-" PageDown
-noremap <Space> <PageDown>
-" PageUp
-noremap - <PageUp>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keys NERDTree
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " Toggle NERDTree on/off
+" nmap <leader>n :NERDTreeToggle<CR>
+" " Opens current file location in NERDTree
+" nmap <leader>f :NERDTreeFind<CR>
+" " PageDown
+" noremap <Space> <PageDown>
+" " PageUp
+" noremap - <PageUp>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keys vim-easy-align
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 
 
@@ -207,12 +185,9 @@ noremap - <PageUp>
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" === Denite setup ==="
-" Use ripgrep for searching current directory for files
-" By default, ripgrep will respect rules in .gitignore
-"   --files: Print each file that would be searched (but don't search)
-"   --glob:  Include or exclues files for searching that match the given glob
-"            (aka ignore .git files)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Denite
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 try
 
@@ -265,9 +240,10 @@ endtry
 
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin coc
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" === coc.nvim === "
-" use <tab> for trigger completion and navigate to next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
@@ -283,66 +259,39 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin NERDTree
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"let g:NERDTreeShowHidden = 1 "hidden files
+"let g:NERDTreeMinimalUI = 1 " remove bookmarks and help text
+""let g:NERDTreeDirArrowExpandable = '⬏' "custom icons for expandable
+""let g:NERDTreeDirArrowCollapsible = '⬎' "custom icons for expandable
+"let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir]]', '\.sass-cache$'] "ignore list
 
 
-" === nerdtree === "
-let g:NERDTreeShowHidden = 1 "hidden files
-let g:NERDTreeMinimalUI = 1 " remove bookmarks and help text
-"let g:NERDTreeDirArrowExpandable = '⬏' "custom icons for expandable
-"let g:NERDTreeDirArrowCollapsible = '⬎' "custom icons for expandable
-let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir]]', '\.sass-cache$'] "ignore list
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin airline
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
-" === vim airline ==== "
 try
 
-" Enable extensions
 let g:airline_extensions = ['branch', 'hunks', 'coc']
-
-" Update section z to just have line number
 let g:airline_section_z = airline#section#create(['linenr'])
-
-" Do not draw separators for empty sections (only for the active window) >
 let g:airline_skip_empty_sections = 1
-
-" Smartly uniquify buffers names with similar filename, suppressing common parts of paths.
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
-" Custom setup that removes filetype/whitespace from default vim airline bar
 let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
-
 let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
-
 let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
-
-" Configure error/warning section to use coc.nvim
 let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
 let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
-
-" Hide the Nerdtree status line to avoid clutter
 let g:NERDTreeStatusline = ''
-
-" Disable vim-airline in preview mode
 let g:airline_exclude_preview = 1
-
-" Enable powerline fonts
 let g:airline_powerline_fonts = 1
-
-" Enable caching of syntax highlighting groups
 let g:airline_highlighting_cache = 1
+let g:airline_theme='oceanicnext'
 
-" Define custom airline symbols
-"if !exists('g:airline_symbols')
-  "let g:airline_symbols = {}
-"endif
-
-" unicode symbols
-"let g:airline_left_sep = '❮'
-"let g:airline_right_sep = '❯'
-
-" Don't show git changes to current file in airline
 let g:airline#extensions#hunks#enabled=0
 
 catch
@@ -351,21 +300,17 @@ endtry
 
 
 
-" === vim-go ==="
-" use gopls (googles lang server protocol plugin)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin vim-go
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:go_def_mode='gopls'
 
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin nnn.vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
 
-" References
-"
-" A guide to modern Web Development with (Neo)vim
-" https://medium.freecodecamp.org/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2
-"
-" How I revamped my Vim setup
-" https://alex.dzyoba.com/blog/vim-revamp/
-" 
-" How I'm still not using GUIs in 2019: A guide to the terminal
-" https://lucasfcosta.com/2019/02/10/terminal-guide-2019.html
