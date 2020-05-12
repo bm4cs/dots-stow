@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # thx to hexdsl for sharing his config and ideas
 # https://hexdsl.co.uk/hextool
@@ -61,15 +61,25 @@ stow()
 
 unstow()
 {
-	/usr/bin/stow --version
 	cd ~/dots/stow-home
 	for d in *; do
 		$stow -D -t ~ $d || true
 	done
 }
 
+restow()
+{
+    if [ -n "$1" ]; then
+	    cd ~/dots/stow-home/
+        $stow -D -t ~ $1 || true
+	    $stow -t ~ $1
+    fi
+}
+
+
+
 if [ -n "$1" ]; then
-	$1
+	$1 ${@:2}
 else
 	menu
 fi

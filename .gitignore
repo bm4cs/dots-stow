@@ -3,8 +3,8 @@ stow-home/neovim/.config/nvim/.netrwhist
 
 *.uuid
 fonts/.uuid
+stow-home/mpd/.config/mpd/log
+stow-home/mpd/.config/mpd/pid
+stow-home/mpd/.config/mpd/state
 stow-home/mpd/.config/mpd/database
-stow-home/mpd/.config/mpd/mpd/log
-stow-home/mpd/.config/mpd/mpd/pid
-stow-home/mpd/.config/mpd/mpd/state
 

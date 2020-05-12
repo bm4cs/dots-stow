@@ -9,7 +9,6 @@
 " ·▀▀▀▀ ▀▀  █▪▀▀▀ ▀▀▀▀
 
 
-
 " load plugins with vimplug
 call plug#begin('~/.config/nvim/plugged')
 Plug 'ntpeters/vim-better-whitespace' "trailing whitespace
@@ -135,9 +134,31 @@ inoremap <Right> <nop>
 " elevated save
 cmap w!! w !sudo tee %
 
+" insert timestamp
+nmap <leader>d i<C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR><Esc>
+imap <leader>d <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
+
+
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-" Keys denite
+"  ▄▄▄·▄▄▌  ▄• ▄▌ ▄▄ • ▪   ▐ ▄ .▄▄ ·
+" ▐█ ▄███•  █▪██▌▐█ ▀ ▪██ •█▌▐█▐█ ▀.
+"  ██▀·██▪  █▌▐█▌▄█ ▀█▄▐█·▐█▐▐▌▄▀▀▀█▄
+" ▐█▪·•▐█▌▐▌▐█▄█▌▐█▄▪▐█▐█▌██▐█▌▐█▄▪▐█
+" .▀   .▀▀▀  ▀▀▀ ·▀▀▀▀ ▀▀▀▀▀ █▪ ▀▀▀▀
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keys vim-easy-align
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Denite
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " ; - search open buffers
 nmap ; :Denite buffer -split=floating -winrow=1<CR>
@@ -148,49 +169,7 @@ nnoremap <leader>g :<C-u>Denite grep:. -no-empty -mode=normal<CR>
 " <leader>j - search for term under cursor
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Keys COC
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <silent> <leader>dd <Plug>(coc-definition)
-nmap <silent> <leader>dr <Plug>(coc-references)
-nmap <silent> <leader>dj <Plug>(coc-implementation)
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Keys NERDTree
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" " Toggle NERDTree on/off
-" nmap <leader>n :NERDTreeToggle<CR>
-" " Opens current file location in NERDTree
-" nmap <leader>f :NERDTreeFind<CR>
-" " PageDown
-" noremap <Space> <PageDown>
-" " PageUp
-" noremap - <PageUp>
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Keys vim-easy-align
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
-
-
-
-
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin Denite
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
 try
-
 call denite#custom#var('file/rec', 'command', ['rg', '--files', '--glob', '!.git'])
 
 " Use ripgrep in place of "grep"
@@ -243,6 +222,9 @@ endtry
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin coc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> <leader>dd <Plug>(coc-definition)
+nmap <silent> <leader>dr <Plug>(coc-references)
+nmap <silent> <leader>dj <Plug>(coc-implementation)
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -262,6 +244,17 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin NERDTree
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" nnn.vim has replaced NERDTree for me
+
+" " Toggle NERDTree on/off
+" nmap <leader>n :NERDTreeToggle<CR>
+" " Opens current file location in NERDTree
+" nmap <leader>f :NERDTreeFind<CR>
+" " PageDown
+" noremap <Space> <PageDown>
+" " PageUp
+" noremap - <PageUp>
 
 "let g:NERDTreeShowHidden = 1 "hidden files
 "let g:NERDTreeMinimalUI = 1 " remove bookmarks and help text
@@ -290,7 +283,7 @@ let g:NERDTreeStatusline = ''
 let g:airline_exclude_preview = 1
 let g:airline_powerline_fonts = 1
 let g:airline_highlighting_cache = 1
-let g:airline_theme='oceanicnext'
+let g:airline_theme='nord'
 
 let g:airline#extensions#hunks#enabled=0
 
