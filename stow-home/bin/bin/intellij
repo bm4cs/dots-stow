@@ -1,5 +1,5 @@
 #!/bin/sh
 
 export _JAVA_AWT_WM_NONREPARENTING=1
-~/opt/idea-IU-193.5233.102/bin/idea.sh
+~/opt/idea-IU-201.8538.31/bin/idea.sh
 

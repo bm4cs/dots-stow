@@ -13,6 +13,12 @@
       "source": "core"
     },
     {
+      "name": "bc",
+      "about": "CLI calculator",
+      "category": "",
+      "source": "extra"
+    },
+    {
       "name": "cdrtools",
       "about": "Original cdrtools supporting CD, DVD and BluRay burning",
       "category": "dvd",
@@ -399,6 +405,12 @@
     {
       "name": "xorg-xfontsel",
       "about": "Point and click selection of X11 font names",
+      "category": "x",
+      "source": "core"
+    },
+    {
+      "name": "xorg-xsetroot",
+      "about": "Setting content in the dwm bar",
       "category": "x",
       "source": "core"
     },

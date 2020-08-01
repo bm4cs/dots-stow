@@ -31,9 +31,7 @@ Plug 'ryanoasis/vim-devicons' "file type icons
 "Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "nerdtree devicons
 Plug 'mcchrish/nnn.vim' "file explorer
 Plug 'ap/vim-css-color' "colorise hashcodes
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'yaml', 'html'] }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 call plug#end()
 
 
