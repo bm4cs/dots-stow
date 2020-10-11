@@ -23,12 +23,9 @@ Plug 'shougo/denite.nvim' "file jumper
 Plug 'mzlogin/vim-markdown-toc' "contents generator
 Plug 'junegunn/vim-easy-align' "code neatener
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}} "autocomplete
-Plug 'fatih/vim-go' "golang
-Plug 'nsf/gocode' "golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } "golang
 Plug 'arcticicestudio/nord-vim' "colorscheme
 Plug 'ryanoasis/vim-devicons' "file type icons
-"Plug 'scrooloose/nerdtree' "file explorer
-"Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "nerdtree devicons
 Plug 'mcchrish/nnn.vim' "file explorer
 Plug 'ap/vim-css-color' "colorise hashcodes
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }

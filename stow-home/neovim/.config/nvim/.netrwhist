@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/ben/tmp/vimfun'
-let g:netrw_dirhist_2='/home/ben/tmp'
-let g:netrw_dirhist_3='/home/ben/tmp/vimfun'
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/ben/dots/stow-home/xorg'
+let g:netrw_dirhist_4='/home/ben/dots/stow-home'
+let g:netrw_dirhist_3='/home/ben/dots/stow-home/bash'
+let g:netrw_dirhist_2='/home/ben/git/oidc-mock'
+let g:netrw_dirhist_1='/home/ben/git/bencode.net/content/posts/migration'
