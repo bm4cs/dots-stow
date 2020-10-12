@@ -16,6 +16,7 @@ export TERMINAL="st"
 export BROWSER="firefox"
 export READER="mupdf"
 export FILE="nnn"
+export GOBIN=$HOME/go/bin
 export GOPATH=$HOME/go
 export DOTNET_ROOT=$HOME/.dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
