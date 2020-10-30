@@ -24,7 +24,7 @@ Plug 'mzlogin/vim-markdown-toc' "contents generator
 Plug 'junegunn/vim-easy-align' "code neatener
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}} "autocomplete
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } "golang
-Plug 'fatih/molokai' "colorscheme
+Plug 'morhetz/gruvbox' "colorscheme
 Plug 'ryanoasis/vim-devicons' "file type icons
 Plug 'mcchrish/nnn.vim' "file explorer
 Plug 'ap/vim-css-color' "colorise hashcodes
@@ -105,7 +105,7 @@ set nowb "don't write a backup file before overwriting a file
 
 "set termguicolors "enable true color
 syntax enable "syntax highlighting
-colorscheme molokai "default color scheme
+colorscheme gruvbox "default color scheme
 set t_Co=256 "the number of colors the terminal supports
 let $TERM="st-256color"
 "set term=st-256color "what terminal type to use
@@ -388,7 +388,7 @@ let g:NERDTreeStatusline = ''
 let g:airline_exclude_preview = 1
 let g:airline_powerline_fonts = 1
 let g:airline_highlighting_cache = 1
-"let g:airline_theme='molokai'
+let g:airline_theme='gruvbox'
 
 let g:airline#extensions#hunks#enabled=0
 
