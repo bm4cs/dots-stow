@@ -1,5 +1,5 @@
 " Yet another .vimrc (YAVR)
-" Ben Simmonds (2015)
+" Ben Simmonds (2007)
 " See :options for further details.
 "
 " ▄▄▄▄· • ▌ ▄ ·. .▄▄
@@ -157,38 +157,13 @@ nmap ga <Plug>(EasyAlign)
 " Plugin Denite
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 "   ;         - Browser currently open buffers
-"   <leader>l - Browse list of files in current directory
+"   <leader>f - Browse list of files in current directory
 "   <leader>g - Search current directory for occurences of given term and close window if no results
 "   <leader>j - Search current directory for occurences of word under cursor
 nmap ; :Denite buffer<CR>
-nmap <leader>l :Denite -start-filter file/rec<CR>
+nmap <leader>f :Denite -start-filter file/rec<CR>
 nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
-
-" Define mappings while in 'filter' mode
-"   <C-o>         - Switch to normal mode inside of search results
-"   <Esc>         - Exit denite window in any mode
-"   <CR>          - Open currently selected file in any mode
-"   <C-t>         - Open currently selected file in a new tab
-"   <C-v>         - Open currently selected file a vertical split
-"   <C-h>         - Open currently selected file in a horizontal split
-autocmd FileType denite-filter call s:denite_filter_my_settings()
-function! s:denite_filter_my_settings() abort
-  imap <silent><buffer> <C-o>
-  \ <Plug>(denite_filter_quit)
-  inoremap <silent><buffer><expr> <Esc>
-  \ denite#do_map('quit')
-  nnoremap <silent><buffer><expr> <Esc>
-  \ denite#do_map('quit')
-  inoremap <silent><buffer><expr> <CR>
-  \ denite#do_map('do_action')
-  inoremap <silent><buffer><expr> <C-t>
-  \ denite#do_map('do_action', 'tabopen')
-  inoremap <silent><buffer><expr> <C-v>
-  \ denite#do_map('do_action', 'vsplit')
-  inoremap <silent><buffer><expr> <C-h>
-  \ denite#do_map('do_action', 'split')
-endfunction
 
 " Define mappings while in denite window
 "   <CR>        - Opens currently selected file
@@ -222,7 +197,6 @@ function! s:denite_my_settings() abort
   nnoremap <silent><buffer><expr> <C-h>
   \ denite#do_map('do_action', 'split')
 endfunction
-
 
 try
     " Interactive grep search
