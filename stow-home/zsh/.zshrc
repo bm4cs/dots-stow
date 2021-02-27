@@ -1,16 +1,16 @@
 export ZSH="/home/ben/.oh-my-zsh"
 
-ZSH_THEME="bullet-train"
+#ZSH_THEME="bullet-train"
 
-BULLETTRAIN_PROMPT_ORDER=(
-  time
-  status
-  context
-  dir
-  go
-  git
-  cmd_exec_time
-)
+#BULLETTRAIN_PROMPT_ORDER=(
+#  time
+#  status
+#  context
+#  dir
+#  go
+#  git
+#  cmd_exec_time
+#)
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -69,9 +69,11 @@ plugins=(
   #golang
   archlinux
   colorize
+  sudo
 )
 
 source $ZSH/oh-my-zsh.sh
+eval "$(starship init zsh)"
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
