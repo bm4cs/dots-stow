@@ -6,11 +6,11 @@ disabled = true
 disabled = true
 
 # Don't print a new line at the start of the prompt
-add_newline = false
+#add_newline = false
 
 # makes prompt a single line
-[line_break]
-disabled = true
+#[line_break]
+#disabled = true
 
 # Disable the package module, hiding it from the prompt completely
 [package]
@@ -22,7 +22,6 @@ format = "took [$duration]($style)"
 
 [character]
 error_symbol = "[X](bold red) "
-success_symbol = "[  λ](bold fg:bright-green)"
 
 # These symbols will only show when battery levels are 20% or less
 [battery]

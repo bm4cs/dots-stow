@@ -67,3 +67,5 @@
 	commitstoday = !git log --author=\"`git config user.name`\" --since=\"6am\"
 	rank = shortlog -sn --no-merges
 
+[pull]
+	rebase = false

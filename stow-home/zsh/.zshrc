@@ -66,7 +66,7 @@ plugins=(
   fzf
   zsh-autosuggestions
   colored-man-pages
-  #golang
+  golang
   archlinux
   colorize
   sudo
@@ -74,6 +74,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 eval "$(starship init zsh)"
+source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh/calc.plugin.zsh
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"

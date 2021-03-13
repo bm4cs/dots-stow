@@ -19,8 +19,8 @@ export FILE="nnn"
 export GOBIN=$HOME/go/bin
 export GOPATH=$HOME/go
 export DOTNET_ROOT=$HOME/.dotnet
+export MSBuildSDKsPath=$DOTNET_ROOT/sdk/$(${DOTNET_ROOT}/dotnet --version)/Sdks
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export MSBuildSDKsPath="/home/ben/dotnet/sdk/3.0.100/Sdks"
 
 export PATH="$PATH:$GOPATH/bin:$HOME/.dotnet:$HOME/.cargo/bin"
 
